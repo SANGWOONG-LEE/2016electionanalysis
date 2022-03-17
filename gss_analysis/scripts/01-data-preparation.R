@@ -131,6 +131,7 @@ reduced_data <-
     Family_income == 27 ~ "Refused"
   ))
 
+
 race_data <- data.frame(white = sum(reduced_data$raceacs1, na.rm = T), black = sum(reduced_data$raceacs2, na.rm = T),
                         native_american = sum(reduced_data$raceacs3, na.rm = T),
                         asian = sum(reduced_data$raceacs4, reduced_data$raceacs5, 
