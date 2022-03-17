@@ -13,8 +13,7 @@
 library(haven)
 library(tidyverse)
 # Read in the raw data. 
-raw_data <- haven::read_dta("gss2021.dta"
-                     )
+raw_data <- haven::read_dta("gss_analysis/gss2021.dta")
 # Just keep some variables that may be of interest (change 
 # this depending on your interests)
 names(raw_data)
@@ -27,6 +26,7 @@ reduced_data <-
          degree,
          income16,
          raceacs1,
+         
          raceacs2,
          raceacs3,
          raceacs4,
@@ -46,6 +46,23 @@ reduced_data <-
          nataidy,
          natsoc)
 rm(raw_data)
+
+race_data <- reduced_data %>%
+  select(raceacs1, 
+         raceacs2,
+         raceacs3,
+         raceacs4,
+         raceacs5,
+         raceacs6,
+         raceacs7,
+         raceacs8,
+         raceacs9,
+         raceacs10,
+         raceacs15,
+         raceacs16) %>%
+  
+
+  #pivot_longer(everything(), names_to = "name", values_to = "value")
 
 #### What's next? ####
 
