@@ -13,7 +13,7 @@
 library(haven)
 library(tidyverse)
 # Read in the raw data. 
-raw_data <- haven::read_dta("/Users/sangwoonglee/Desktop/gss_analysis/gss2021.dta"
+raw_data <- haven::read_dta("gss2021.dta"
                      )
 # Just keep some variables that may be of interest (change 
 # this depending on your interests)
@@ -44,8 +44,7 @@ reduced_data <-
          natfare,
          natfarey,
          nataidy,
-         natsoc,
-         )
+         natsoc)
 rm(raw_data)
 
 #### What's next? ####
