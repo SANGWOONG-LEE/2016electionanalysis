@@ -131,15 +131,36 @@ reduced_data <-
     Family_income == 27 ~ "Refused"
   ))
 
+reduced_data <- drop_na()
 
-race_data <- data.frame(white = sum(reduced_data$raceacs1, na.rm = T), black = sum(reduced_data$raceacs2, na.rm = T),
-                        native_american = sum(reduced_data$raceacs3, na.rm = T),
-                        asian = sum(reduced_data$raceacs4, reduced_data$raceacs5, 
-                     reduced_data$raceacs6, reduced_data$raceacs7, 
-                     reduced_data$raceacs8, reduced_data$raceacs9, 
-                     reduced_data$raceacs10, na.rm = T),
-                     hispanic = sum(reduced_data$raceacs15, na.rm = T),
-                     other = sum(reduced_data$raceacs16, na.rm = T))
+reduced_data <- reduced_data %>%
+  mutate(raceacs1 = if_else(raceacs1 == 1, "white", "")) %>%
+  mutate(raceacs2 = if_else(raceacs2 == 1, "black", "")) %>%
+  mutate(raceacs3 = if_else(raceacs3 == 1, "asian", "")) %>%
+  mutate(raceacs4 = if_else(raceacs4 == 1, "asian", "")) %>%
+  mutate(raceacs5 = if_else(raceacs5 == 1, "asian", "")) %>%
+  mutate(raceacs6 = if_else(raceacs6 == 1, "asian", "")) %>%
+  mutate(raceacs7 = if_else(raceacs7 == 1, "asian", "")) %>%
+  mutate(raceacs8 = if_else(raceacs8 == 1, "asian", "")) %>%
+  mutate(raceacs9 = if_else(raceacs9 == 1, "asian", "")) %>%
+  mutate(raceacs10 = if_else(raceacs10 == 1, "asian", "")) %>%
+  mutate(raceacs16 = if_else(raceacs16 == 1, "hispanic", "")) %>%
+  mutate(raceacs15 = if_else(raceacs15 == 1, "other", ""))
+  
+reduced_data$race <- paste(reduced_data$raceacs1, reduced_data$raceacs2, reduced_data$raceacs3,
+                           reduced_data$raceacs4, reduced_data$raceacs5, reduced_data$raceacs6, 
+                           reduced_data$raceacs7, reduced_data$raceacs8, reduced_data$raceacs9,
+                           reduced_data$raceacs10, reduced_data$raceacs15, reduced_data$raceacs16)
+
+
+#race_data <- data.frame(white = sum(reduced_data$raceacs1, na.rm = T), black = sum(reduced_data$raceacs2, na.rm = T),
+ #                       native_american = sum(reduced_data$raceacs3, na.rm = T),
+  #                      asian = sum(reduced_data$raceacs4, reduced_data$raceacs5, 
+   #                  reduced_data$raceacs6, reduced_data$raceacs7, 
+    #                 reduced_data$raceacs8, reduced_data$raceacs9, 
+     #                reduced_data$raceacs10, na.rm = T),
+      #               hispanic = sum(reduced_data$raceacs15, na.rm = T),
+       #              other = sum(reduced_data$raceacs16, na.rm = T))
 
   
 
