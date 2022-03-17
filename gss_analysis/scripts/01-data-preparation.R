@@ -13,7 +13,7 @@
 library(haven)
 library(tidyverse)
 # Read in the raw data. 
-raw_data <- haven::read_dta("gss2021.dta"
+raw_data <- haven::read_dta("gss_analysis/gss2021.dta"
                      )
 # Just keep some variables that may be of interest (change 
 # this depending on your interests)
@@ -44,8 +44,29 @@ reduced_data <-
          natfare,
          natfarey,
          nataidy,
-         natsoc)
+         natsoc) %>% 
+  rename(gender = sexnow1,
+         born_US = born,
+         Family_income = income16,
+         nation_education = nateduc,
+         nation_arms = natarms,
+         nation_welfare = natfare,
+         Assistance_to_the_poor = natfarey,
+         Assistance_to_other_countries = nataidy,
+         social_security = natsoc)
+
 rm(raw_data)
+# Recode for sexnow1. Corresponding to options from the Codebook
+#'GSS 2021 Codebook R1b.pdf', variables are modified as below: 
+reduced_data <- 
+  reduced_data %>% 
+  mutate(gender == case_when(
+    gender == 1 ~ "Male",
+    gender == 2 ~ "Female",
+    gender == 3 ~ "Transgender",
+    gender == 4 ~ "Other",
+  ))
+
 
 #### What's next? ####
 
