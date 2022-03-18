@@ -37,6 +37,14 @@ reduced_data %>%
   geom_bar()
 
 reduced_data %>%
+  ggplot(aes(x = race, fill = pres16)) +
+  geom_bar()
+
+reduced_data %>%
+  ggplot(aes(x = gender, fill = pres16)) +
+  geom_bar()
+
+reduced_data %>%
   ggplot(aes(x = degree, fill = pres16)) +
   geom_bar()
 
