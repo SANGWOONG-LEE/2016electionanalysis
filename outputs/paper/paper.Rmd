@@ -30,7 +30,52 @@ what are some of the trade offs of this
 how is non response handled.
 (What is good and bad about it)
 
-
+```{r}
+library(ggplot2)
+reduced_data %>%
+  ggplot(aes(x = gender, fill = pres16)) +
+  geom_bar()
+```
+```{r}
+reduced_data %>%
+  ggplot(aes(x = degree, fill = pres16)) +
+  geom_bar()
+```
+```{r}
+reduced_data %>%
+  ggplot(aes(x = born_US, fill = pres16)) +
+  geom_bar()
+```
+```{r}
+reduced_data %>%
+  ggplot(aes(x = Family_income, fill = pres16)) +
+  geom_bar()
+```
+```{r}
+reduced_data %>%
+  ggplot(aes(x = nation_education, fill = pres16)) +
+  geom_bar()
+```
+```{r}
+reduced_data %>%
+  ggplot(aes(x = nation_race, fill = pres16)) +
+  geom_bar()
+```
+```{r}
+reduced_data %>%
+  ggplot(aes(x = nation_arms, fill = pres16)) +
+  geom_bar()
+```
+```{r}
+reduced_data %>%
+  ggplot(aes(x = nation_welfare, fill = pres16)) +
+  geom_bar()
+```
+```{r}
+reduced_data %>%
+  ggplot(aes(x = Assistance_to_the_poor, fill = pres16)) +
+  geom_bar()
+```
 
 
 
