@@ -30,14 +30,15 @@ what are some of the trade offs of this
 how is non response handled.
 (What is good and bad about it)
 
+
 ```{r}
 library(ggplot2)
 reduced_data %>%
-  ggplot(aes(x = gender, fill = pres16)) +
+  ggplot(aes(x = gender)) +
   geom_bar()
 
 reduced_data %>%
-  ggplot(aes(x = race, fill = pres16)) +
+  ggplot(aes(x = race)) +
   geom_bar()
 
 reduced_data %>%
