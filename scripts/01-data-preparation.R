@@ -13,7 +13,7 @@
 library(haven)
 library(tidyverse)
 # Read in the raw data. 
-raw_data <- haven::read_dta("gss2021.dta")
+raw_data <- haven::read_dta("inputs/data/2021_stata/gss2021.dta")
 
 # Just keep some variables that may be of interest (change 
 # this depending on your interests)
