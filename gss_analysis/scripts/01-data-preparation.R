@@ -259,8 +259,8 @@ reduced_data <-
 reduced_data <- reduced_data[!is.na(reduced_data$pres16), ]
   
 
-#### What's next? ####
-
+#### Save ####
+write_csv(reduced_data, "gss_analysis/outputs/data/prepared_gss.csv")
 
 
          
