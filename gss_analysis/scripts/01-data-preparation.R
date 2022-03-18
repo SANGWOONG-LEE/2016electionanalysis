@@ -167,6 +167,10 @@ reduced_data <-
     nation_arms == 3 ~ "Too much",
   ))
 
+reduced_data$race_sum <- reduced_data %>%
+  select(raceacs1, raceacs2, raceacs3, raceacs4, raceacs5, raceacs6, raceacs7, raceacs8, raceacs9, raceacs10, raceacs15, raceacs16) %>%
+  rowSums(.)
+
 
 reduced_data <- reduced_data %>%
   mutate(raceacs1 = if_else(raceacs1 == 1, "white", "")) %>%
@@ -187,6 +191,8 @@ reduced_data$race <- paste(reduced_data$raceacs1, reduced_data$raceacs2, reduced
                            reduced_data$raceacs7, reduced_data$raceacs8, reduced_data$raceacs9,
                            reduced_data$raceacs10, reduced_data$raceacs15, reduced_data$raceacs16)
 
+reduced_data <- reduced_data %>%
+  mutate(race = if_else(race_sum == 1, "", "other"))
 
 # Recode to rename variables in nation_welfare according to options from the Codebook 'GSS 2021 Codebook R1b.pdf'.
 # The question was whether US is spending too much, too little, or about the right amount on 
