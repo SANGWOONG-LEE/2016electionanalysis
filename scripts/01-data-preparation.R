@@ -46,7 +46,8 @@ reduced_data <-
          natfarey,
          nataidy,
          natsoc,
-         pres16) %>% 
+         pres16,
+         tax) %>% 
   rename(gender = sexnow1,
          born_US = born,
          Family_income = income16,
@@ -259,6 +260,16 @@ reduced_data <-
     pres16 == 2 ~ "Trump",
     pres16 == 3 ~ "Other",
     pres16 == 4 ~ "Did not vote",
+  ))
+# Recode to rename variables in tax according to options from the Codebook 'GSS 2021 Codebook R1b.pdf'.
+#The question was do you consider the amount of federal income tax which you have to pay as too high
+#about right, or too low?
+reduced_data <- 
+  reduced_data %>% 
+  mutate(tax = case_when(
+    tax == 1 ~ "Too high",
+    tax == 2 ~ "About right",
+    tax == 3 ~ "Too low",
   ))
 
 reduced_data <- reduced_data[!is.na(reduced_data$pres16), ]
