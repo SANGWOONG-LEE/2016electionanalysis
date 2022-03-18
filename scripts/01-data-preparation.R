@@ -21,7 +21,8 @@ names(raw_data)
 
 reduced_data <- 
   raw_data %>% 
-  select(sexnow1, 
+  select(age,
+         sexnow1, 
          degree,
          born,
          degree,

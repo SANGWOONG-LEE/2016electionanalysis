@@ -34,6 +34,10 @@ how is non response handled.
 ```{r}
 library(ggplot2)
 reduced_data %>%
+  ggplot(aes(x = age)) +
+  geom_bar()
+
+reduced_data %>%
   ggplot(aes(x = gender)) +
   geom_bar()
 
