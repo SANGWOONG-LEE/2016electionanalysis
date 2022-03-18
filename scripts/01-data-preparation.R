@@ -131,6 +131,7 @@ reduced_data <-
     Family_income == 26 ~ "$170,000 or over",
     Family_income == 27 ~ "Refused"
   ))
+
 # Recode to rename variables in nation_education according to options from the Codebook 'GSS 2021 Codebook R1b.pdf'.
 # The question was whether US is spending too much, too little, or about the right amount on 
 # improving the nation's education system.
@@ -211,6 +212,7 @@ reduced_data <-
     nation_welfare == 2 ~ "About right",
     nation_welfare == 3 ~ "Too much",
   ))
+
 # Recode to rename variables in Assistance_to_the_poor according to options from the Codebook 'GSS 2021 Codebook R1b.pdf'.
 # The question was whether US is spending too much, too little, or about the right amount on 
 # assistance to the poor
@@ -223,11 +225,11 @@ reduced_data <-
     Assistance_to_the_poor == 2 ~ "About right",
     Assistance_to_the_poor == 3 ~ "Too much",
   ))
+
 # Recode to rename variables in Assistance_to_other_countries according to options from the Codebook 'GSS 2021 Codebook R1b.pdf'.
 # The question was whether US is spending too much, too little, or about the right amount on 
 # assistance to the other countries.
 # Unfortunately 49.3% of respondents answered "Not Applicable" which falls into "NA".
-
 reduced_data <- 
   reduced_data %>% 
   mutate(Assistance_to_other_countries = case_when(
@@ -235,6 +237,7 @@ reduced_data <-
     Assistance_to_other_countries == 2 ~ "About right",
     Assistance_to_other_countries == 3 ~ "Too much",
   ))
+
 # Recode to rename variables in social_security according to options from the Codebook 'GSS 2021 Codebook R1b.pdf'.
 # The question was whether US is spending too much, too little, or about the right amount on 
 # social security
@@ -245,6 +248,7 @@ reduced_data <-
     social_security == 2 ~ "About right",
     social_security == 3 ~ "Too much",
   ))
+
 # Recode to rename variables in pres16 according to options from the Codebook 'GSS 2021 Codebook R1b.pdf'.
 # The question was whether a respondent voted for Hillary Clinton or Donald Trump
 reduced_data <- 
