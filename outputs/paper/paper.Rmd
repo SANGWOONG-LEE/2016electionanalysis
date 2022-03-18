@@ -76,6 +76,11 @@ reduced_data %>%
   ggplot(aes(x = Assistance_to_the_poor, fill = pres16)) +
   geom_bar()
 ```
+```{r}
+reduced_data %>%
+  ggplot(aes(x = Assistance_to_other_countries, fill = pres16)) +
+  geom_bar()
+```
 
 
 
