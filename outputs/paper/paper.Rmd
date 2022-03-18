@@ -34,7 +34,7 @@ how is non response handled.
 ```{r}
 library(ggplot2)
 reduced_data %>%
-  ggplot(aes(x = age)) +
+  ggplot(aes(x = pres16)) +
   geom_bar()
 
 reduced_data %>%
@@ -92,8 +92,31 @@ reduced_data %>%
 reduced_data %>%
   ggplot(aes(x = race, fill = pres16)) +
   geom_bar()
-```
 
+reduced_data %>%
+  ggplot(aes(x = degree, fill = Family_income)) +
+  geom_bar()
+
+```
+US demographics: White 76.3%, Black: 13.4%, American Indian: 1.3%, Asian: 5.9%, Hispanic: 18.5%
+https://www.census.gov/quickfacts/fact/table/US/PST045221.
+Considering the result above, our data sample is fairly recruited. 
+
+
+1. nation_race 
+-> This session clearly shows the difference in approval rating between Hillary Clinton and 
+Donald Trump. Majority of people who thinks that national spending on improving conditions on
+race has to be increased advocated Hillary Clinton. On the other hand, people who did not agree 
+with them advocated Donald Trump. I assume that this is due to the image of Donald Trump. 
+
+2. nation_arms
+-> Interestingly this session shows opposite trend compared to nation_race. Aside from people who
+answered "About right" and "NA", the two bars, "Too little" and "Too much" shows us opposite trend.
+
+In general, similar to the indicators above, Hillary Clinton supporters were moved by social equality such as 
+"Assistance to the Poor", "nation welfare", "nation education" and "Assistance to the other countries". On the other hand, Donald Trump supporters were interested by more conservative ideas that US is spending too much on the sessions above. 
+
+3. 
 
 
 # Results
