@@ -167,32 +167,38 @@ reduced_data <-
     nation_arms == 3 ~ "Too much",
   ))
 
+# First step of merging process of survey response related to race. Create a column race_sum which each row represents number of races of each person.
+# If value at column race_sum is greater than 1, that person is of mixed race.
 reduced_data$race_sum <- reduced_data %>%
   select(raceacs1, raceacs2, raceacs3, raceacs4, raceacs5, raceacs6, raceacs7, raceacs8, raceacs9, raceacs10, raceacs15, raceacs16) %>%
   rowSums(.)
 
-
+# Create a column named "race" and assign values according to the columns from the survey.
 reduced_data <- reduced_data %>%
-  mutate(raceacs1 = if_else(raceacs1 == 1, "white", "")) %>%
-  mutate(raceacs2 = if_else(raceacs2 == 1, "black", "")) %>%
-  mutate(raceacs3 = if_else(raceacs3 == 1, "asian", "")) %>%
-  mutate(raceacs4 = if_else(raceacs4 == 1, "asian", "")) %>%
-  mutate(raceacs5 = if_else(raceacs5 == 1, "asian", "")) %>%
-  mutate(raceacs6 = if_else(raceacs6 == 1, "asian", "")) %>%
-  mutate(raceacs7 = if_else(raceacs7 == 1, "asian", "")) %>%
-  mutate(raceacs8 = if_else(raceacs8 == 1, "asian", "")) %>%
-  mutate(raceacs9 = if_else(raceacs9 == 1, "asian", "")) %>%
-  mutate(raceacs10 = if_else(raceacs10 == 1, "asian", "")) %>%
-  mutate(raceacs16 = if_else(raceacs16 == 1, "hispanic", "")) %>%
-  mutate(raceacs15 = if_else(raceacs15 == 1, "other", ""))
+  mutate(race = case_when(
+    raceacs1 == 1 ~ "white",
+    raceacs2 == 1 ~ "black",
+    raceacs3 == 1 ~ "american_native",
+    raceacs4 == 1 ~ "asian",
+    raceacs5 == 1 ~ "asian",
+    raceacs6 == 1 ~ "asian",
+    raceacs7 == 1 ~ "asian",
+    raceacs8 == 1 ~ "asian",
+    raceacs9 == 1 ~ "asian",
+    raceacs10 == 1 ~ "asian",
+    raceacs15 == 1 ~ "other",
+    raceacs16 == 1 ~ "hispanic"
+    ))
+
+# If a person is of mixed race, that person is assigned value "other"
+reduced_data <- reduced_data %>%
+  mutate(race = if_else(race_sum == 1, reduced_data$race, "other"))
+
+# Remove columns that are no longer needed.
+reduced_data <- reduced_data %>%
+  select(-c(raceacs1, raceacs2, raceacs3, raceacs4, raceacs5, raceacs6, raceacs7, raceacs8, raceacs9, raceacs10, raceacs15, raceacs16, race_sum))
+
   
-reduced_data$race <- paste(reduced_data$raceacs1, reduced_data$raceacs2, reduced_data$raceacs3,
-                           reduced_data$raceacs4, reduced_data$raceacs5, reduced_data$raceacs6, 
-                           reduced_data$raceacs7, reduced_data$raceacs8, reduced_data$raceacs9,
-                           reduced_data$raceacs10, reduced_data$raceacs15, reduced_data$raceacs16)
-
-reduced_data <- reduced_data %>%
-  mutate(race = if_else(race_sum == 1, "", "other"))
 
 # Recode to rename variables in nation_welfare according to options from the Codebook 'GSS 2021 Codebook R1b.pdf'.
 # The question was whether US is spending too much, too little, or about the right amount on 
@@ -249,20 +255,9 @@ reduced_data <-
     pres16 == 3 ~ "Other",
     pres16 == 4 ~ "Did not vote",
   ))
-#race_data <- data.frame(white = sum(reduced_data$raceacs1, na.rm = T), black = sum(reduced_data$raceacs2, na.rm = T),
-#                        native_american = sum(reduced_data$raceacs3, na.rm = T),
-#                        asian = sum(reduced_data$raceacs4, reduced_data$raceacs5, 
-#                     reduced_data$raceacs6, reduced_data$raceacs7, 
-#                     reduced_data$raceacs8, reduced_data$raceacs9, 
-#                     reduced_data$raceacs10, na.rm = T),
-#                     hispanic = sum(reduced_data$raceacs15, na.rm = T),
-#                     other = sum(reduced_data$raceacs16, na.rm = T))
 
 reduced_data <- reduced_data[!is.na(reduced_data$pres16), ]
   
-reduced_data %>%
-  ggplot(aes(x = pres16)) +
-  geom_bar()
 
 #### What's next? ####
 
