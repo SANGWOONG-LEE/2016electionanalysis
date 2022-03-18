@@ -13,7 +13,6 @@ toc: FALSE
 bibliography: references.bib
 ---
 
-
 # Introduction
 
 Donald Trump won the 2016 United States presidential election. We are not US citizens. 
@@ -30,6 +29,8 @@ what sampling approach is taken
 what are some of the trade offs of this 
 how is non response handled.
 (What is good and bad about it)
+
+
 
 
 
