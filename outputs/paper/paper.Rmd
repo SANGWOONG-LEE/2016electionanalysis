@@ -37,7 +37,12 @@ However, considering
 ```{r, include=FALSE, echo=FALSE}
 reduced_data <- read_csv("outputs/data/prepared_gss.csv")
 ```
-The data comes from US General Social Survey.
+* number of survey participants of age in the range of 20~40 is unexpectedly low -> not many people in ages between 20-40 participated in the survey
+* Clinton's vote is higher than trump's vote in this survey, which contradicts the election result of 2016, reader should keep in mind that this survey is more biased towards clinton.
+
+
+
+
 1.Conveying a sense of the dataset of interest.
 2.Dicussion of the survey's methodology and its key features, strengths, weaknesses.
 For instance what is the population, frame and sample.
@@ -86,6 +91,16 @@ reduced_data %>%
        caption = "Figure 2: Distribution of survey respondents' Race") +
   theme(legend.position = "none")
 
+reduced_data %>%
+  ggplot(aes(x = pres16, fill = pres16)) +
+  geom_bar() +
+  scale_fill_manual("Candidate", values = c("Clinton" = "#01378C", "Trump" = "#ff3d3d", "Other" = "#2cd18c", "Did not vote" = "#dede1b")) +
+  labs(x = element_blank(),
+       y = element_blank(),
+       title = "Surveyee's vote choice of 2016 Presidential election",
+       caption = "Figure 3: Distribution of survey respondents' vote choice") +
+  theme(legend.position = "none")
+
 
 # reduced_data %>%
 #   ggplot(aes(x = age, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
@@ -97,14 +112,16 @@ reduced_data$pres16 <- factor(reduced_data$pres16, levels = c("Clinton","Trump",
 
 reduced_data %>%
   drop_na(nation_race) %>%
+  drop_na(race) %>%
   ggplot(aes(x = race, fill = nation_race)) +
   geom_bar() +
   coord_flip() +
   labs(x = element_blank(),
        y = element_blank(),
        title = "Opinion on National Spending on Improving Conditions of Black Population",
-       caption = "Figure 3: Distribution of survey respondents' Race") +
-  facet_wrap(~ pres16)
+       caption = "Figure 4: Distribution of survey respondents' Race") +
+  facet_wrap(~ pres16) + 
+  theme(legend.title = element_blank())
 
 reduced_data %>%
   ggplot(aes(x = pres16, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
