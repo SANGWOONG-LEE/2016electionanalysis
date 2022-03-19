@@ -151,6 +151,15 @@ reduced_data %>%
 #   labs(fil = "Candidate")
 
 reduced_data %>%
+  ggplot(aes(x = pres16, fill = gender)) +
+  geom_bar() +
+  coord_flip() +
+  labs(x = element_blank(),
+       y = element_blank(),
+       title = "Surveyee's Vote Choice of 2016 Presidential Election by Gender",
+       caption = "Figure 7: Distribution of survey respondents' vote by gender",)
+
+reduced_data %>%
   drop_na(nation_welfare) %>%
   drop_na(race) %>%
   ggplot(aes(x = race, fill = nation_welfare)) +
@@ -159,7 +168,7 @@ reduced_data %>%
   labs(x = element_blank(),
        y = element_blank(),
        title = "Is the Government Spending Enough on Welfare?",
-       caption = "Figure 7: Opinion on national spending on welfare") +
+       caption = "Figure 8: Opinion on national spending on welfare") +
   facet_wrap(~ pres16) + 
   theme(legend.title = element_blank())
 
@@ -178,7 +187,7 @@ reduced_data %>%
   labs(x = element_blank(),
        y = element_blank(),
        title = "Education, Income and its Effect to the Vote",
-       caption = "Figure 8: Distribution of votes by degree and family income")
+       caption = "Figure 9: Distribution of votes by degree and family income")
 
 reduced_data %>%
   ggplot(aes(x = Immigration, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
@@ -189,7 +198,7 @@ reduced_data %>%
   labs(x = element_blank(),
        y = element_blank(),
        title = "Should the Government Limit Immigration?",
-       caption = "Figure 9: Opinion on wheter the US should limit immigration to protect their culture") +
+       caption = "Figure 10: Opinion on wheter the US should limit immigration to protect their culture") +
   facet_wrap(~pres16)
 
 reduced_data %>%
@@ -200,7 +209,7 @@ reduced_data %>%
   labs(x = element_blank(),
        y = element_blank(),
        title = "Is the Government Spending Enough on Improving Education?",
-       caption = "Figure 10: Surveyee's opinion on government's budget on education improvement")
+       caption = "Figure 11: Surveyee's opinion on government's budget on education improvement")
 
 
 reduced_data %>%
@@ -211,7 +220,7 @@ reduced_data %>%
   labs(x = element_blank(),
        y = element_blank(),
        title = "Is the Government Spending Enough on Arms and National Defense?",
-       caption = "Figure 11: Surveyee's opinion on government's budget on arms")
+       caption = "Figure 12: Surveyee's opinion on government's budget on arms")
 
 
 reduced_data %>%
@@ -222,7 +231,7 @@ reduced_data %>%
   labs(x = element_blank(),
        y = element_blank(),
        title = "Is the Government Spending Enough to Assis the Poor?",
-       caption = "Figure 12: Surveyee's opinion on government's budget on assisting the poor")
+       caption = "Figure 13: Surveyee's opinion on government's budget on assisting the poor")
 
 reduced_data %>%
   ggplot(aes(x = Assistance_to_other_countries, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
@@ -232,7 +241,7 @@ reduced_data %>%
   labs(x = element_blank(),
        y = element_blank(),
        title = "Is the Government Spending Enough to Assis Other Countries?",
-       caption = "Figure 13: Surveyee's opinion on government's budget on assisting other countries")
+       caption = "Figure 14: Surveyee's opinion on government's budget on assisting other countries")
 ```
 
 ```{r, echo=FALSE}
