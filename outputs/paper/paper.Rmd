@@ -35,6 +35,15 @@ Why did we clean some variables?
 what the variables look like using graphs or tables discussion of the observations.
 Summary statistics should also be included 
 
+Original dataset is collected through US GSS, which is aimed for the goal that enabling the cleanest comparison to show changes in public opinion in the United States. Usually, it is conducted in person, however because of pandemic, it was conducted via online. Among numerous interesting findings from the dataset, we choose to analyze the 2016 United States presidential election. However, choosing specific variables related to the election was not easy since deciding who to vote is followed by countless factors.After looking over the variables, we chose age,race,gender,degree,born US, Family income, national spending on education, race, arms, welfare, the poor, the other countries, social security and immigration as potential variables. 
+We mainly divided the variables into two parts: personal information and thoughts on national policy. Age, race, gender, degree, born US and family income are respondents' personal information, and national spending on education, race, arms, welfare, the poor, the other countries, social security and immigration are personal thoughts on national policy. 
+
+US demographics: White 76.3%, Black: 13.4%, American Indian: 1.3%, Asian: 5.9%, Hispanic: 18.5%
+https://www.census.gov/quickfacts/fact/table/US/PST045221.
+Considering the result above, our data sample is fairly recruited. 
+
+
+
 
 ```{r}
 library(ggplot2)
@@ -158,12 +167,6 @@ Summary statistics, tables, graphs, images ....
 Regression tables must not contain stars?? 
 
 Thesis: what triggered U.S citizens to vote Clinton and Trump. 
-
-
-US demographics: White 76.3%, Black: 13.4%, American Indian: 1.3%, Asian: 5.9%, Hispanic: 18.5%
-https://www.census.gov/quickfacts/fact/table/US/PST045221.
-Considering the result above, our data sample is fairly recruited. 
-
 
 1. nation_race 
 -> This session clearly shows the difference in approval rating between Hillary Clinton and 
