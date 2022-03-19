@@ -1,10 +1,9 @@
 ---
-title: "Numerous variables relating to 2016 election in 2021 US GSS"
+title: "Numerous variables relating to 2016 election in 2021 US GSS^[Code and data are available at: https://github.com/SANGWOONG-LEE/2016electionanalysis.git]"
 subtitle: "Possible factors effecting 2016 election"
 author: 
   - SangWoong Lee
-  - Young Suk 
-thanks: "Code and data are available at: https://github.com/SANGWOONG-LEE/2016electionanalysis.git".
+  - Young Suk
 date: "`r format(Sys.time(), '%d %B %Y')`"
 abstract: "First sentence (what was done). Second sentence(what was found). Third sentence (why this matters). Fourth sentence."
 output:
@@ -12,6 +11,13 @@ output:
 toc: FALSE
 bibliography: references.bib
 ---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
+library(tidyverse)
+library(dplyr)
+```
 
 # Introduction
 1) broader context to motivate
@@ -28,6 +34,18 @@ However, considering
 
 
 # Data
+```{r, include=FALSE, echo=FALSE}
+reduced_data <- read_csv("outputs/data/prepared_gss.csv")
+```
+1.Conveying a sense of the dataset of interest.
+2.Dicussion of the survey's methodology and its key features, strengths, weaknesses.
+For instance what is the population, frame and sample.
+How is the sample recruited 
+what sampling approach is taken
+what are some of the trade offs of this 
+how is non response handled.
+(What is good and bad about it
+
 A sense of the datasets should be communicated to the reader.
 All varaiables should be throughly examined and explained.
 Explain if there were similar datasets that could have been used and why they were not.
@@ -45,9 +63,11 @@ Considering the result above, our data sample is fairly recruited.
 
 
 
-```{r}
-library(ggplot2)
-library(dplyr)
+
+```{r, echo=FALSE}
+ggplot(reduced_data, aes(x = age)) +
+  geom_bar(na.rm = T)
+
 reduced_data %>%
   ggplot(aes(x = age, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
   geom_bar() +
@@ -55,6 +75,7 @@ reduced_data %>%
   labs(fil = "Candidate")
 
 reduced_data$pres16 <- factor(reduced_data$pres16, levels = c("Clinton","Trump","Other","Did not vote"))
+
 reduced_data %>%
   ggplot(aes(x = pres16, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
   geom_bar() +
@@ -146,12 +167,15 @@ reduced_data %>%
   labs(fil = "Candidate")
 
 reduced_data %>%
-  ggplot(aes(x = degree, fill = factor(Family_income, levels = c("$170,000 or over","$130,000 ~ $169,999","$90,000 ~ $129,999","$60,000 ~ $89,999","$40,000 ~ $59,999","$20,000 ~ $39,999","$10,000 ~ $19,999","Under $10,000")))) +
+  ggplot(aes(x = degree, fill = factor(Family_income, 
+                                       levels = c("$170,000 or over","$130,000 ~ $169,999","$90,000 ~ $129,999","$60,000 ~ $89,999",
+                                                  "$40,000 ~ $59,999","$20,000 ~ $39,999","$10,000 ~ $19,999","Under $10,000")))) +
   geom_bar() +
   labs(fill = "Family Income") +
   coord_flip()
 
 reduced_data$Immigration <- factor(reduced_data$Immigration, levels = c("Strongly disagree","Disagree", "Neither","Agree","Strongly agree"))
+
 reduced_data %>%
   ggplot(aes(x = Immigration, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
   geom_bar() +
