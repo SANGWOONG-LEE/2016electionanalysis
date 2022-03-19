@@ -46,7 +46,10 @@ reduced_data <-
          natfarey,
          nataidy,
          natsoc,
-         pres16) %>% 
+         pres16,
+         tax,
+         immlimit,
+         ) %>% 
   rename(gender = sexnow1,
          born_US = born,
          Family_income = income16,
@@ -56,10 +59,21 @@ reduced_data <-
          nation_welfare = natfare,
          Assistance_to_the_poor = natfarey,
          Assistance_to_other_countries = nataidy,
-         social_security = natsoc)
+         social_security = natsoc,
+         Immigration = immlimit)
 
 rm(raw_data)
-
+# # Recode to rename variables in imigration according to options from the Codebook 'GSS 2021 Codebook R1b.pdf'.
+# The question was America should limit immigration in order to protect our national way of life
+reduced_data <- 
+  reduced_data %>% 
+  mutate(Immigration = case_when(
+    Immigration == 1 ~ "Strongly agree",
+    Immigration == 2 ~ "Agree",
+    Immigration == 3 ~ "Neither",
+    Immigration == 4 ~ "Disagree",
+    Immigration == 5 ~ "Strongly disagree"
+  ))
 # Recode to rename variables in gender according to options from the Codebook 'GSS 2021 Codebook R1b.pdf'.
 # The question was Do you describe yourself as male, female, or transgender?
 reduced_data <- 
