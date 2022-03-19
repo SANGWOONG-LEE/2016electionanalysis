@@ -118,8 +118,8 @@ reduced_data %>%
   coord_flip() +
   labs(x = element_blank(),
        y = element_blank(),
-       title = "Opinion on National Spending on Improving Conditions of Black Population",
-       caption = "Figure 4: Distribution of survey respondents' Race") +
+       title = "Is the US Governemnt Spending Enough to Improve Conditions of Black Population?",
+       caption = "Figure 4: Opinion on National Spending on Improving Conditions of Black Population") +
   facet_wrap(~ pres16) + 
   theme(legend.title = element_blank())
 
@@ -144,6 +144,21 @@ reduced_data %>%
 #   geom_bar() +
 #   scale_fill_manual("Candidate", values = c("Clinton" = "#01378C", "Trump" = "#ff3d3d", "Other" = "#2cd18c", "Did not vote" = "#dede1b")) +
 #   labs(fil = "Candidate")
+
+reduced_data %>%
+  drop_na(nation_welfare) %>%
+  ggplot(aes(x = race, fill = nation_welfare)) +
+  geom_bar() +
+  coord_flip() +
+  labs(x = element_blank(),
+       y = element_blank(),
+       title = "Is the US Government Spending Enough on Welfare?",
+       caption = "Figure 6: Opinion on National Spending on welfare") +
+  facet_wrap(~ pres16) + 
+  theme(legend.title = element_blank())
+```
+
+``````{r, echo=FALSE}
 
 reduced_data %>%
   ggplot(aes(x = degree, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
@@ -176,11 +191,11 @@ reduced_data %>%
   scale_fill_manual("Candidate", values = c("Clinton" = "#01378C", "Trump" = "#ff3d3d", "Other" = "#2cd18c", "Did not vote" = "#dede1b")) +
   labs(fil = "Candidate")
 
-reduced_data %>%
-  ggplot(aes(x = nation_welfare, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
-  geom_bar() +
-  scale_fill_manual("Candidate", values = c("Clinton" = "#01378C", "Trump" = "#ff3d3d", "Other" = "#2cd18c", "Did not vote" = "#dede1b")) +
-  labs(fil = "Candidate")
+# reduced_data %>%
+#   ggplot(aes(x = nation_welfare, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
+#   geom_bar() +
+#   scale_fill_manual("Candidate", values = c("Clinton" = "#01378C", "Trump" = "#ff3d3d", "Other" = "#2cd18c", "Did not vote" = "#dede1b")) +
+#   labs(fil = "Candidate")
 
 reduced_data %>%
   ggplot(aes(x = Assistance_to_the_poor, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
