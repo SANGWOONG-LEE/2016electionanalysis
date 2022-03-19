@@ -48,21 +48,24 @@ reduced_data$Family_income <- factor(reduced_data$Family_income,
 reduced_data$Immigration <- factor(reduced_data$Immigration, levels = c("Strongly disagree","Disagree", "Neither","Agree","Strongly agree"))
 ```
 
-Original dataset is collected through US GSS, which is aimed for the goal that enabling the cleanest comparison to show changes in public opinion in the United States. Usually, it is conducted in person, however because of pandemic, this time it was conducted via online. Among numerous interesting findings from the dataset, we choose to analyze the 2016 United States presidential election. This slightly deviates the US GSS goal, but we thought it clearly represents current situation of US. However, choosing specific variables related to the election was not easy since deciding who to vote is followed by countless factors. After looking over the variables, we chose age,race,gender,degree,born US, Family income, national spending on education, race, arms, welfare, the poor, the other countries, social security and immigration as potential variables. 
-We mainly divided the variables into two parts: personal information (Age, race, gender, degree, born US and family income) and thoughts on national policies (national spending on education, race, arms, welfare, the poor, the other countries, social security and immigration).
-As I mentioned above, deciding who to vote is followed by very complex system of thoughts. Thus, as we cut down the variables, they do not guarantee 100% of the vote. Also, we thought that excluding non-response completely would affect our understandings of data, so even though it caused difficulties in interpretation, we decided to include it except "pres16", which is our main variable whether respondents voted for Clinton and Trump. This is because non-response does not have meanings regarding our interests.There exists similar survey similar to ours, CNN exit polls, however it is not easy to obtain the datasets they used. Also, US GSS is more realistic than exit polls since people would think more rational in US GSS than exit polls. 
-Now, let's get into the variables in details. One thing that we focused was whether respondents were equivalently recruited. To do this, we first have to look at respondents' personal information. If you take a look from Figure \@ref(fig:fig1) to Figure \@ref(fig:fig4). There exists some interesting things. 
-1) number of survey participants of age in the range of 20~40 is unexpectedly low compared to other ages. \@ref(fig:fig1)
-2) There are more white race than others. However, considering US race demographics, it is very reasonable. \@ref(fig:fig2)
-For more details on US race demographics, https://www.census.gov/quickfacts/fact/table/US/PST045221.
-3) For gender, there is slightly more female than male, and we will see later whether this has impacts on vote or not. \@ref(fig:fig3)
-4) Clinton's vote is higher than trump's vote in this survey, which contradicts the election result of 2016, reader should keep in mind that this survey is more biased towards Clinton.
-\@ref(fig:fig4)
-From Figure \@ref(fig:fig5) to Figure \@ref(fig:fig6), they represent respondents' thoughts on national policies as well as relation between variables.  
-Mostly they were collected from questions that whether you think that national spending on corresponding variables is about right, too much, or too little.
-For instance, let's take a look at \@ref(fig:fig7). This graph represents respondents' thoughts on U.S national spending on improving black condition, and we sorted it with our interest, Clinton or Trump. For more example, let's take a look at \@ref(fig:fig9).This graph represents relation between income and degree with respect to our interest. It generally shows that higher education you have more income you earn. We are going to talk detailed later in result session. For more information regarding variables graph please check Appndix.
+Original dataset is collected through US GSS, which is aimed for the goal that enabling the cleanest comparison to show changes in public opinion in the United States. Usually, it is conducted in person, however because of pandemic, this time it was conducted via online. Among numerous interesting findings from the dataset, we choose to analyze the 2016 United States presidential election. This slightly deviates from the US GSS goal, but we thought that it can clearly represent current situations of U.S. However, choosing specific variables related to the election was not easy since deciding who to vote is followed by countless and complex factors. After looking over the variables, we chose age,race,gender,degree,born US, family income, national spending on education, race, arms, welfare, the poor, the other countries, social security and immigration as potential variables.
 
-```{r fig1, echo=FALSE, fig.cap = "Distribution of survey respondents' age group"}
+We mainly divided the variables into two parts: personal information (Age, race, gender, degree, born US and family income) and thoughts on national policies (national spending on education, race, arms, welfare, the poor, the other countries, social security and immigration).
+As I mentioned above, deciding who to vote is followed by very complex system of thoughts. Thus, as we cut down the variables, they do not guarantee 100% of the vote. Also, we thought that excluding non-response completely would be a bias for our understandings in data, so even though it caused difficulties in interpretation, we decided to include it except "pres16", which is our main variable whether respondents voted for Clinton and Trump. This is because non-response does not have meanings with respect to our interests.
+There exists similar survey similar to ours, CNN exit polls, however it is not easy to obtain the datasets they used. Also, US GSS is more realistic than exit polls since people would think more rational in US GSS than exit polls. 
+
+Now, let's get into the variables in details. One thing that we focused at first was whether respondents were equivalently recruited. To do this, we have to look at respondents' personal information. If you take a look from figure \@ref(fig:fig1) to \@ref(fig:fig4). We can see some interesting observations as followed:
+1) number of survey participants of age in the range of 20~40 is unexpectedly low compared to other ages.
+2) There are more white race than others. However, considering US race demographics, it is very reasonable. 
+For more details on US race demographics, please visit the link below: https://www.census.gov/quickfacts/fact/table/US/PST045221.
+3) For gender, there is slightly more female than male, and we will see later whether this has impacts on vote or not. 
+4) Clinton's vote is higher than trump's vote in this survey, which contradicts the election result of 2016, reader should keep in mind that this survey is more biased towards Clinton.
+
+From figure \@ref(fig:fig5) to \@ref(fig:fig14), they represent respondents' thoughts on national policies as well as relation between variables.  
+Mostly they were collected from questions that whether you think that national spending on corresponding variables is about right, too much, or too little.
+For instance, let's take a look at figure \@ref(fig:fig7). This graph represents respondents' thoughts on U.S national spending on improving black condition, and we sorted it with our interest, Clinton or Trump. For more example, let's take a look at figure \@ref(fig:fig9).This graph represents relation between income and degree with respect to our interest. It generally shows that higher education you have more income you earn. We are going to talk about interesting results in more detailed later in result and discussion session. For more information regarding variables graph please check Appendix.
+
+```{r fig1,echo=FALSE, fig.cap = "Distribution of survey respondents' age group."}
 
 reduced_data %>%
   drop_na(age_group) %>%
@@ -71,11 +74,11 @@ reduced_data %>%
   coord_flip() +
   labs(x = element_blank(),
        y = element_blank(),
-       title = "Survey Respondents' Age",
-        )+
+       title = "Survey Respondents' Age") +
   theme(legend.position = "none")
 ```
-```{r fig2, echo=FALSE, fig.cap = "Distribution of survey respondents' race"}
+
+```{r fig2, fig.cap= "Distribution of survey respondents' race.", echo = FALSE}
 
 reduced_data %>%
   ggplot(aes(x = race, fill = race)) +
@@ -86,6 +89,7 @@ reduced_data %>%
        ) +
   theme(legend.position = "none")
 ```
+
 ```{r fig3, echo = FALSE, fig.cap= "Distribution of survey respondents' gender"}
 reduced_data %>%
   ggplot(aes(x = gender, fill = gender)) +
@@ -97,7 +101,8 @@ reduced_data %>%
        ) +
   theme(legend.position = "none")
 ```
-```{r fig4, echo=FALSE, fig.cap = "Distribution of survey respondents' vote choice"}
+
+```{r fig4, echo=FALSE, fig.cap = "Distribution of survey respondents"}
 reduced_data %>%
   ggplot(aes(x = pres16, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
   geom_bar() +
@@ -108,6 +113,7 @@ reduced_data %>%
        ) +
   theme(legend.position = "none")
 ```
+
 ```{r fig5, echo=FALSE, fig.cap = "Opinion on national spending on improving conditions of black population"}
 reduced_data %>%
   drop_na(nation_race) %>%
@@ -122,6 +128,7 @@ reduced_data %>%
   facet_wrap(~ pres16) + 
   theme(legend.title = element_blank())
 ```
+
 ```{r fig6, echo=FALSE,fig.cap = "Distribution of survey respondents' vote choice by birth place"}
 reduced_data %>%
   ggplot(aes(x = born_US, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
@@ -132,6 +139,7 @@ reduced_data %>%
        title = "Surveyee's Vote Choice of 2016 Presidential Election by Brith Place",
        fil = "Candidate")
 ```  
+
 ```{r fig7, echo=FALSE, fig.cap = "Distribution of survey respondents' vote by gender"}
 reduced_data %>%
   ggplot(aes(x = pres16, fill = gender)) +
@@ -142,6 +150,7 @@ reduced_data %>%
        title = "Surveyee's Vote Choice of 2016 Presidential Election by Gender"
        )
 ```
+
 ```{r fig8, echo=FALSE, fig.cap = "Opinion on national spending on welfare"}
 reduced_data %>%
   drop_na(nation_welfare) %>%
@@ -156,6 +165,7 @@ reduced_data %>%
   facet_wrap(~ pres16) + 
   theme(legend.title = element_blank())
 ```
+
 ```{r fig9, echo=FALSE, fig.cap = "Distribution of votes by degree and family income"}
 reduced_data %>%
   drop_na(degree) %>%
@@ -171,6 +181,7 @@ reduced_data %>%
        title = "Education, Income and its Effect to the Vote"
        )
 ```
+
 ```{r fig10, echo=FALSE, fig.cap = "Opinion on wheter the US should limit immigration to protect their culture"}
 reduced_data %>%
   ggplot(aes(x = Immigration, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
@@ -184,6 +195,7 @@ reduced_data %>%
        ) +
   facet_wrap(~pres16)
 ```
+
 ```{r fig11, echo=FALSE, fig.cap = "Surveyee's opinion on government's budget on education improvement"}
 reduced_data %>%
   ggplot(aes(x = nation_education, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
@@ -195,6 +207,7 @@ reduced_data %>%
        title = "Is the Government Spending Enough on Improving Education?"
        )
 ```
+
 ```{r fig12, echo=FALSE, fig.cap = "Surveyee's opinion on government's budget on arms"}
 reduced_data %>%
   ggplot(aes(x = nation_arms, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
@@ -206,6 +219,7 @@ reduced_data %>%
        title = "Is the Government Spending Enough on Arms and National Defense?"
        )
 ```
+
 ```{r fig13, echo=FALSE, fig.cap= "Surveyee's opinion on government's budget on assisting the poor"}
 reduced_data %>%
   ggplot(aes(x = Assistance_to_the_poor, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
@@ -217,6 +231,7 @@ reduced_data %>%
        title = "Is the Government Spending Enough to Assis the Poor?"
        )
 ```
+
 ```{r fig14, echo=FALSE, fig.cap = "Surveyee's opinion on government's budget on assisting other countries"}
 reduced_data %>%
   ggplot(aes(x = Assistance_to_other_countries, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
@@ -228,6 +243,7 @@ reduced_data %>%
        title = "Is the Government Spending Enough to Assis Other Countries?"
        )
 ```
+
 ```{r, echo=FALSE}
 
 # reduced_data %>%
@@ -315,7 +331,13 @@ Weaknesses and next steps should also be included.
 \appendix
 
 # Appendix {-}
-
+Figure \@ref(fig:fig6) represents people who were born in US and their votes on the candidates. Most respondents were born in US.
+Figure \@ref(fig:fig8) represents national spending on welfare. People who advocated more funds in improvement of welfare shows preference in Clinton and people who did not shows preference in Trump. 
+Figure \@ref(fig:fig10) represents whether U.S should limit immigration in order to protect their own cultures or not. Even though many answered "Not Applicable", we can observe two different patters in Clinton and Trump. 
+Figure \@ref(fig:fig11) represents  national spending on education with votes. People who want more funds in education improvement shows preference in Clinton and vice versa.
+Figure \@ref(fig:fig12) represents national spending on the arms with respect to votes for the candidates. People who thought too much clealry shows the preference toward Clinton. 
+Figure \@ref(fig:fig13) represents national spending on the poor with respect to respondents' votes on the candidates. From "About right" to "Too much", there exits more Trump supporters than Clinton's and vice versa.
+Figure \@ref(fig:fig14) represents national spending on aids to foreign countries with respect to the votes for candidates . There exists more Trump supporters in "Too much" comparing to Clinton's supporters.
 
 # Supplementary survey
 
