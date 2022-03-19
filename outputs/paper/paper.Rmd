@@ -6,7 +6,7 @@ author:
   - Young Suk 
 thanks: "Code and data are available at: https://github.com/SANGWOONG-LEE/2016electionanalysis.git".
 date: "`r format(Sys.time(), '%d %B %Y')`"
-abstract: "First sentence. Second sentence. Third sentence. Fourth sentence."
+abstract: "First sentence (what was done). Second sentence(what was found). Third sentence (why this matters). Fourth sentence."
 output:
   bookdown::pdf_document2
 toc: FALSE
@@ -14,21 +14,26 @@ bibliography: references.bib
 ---
 
 # Introduction
-
+1) broader context to motivate
+2) some detail about hat the papaer is about
+3) a clear gap that needs to be filled
+4) what was done
+5) what was found
+6) why it is important
+7) The structure of the paper
+(3~4 paragraphs)
 Donald Trump won the 2016 United States presidential election. We are not US citizens. 
 However, considering 
 
 
 
 # Data
-1.Conveying a sense of the dataset of interest.
-2.Dicussion of the survey's methodology and its key features, strengths, weaknesses.
-For instance what is the population, frame and sample.
-How is the sample recruited 
-what sampling approach is taken
-what are some of the trade offs of this 
-how is non response handled.
-(What is good and bad about it)
+A sense of the datasets should be communicated to the reader.
+All varaiables should be throughly examined and explained.
+Explain if there were similar datasets that could have been used and why they were not.
+Why did we clean some variables?
+what the variables look like using graphs or tables discussion of the observations.
+Summary statistics should also be included 
 
 
 ```{r}
@@ -137,14 +142,24 @@ reduced_data %>%
   labs(fill = "Family Income") +
   coord_flip()
 
-reduced_data$tax <- factor(reduced_data$tax, levels = c("Too low","About right","Too high"))
+reduced_data$Immigration <- factor(reduced_data$Immigration, levels = c("Strongly disagree","Disagree", "Neither","Agree","Strongly agree"))
 reduced_data %>%
-  ggplot(aes(x = tax, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
+  ggplot(aes(x = Immigration, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
   geom_bar() +
   scale_fill_manual("Candidate", values = c("Clinton" = "blue", "Trump" = "red", "Other" = "green", "Did not vote" = "yellow")) +
-  labs(fil = "Candidate")
+  labs(fil = "Candidate") +
+  coord_flip()
 
 ```
+
+
+# Results
+Summary statistics, tables, graphs, images .... 
+Regression tables must not contain stars?? 
+
+Thesis: what triggered U.S citizens to vote Clinton and Trump. 
+
+
 US demographics: White 76.3%, Black: 13.4%, American Indian: 1.3%, Asian: 5.9%, Hispanic: 18.5%
 https://www.census.gov/quickfacts/fact/table/US/PST045221.
 Considering the result above, our data sample is fairly recruited. 
@@ -161,16 +176,16 @@ with them advocated Donald Trump. I assume that this is due to the image of Dona
 answered "About right" and "NA", the two bars, "Too little" and "Too much" shows us opposite trend.
 
 In general, similar to the indicators above, Hillary Clinton supporters were moved by improvement in social equality or welfare such as 
-"Assistance to the Poor", "nation welfare", "nation education" and "Assistance to the other countries". On the other hand, Donald Trump supporters were interested by more conservative ideas that US is spending too much on the sessions above. 
-
-
-# Results
-Convey findings. 
+"Assistance to the Poor", "nation welfare", "nation education" and "Assistance to the other countries". On the other hand, Donald Trump supporters were interested by more conservative ideas that US is spending too much on the sessions above.
 
 
 # Discussion
 
-Things that we must include
+what is done in this paper?
+what is something that we learn about the world
+what is another thing that we learn about the world
+what are some weaknesses of what was done?
+what is left to learn or how should we proceed in the future?
 
 ## First discussion point
 
