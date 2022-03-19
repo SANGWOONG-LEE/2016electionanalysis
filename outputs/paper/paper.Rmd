@@ -51,17 +51,18 @@ reduced_data$Immigration <- factor(reduced_data$Immigration, levels = c("Strongl
 Original dataset is collected through US GSS, which is aimed for the goal that enabling the cleanest comparison to show changes in public opinion in the United States. Usually, it is conducted in person, however because of pandemic, this time it was conducted via online. Among numerous interesting findings from the dataset, we choose to analyze the 2016 United States presidential election. This slightly deviates the US GSS goal, but we thought it clearly represents current situation of US. However, choosing specific variables related to the election was not easy since deciding who to vote is followed by countless factors. After looking over the variables, we chose age,race,gender,degree,born US, Family income, national spending on education, race, arms, welfare, the poor, the other countries, social security and immigration as potential variables. 
 We mainly divided the variables into two parts: personal information (Age, race, gender, degree, born US and family income) and thoughts on national policies (national spending on education, race, arms, welfare, the poor, the other countries, social security and immigration).
 As I mentioned above, deciding who to vote is followed by very complex system of thoughts. Thus, as we cut down the variables, they do not guarantee 100% of the vote. Also, we thought that excluding non-response completely would affect our understandings of data, so even though it caused difficulties in interpretation, we decided to include it except "pres16", which is our main variable whether respondents voted for Clinton and Trump. This is because non-response does not have meanings regarding our interests.There exists similar survey similar to ours, CNN exit polls, however it is not easy to obtain the datasets they used. Also, US GSS is more realistic than exit polls since people would think more rational in US GSS than exit polls. 
-Now, let's get into the variables in details. One thing that we focused was whether respondents were equivalently recruited. To do this, we first have to look at respondents' personal information. If you take a look from Figure \ref{fig:fig1} to Figure \ref{fig:fig4}. There exists some interesting things. 
-1) number of survey participants of age in the range of 20~40 is unexpectedly low compared to other ages. \ref{fig:fig1}
-2) There are more white race than others. However, considering US race demographics, it is very reasonable. \ref{fig:fig2}
+Now, let's get into the variables in details. One thing that we focused was whether respondents were equivalently recruited. To do this, we first have to look at respondents' personal information. If you take a look from Figure \@ref(fig:fig1) to Figure \@ref(fig:fig4). There exists some interesting things. 
+1) number of survey participants of age in the range of 20~40 is unexpectedly low compared to other ages. \@ref(fig:fig1)
+2) There are more white race than others. However, considering US race demographics, it is very reasonable. \@ref(fig:fig2)
 For more details on US race demographics, https://www.census.gov/quickfacts/fact/table/US/PST045221.
-3) For gender, there is slightly more female than male, and we will see later whether this has impacts on vote or not. \ref{fig:fig3}
+3) For gender, there is slightly more female than male, and we will see later whether this has impacts on vote or not. \@ref(fig:fig3)
 4) Clinton's vote is higher than trump's vote in this survey, which contradicts the election result of 2016, reader should keep in mind that this survey is more biased towards Clinton.
-\ref{fig:fig4}
-From Figure \ref{fig:fig5} to Figure \ref{fig:fig14}, they represent respondents' thoughts on national policies as well as relation between variables.  
+\@ref(fig:fig4)
+From Figure \@ref(fig:fig5) to Figure \@ref(fig:fig6), they represent respondents' thoughts on national policies as well as relation between variables.  
 Mostly they were collected from questions that whether you think that national spending on corresponding variables is about right, too much, or too little.
+For instance, let's take a look at \@ref(fig:fig7). This graph represents respondents' thoughts on U.S national spending on improving black condition, and we sorted it with our interest, Clinton or Trump. For more example, let's take a look at \@ref(fig:fig9).This graph represents relation between income and degree with respect to our interest. It generally shows that higher education you have more income you earn. We are going to talk detailed later in result session. For more information regarding variables graph please check Appndix.
 
-```{r fig1, include=FALSE, fig.cap = "Distribution of survey respondents' age group"}
+```{r fig1, echo=FALSE, fig.cap = "Distribution of survey respondents' age group"}
 
 reduced_data %>%
   drop_na(age_group) %>%
