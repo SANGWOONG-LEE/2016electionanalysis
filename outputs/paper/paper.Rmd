@@ -1,10 +1,9 @@
 ---
-title: "Numerous variables relating to 2016 election in 2021 US GSS"
+title: "Numerous variables relating to 2016 election in 2021 US GSS^[Code and data are available at: https://github.com/SANGWOONG-LEE/2016electionanalysis.git]"
 subtitle: "Possible factors effecting 2016 election"
 author: 
   - SangWoong Lee
-  - Young Suk 
-thanks: "Code and data are available at: https://github.com/SANGWOONG-LEE/2016electionanalysis.git".
+  - Young Suk
 date: "`r format(Sys.time(), '%d %B %Y')`"
 abstract: "First sentence. Second sentence. Third sentence. Fourth sentence."
 output:
@@ -12,6 +11,13 @@ output:
 toc: FALSE
 bibliography: references.bib
 ---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
+library(tidyverse)
+library(dplyr)
+```
 
 # Introduction
 
@@ -21,6 +27,9 @@ However, considering
 
 
 # Data
+```{r, echo=FALSE}
+reduced_data <- read_csv("outputs/data/prepared_gss.csv")
+```
 1.Conveying a sense of the dataset of interest.
 2.Dicussion of the survey's methodology and its key features, strengths, weaknesses.
 For instance what is the population, frame and sample.
@@ -31,11 +40,11 @@ how is non response handled.
 (What is good and bad about it)
 
 
-```{r}
+```{r, echo=FALSE}
 library(ggplot2)
 reduced_data %>%
   ggplot(aes(x = age)) +
-  geom_bar()
+  geom_bar(na.rm = T)
 
 reduced_data %>%
   ggplot(aes(x = gender)) +
@@ -59,7 +68,7 @@ reduced_data %>%
 
 reduced_data %>%
   ggplot(aes(x = Family_income, fill = pres16)) +
-  geom_bar()
+  geom_bar()  + coord_flip()
 
 reduced_data %>%
   ggplot(aes(x = nation_education, fill = pres16)) +
