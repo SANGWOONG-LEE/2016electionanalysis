@@ -222,7 +222,7 @@ reduced_data <- reduced_data %>%
 
 # If a person is of mixed race, that person is assigned value "other"
 reduced_data <- reduced_data %>%
-  mutate(race = if_else(race_sum == 1, reduced_data$race, "other"))
+  mutate(race = if_else(race_sum == 1, reduced_data$race, "Other"))
 
 # Remove columns that are no longer needed.
 reduced_data <- reduced_data %>%

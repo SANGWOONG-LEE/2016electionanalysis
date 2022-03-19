@@ -12,7 +12,7 @@ NA,Female,Graduate,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,About right,Too much,Too
 56,Female,Associate College,Yes,NA,NA,NA,NA,NA,Too little,Too much,Too little,Clinton,1,NA,50-59 years old,White
 31,Male,Bachelors,Yes,"$130,000 ~ $169,999",Too little,Too little,About right,Too little,NA,NA,Too little,Clinton,NA,Disagree,30-39 years old,Asian
 55,Female,Bachelors,Yes,"$170,000 or over",Too much,Too little,Too little,Too much,NA,NA,Too little,Trump,1,NA,50-59 years old,White
-33,Female,Bachelors,Yes,"Under $10,000",About right,Too little,Too much,About right,NA,NA,Too little,Clinton,1,NA,30-39 years old,other
+33,Female,Bachelors,Yes,"Under $10,000",About right,Too little,Too much,About right,NA,NA,Too little,Clinton,1,NA,30-39 years old,Other
 37,Male,Associate College,Yes,"$130,000 ~ $169,999",Too little,Too little,Too little,About right,NA,NA,Too little,Clinton,1,Strongly disagree,30-39 years old,White
 53,Male,High School,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,About right,About right,Clinton,NA,NA,50-59 years old,White
 43,Female,Graduate,No,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,About right,Too little,Other,2,NA,40-49 years old,White
@@ -28,7 +28,7 @@ NA,Female,High School,Yes,"$90,000 ~ $129,999",Too little,Too little,Too much,Ab
 29,Male,Bachelors,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,About right,Too much,Too much,Other,NA,NA,20-29 years old,White
 53,Female,Bachelors,Yes,"$170,000 or over",Too little,Too little,Too much,About right,NA,NA,About right,Clinton,NA,Disagree,50-59 years old,White
 51,Female,Bachelors,Yes,"$130,000 ~ $169,999",NA,NA,NA,NA,Too little,About right,About right,Did not vote,NA,NA,50-59 years old,White
-24,Female,Bachelors,Yes,"$10,000 ~ $19,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,1,NA,20-29 years old,other
+24,Female,Bachelors,Yes,"$10,000 ~ $19,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,1,NA,20-29 years old,Other
 51,Male,Graduate,Yes,"$170,000 or over",Too little,About right,About right,About right,NA,NA,About right,Other,1,NA,50-59 years old,White
 26,Female,High School,Yes,NA,NA,NA,NA,NA,Too little,Too much,Too little,Clinton,2,NA,20-29 years old,Hispanic
 37,Male,Bachelors,Yes,NA,NA,NA,NA,NA,Too little,Too much,Too little,Clinton,1,Disagree,30-39 years old,Black
@@ -36,7 +36,7 @@ NA,Female,High School,Yes,"$90,000 ~ $129,999",Too little,Too little,Too much,Ab
 45,Male,Graduate,Yes,"$170,000 or over",Too little,Too little,Too much,Too little,NA,NA,Too little,Clinton,2,NA,40-49 years old,White
 23,Female,Bachelors,Yes,"$170,000 or over",Too little,Too little,Too much,About right,NA,NA,About right,Clinton,NA,NA,20-29 years old,White
 64,Female,High School,Yes,"$40,000 ~ $59,999",Too little,Too little,About right,Too little,NA,NA,Too little,Clinton,1,NA,60-69 years old,White
-82,Female,Bachelors,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,About right,Too little,Trump,1,Neither,80-89 years old,other
+82,Female,Bachelors,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,About right,Too little,Trump,1,Neither,80-89 years old,Other
 58,Male,Less than high school,No,"$20,000 ~ $39,999",About right,About right,Too much,About right,NA,NA,About right,Clinton,1,NA,50-59 years old,White
 89,Male,High School,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,NA,NA,80-89 years old,White
 78,Male,Bachelors,Yes,"$90,000 ~ $129,999",About right,About right,Too little,Too much,NA,NA,About right,Trump,NA,Agree,70-79 years old,White
@@ -70,7 +70,7 @@ NA,Female,Graduate,Yes,"$130,000 ~ $169,999",NA,NA,NA,NA,Too little,About right,
 51,Male,Bachelors,Yes,"$170,000 or over",Too little,About right,Too little,Too much,NA,NA,Too little,Trump,1,Strongly agree,50-59 years old,White
 66,Female,Bachelors,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,Too much,Too little,Trump,1,NA,60-69 years old,White
 70,Male,High School,Yes,"$130,000 ~ $169,999",Too little,About right,About right,Too much,NA,NA,Too little,Trump,2,NA,70-79 years old,White
-NA,Female,Graduate,Yes,"$130,000 ~ $169,999",Too little,Too little,Too much,About right,NA,NA,Too little,Did not vote,1,Agree,NA,other
+NA,Female,Graduate,Yes,"$130,000 ~ $169,999",Too little,Too little,Too much,About right,NA,NA,Too little,Did not vote,1,Agree,NA,Other
 57,Female,Associate College,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,About right,Too much,Too little,Trump,1,Agree,50-59 years old,White
 41,Male,Bachelors,Yes,"$90,000 ~ $129,999",Too much,About right,Too much,Too much,NA,NA,About right,Other,NA,Agree,40-49 years old,White
 56,Male,High School,Yes,NA,Too little,Too little,Too little,Too much,NA,NA,Too little,Trump,1,NA,50-59 years old,White
@@ -123,13 +123,13 @@ NA,NA,Graduate,Yes,NA,NA,NA,NA,NA,Too little,Too much,Too little,Clinton,NA,Disa
 57,Male,Bachelors,Yes,"$130,000 ~ $169,999",NA,NA,NA,NA,Too little,Too much,About right,Trump,NA,NA,50-59 years old,White
 36,Female,High School,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,NA,About right,Clinton,1,NA,30-39 years old,Hispanic
 44,Female,High School,Yes,"$130,000 ~ $169,999",About right,Too much,About right,About right,NA,NA,Too little,Trump,1,Neither,40-49 years old,White
-67,Female,Less than high school,Yes,"$10,000 ~ $19,999",Too much,Too much,Too little,Too little,NA,NA,Too little,Trump,2,NA,60-69 years old,other
+67,Female,Less than high school,Yes,"$10,000 ~ $19,999",Too much,Too much,Too little,Too little,NA,NA,Too little,Trump,2,NA,60-69 years old,Other
 45,Male,High School,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,About right,Too much,About right,Trump,1,Strongly agree,40-49 years old,White
 40,Female,Bachelors,Yes,"$170,000 or over",NA,NA,NA,NA,About right,About right,Too little,Clinton,NA,NA,40-49 years old,White
 57,Male,High School,Yes,"$170,000 or over",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,NA,NA,50-59 years old,White
 69,Male,High School,Yes,"$60,000 ~ $89,999",Too little,NA,About right,About right,NA,NA,Too little,Clinton,NA,Agree,60-69 years old,White
 67,Male,Graduate,Yes,"$170,000 or over",Too little,Too little,About right,About right,NA,NA,Too little,Clinton,2,NA,60-69 years old,Asian
-41,Female,High School,Yes,"$10,000 ~ $19,999",NA,NA,NA,NA,Too little,About right,About right,Clinton,2,NA,40-49 years old,other
+41,Female,High School,Yes,"$10,000 ~ $19,999",NA,NA,NA,NA,Too little,About right,About right,Clinton,2,NA,40-49 years old,Other
 45,Female,High School,Yes,"Under $10,000",NA,NA,NA,NA,About right,Too much,Too little,Trump,NA,NA,40-49 years old,Asian
 NA,Male,Bachelors,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,About right,Too much,Too little,Trump,1,NA,NA,White
 52,Male,High School,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,About right,Too little,Clinton,2,NA,50-59 years old,Black
@@ -160,7 +160,7 @@ NA,Male,Bachelors,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,About right,About right,A
 64,Female,High School,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,About right,Too much,Too little,Other,1,Neither,60-69 years old,White
 34,Female,Graduate,Yes,"$170,000 or over",NA,NA,NA,NA,Too little,About right,Too little,Clinton,NA,NA,30-39 years old,White
 32,Female,Bachelors,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,Too little,About right,About right,Other,1,Disagree,30-39 years old,White
-29,Female,High School,No,NA,NA,NA,NA,NA,Too little,About right,Too little,Trump,1,NA,20-29 years old,other
+29,Female,High School,No,NA,NA,NA,NA,NA,Too little,About right,Too little,Trump,1,NA,20-29 years old,Other
 42,Female,Graduate,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,About right,About right,Clinton,NA,NA,40-49 years old,White
 74,Female,Bachelors,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,Too little,Too little,Clinton,1,NA,70-79 years old,White
 38,Male,Bachelors,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,About right,Too much,About right,Clinton,2,Neither,30-39 years old,White
@@ -171,8 +171,8 @@ NA,Male,Associate College,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,Too muc
 57,Male,Bachelors,No,NA,NA,NA,NA,NA,Too little,Too little,Too little,Clinton,2,NA,50-59 years old,White
 NA,Male,Graduate,No,"$170,000 or over",Too little,Too little,About right,About right,NA,NA,About right,Clinton,NA,Disagree,NA,Asian
 38,Female,Graduate,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,About right,Too little,Clinton,2,Disagree,30-39 years old,White
-67,Female,NA,Yes,NA,NA,NA,NA,NA,Too little,About right,Too little,Clinton,2,Disagree,60-69 years old,other
-58,Male,Graduate,Yes,NA,NA,NA,NA,NA,Too much,About right,About right,Other,NA,NA,50-59 years old,other
+67,Female,NA,Yes,NA,NA,NA,NA,NA,Too little,About right,Too little,Clinton,2,Disagree,60-69 years old,Other
+58,Male,Graduate,Yes,NA,NA,NA,NA,NA,Too much,About right,About right,Other,NA,NA,50-59 years old,Other
 33,Male,Graduate,No,"$90,000 ~ $129,999",Too little,Too much,About right,Too much,NA,NA,Too much,Other,NA,Disagree,30-39 years old,White
 72,Male,High School,Yes,"$40,000 ~ $59,999",Too little,Too little,About right,Too little,NA,NA,Too little,Clinton,1,Neither,70-79 years old,Black
 30,Female,Graduate,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,Too little,About right,About right,Clinton,2,Strongly disagree,30-39 years old,White
@@ -190,7 +190,7 @@ NA,Male,Graduate,No,"$170,000 or over",Too little,Too little,About right,About r
 69,Male,Graduate,Yes,"$130,000 ~ $169,999",About right,About right,About right,About right,NA,NA,About right,Trump,2,NA,60-69 years old,White
 57,Female,High School,Yes,"$40,000 ~ $59,999",Too little,Too little,About right,Too little,NA,NA,About right,Clinton,NA,Neither,50-59 years old,White
 60,Male,Associate College,Yes,"$130,000 ~ $169,999",Too little,About right,Too little,Too much,NA,NA,Too little,Trump,2,Neither,60-69 years old,White
-NA,Male,Bachelors,Yes,NA,Too little,Too little,Too much,Too little,NA,NA,Too little,Clinton,2,NA,NA,other
+NA,Male,Bachelors,Yes,NA,Too little,Too little,Too much,Too little,NA,NA,Too little,Clinton,2,NA,NA,Other
 61,Male,Bachelors,Yes,"$90,000 ~ $129,999",Too little,Too little,Too much,Too much,NA,NA,About right,Trump,1,Neither,60-69 years old,White
 61,Male,High School,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too much,Too much,Too little,Trump,1,Agree,60-69 years old,White
 65,Female,High School,Yes,NA,NA,NA,NA,NA,About right,Too much,Too little,Trump,1,NA,60-69 years old,White
@@ -198,7 +198,7 @@ NA,Male,Bachelors,Yes,NA,Too little,Too little,Too much,Too little,NA,NA,Too lit
 34,Female,High School,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,About right,Too much,Too little,Trump,NA,NA,30-39 years old,White
 65,Male,Bachelors,Yes,"$170,000 or over",NA,NA,NA,NA,Too little,About right,Too little,Clinton,1,Neither,60-69 years old,White
 NA,Female,Bachelors,Yes,"$40,000 ~ $59,999",Too little,Too little,About right,Too little,NA,NA,Too little,Clinton,NA,Disagree,NA,White
-29,Female,Bachelors,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,About right,Too much,Too much,Clinton,2,NA,20-29 years old,other
+29,Female,Bachelors,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,About right,Too much,Too much,Clinton,2,NA,20-29 years old,Other
 67,Female,Bachelors,Yes,"$90,000 ~ $129,999",Too little,About right,About right,Too little,NA,NA,About right,Clinton,NA,Disagree,60-69 years old,White
 29,Female,Bachelors,Yes,"$90,000 ~ $129,999",Too little,About right,About right,Too much,NA,NA,Too little,Trump,1,Neither,20-29 years old,White
 69,Male,Bachelors,Yes,"$170,000 or over",NA,NA,NA,NA,About right,About right,Too little,Clinton,2,NA,60-69 years old,White
@@ -210,7 +210,7 @@ NA,Female,Graduate,No,"$170,000 or over",Too little,Too little,Too much,Too litt
 66,Male,High School,Yes,"$40,000 ~ $59,999",Too little,Too little,Too much,About right,NA,NA,Too little,Clinton,1,NA,60-69 years old,White
 32,Male,High School,Yes,"$130,000 ~ $169,999",Too little,About right,Too much,Too much,NA,NA,Too little,Clinton,NA,Disagree,30-39 years old,White
 72,Male,Bachelors,Yes,"$40,000 ~ $59,999",Too little,About right,About right,About right,NA,NA,Too little,Trump,2,NA,70-79 years old,White
-NA,Female,Associate College,Yes,"$60,000 ~ $89,999",Too little,Too little,About right,About right,NA,NA,Too little,Clinton,1,Neither,NA,other
+NA,Female,Associate College,Yes,"$60,000 ~ $89,999",Too little,Too little,About right,About right,NA,NA,Too little,Clinton,1,Neither,NA,Other
 24,Male,Bachelors,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,2,Strongly disagree,20-29 years old,White
 76,Male,High School,Yes,"$20,000 ~ $39,999",About right,About right,About right,Too little,NA,NA,Too little,Trump,NA,Disagree,70-79 years old,White
 52,Female,High School,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,Too much,Too little,Trump,1,Strongly agree,50-59 years old,White
@@ -301,7 +301,7 @@ NA,Male,Graduate,Yes,NA,NA,NA,NA,NA,Too little,About right,About right,Clinton,2
 54,Female,High School,No,"$40,000 ~ $59,999",Too little,Too little,Too much,Too little,NA,NA,Too little,Clinton,1,NA,50-59 years old,White
 47,Female,High School,Yes,"$10,000 ~ $19,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,1,NA,40-49 years old,White
 57,Male,High School,Yes,"$130,000 ~ $169,999",Too little,Too little,About right,Too little,NA,NA,Too little,Clinton,2,NA,50-59 years old,White
-NA,Female,High School,Yes,"$60,000 ~ $89,999",Too little,Too little,About right,About right,NA,NA,About right,Clinton,NA,Disagree,NA,other
+NA,Female,High School,Yes,"$60,000 ~ $89,999",Too little,Too little,About right,About right,NA,NA,About right,Clinton,NA,Disagree,NA,Other
 33,Female,High School,NA,"$20,000 ~ $39,999",NA,NA,NA,NA,About right,Too much,Too little,Trump,1,NA,30-39 years old,White
 58,Female,Graduate,Yes,"$90,000 ~ $129,999",About right,About right,About right,Too much,NA,NA,Too little,Clinton,1,Disagree,50-59 years old,White
 27,Male,Bachelors,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,NA,NA,Clinton,NA,NA,20-29 years old,White
@@ -314,7 +314,7 @@ NA,Female,High School,Yes,"$60,000 ~ $89,999",Too little,Too little,About right,
 NA,Male,High School,Yes,"$130,000 ~ $169,999",About right,Too much,Too little,Too much,NA,NA,Too little,Trump,1,Neither,NA,White
 35,Male,Bachelors,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,About right,Too little,Clinton,NA,NA,30-39 years old,White
 41,Female,Graduate,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,Too little,About right,About right,Clinton,3,NA,40-49 years old,White
-43,Female,High School,Yes,"$60,000 ~ $89,999",About right,Too much,About right,Too much,NA,NA,About right,Clinton,NA,Agree,40-49 years old,other
+43,Female,High School,Yes,"$60,000 ~ $89,999",About right,Too much,About right,Too much,NA,NA,About right,Clinton,NA,Agree,40-49 years old,Other
 72,Female,Associate College,Yes,NA,Too little,About right,Too little,Too much,NA,NA,Too little,Trump,1,Strongly agree,70-79 years old,White
 46,Other,Graduate,Yes,"$130,000 ~ $169,999",Too little,Too little,Too much,Too little,NA,NA,Too little,Clinton,NA,Disagree,40-49 years old,White
 NA,Male,Less than high school,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,Too much,Too little,Trump,NA,NA,NA,White
@@ -334,7 +334,7 @@ NA,Male,Graduate,Yes,"$60,000 ~ $89,999",Too little,Too little,Too much,About ri
 34,Male,Graduate,Yes,"$90,000 ~ $129,999",Too little,Too little,Too much,Too little,NA,NA,Too little,Clinton,1,Disagree,30-39 years old,White
 64,Female,Graduate,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,Too little,About right,About right,Clinton,3,Strongly disagree,60-69 years old,White
 49,Female,Graduate,Yes,"$130,000 ~ $169,999",NA,NA,NA,NA,About right,Too much,About right,Trump,NA,NA,40-49 years old,White
-33,Female,Associate College,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,1,NA,30-39 years old,other
+33,Female,Associate College,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,1,NA,30-39 years old,Other
 74,Female,High School,Yes,"$170,000 or over",Too little,About right,About right,About right,NA,NA,About right,Trump,NA,Agree,70-79 years old,White
 33,Female,Associate College,Yes,"$60,000 ~ $89,999",Too little,Too little,Too much,Too little,NA,NA,Too little,Clinton,2,Disagree,30-39 years old,White
 62,Female,High School,Yes,"$20,000 ~ $39,999",Too little,Too much,Too little,Too much,NA,NA,Too little,Trump,NA,Agree,60-69 years old,White
@@ -375,7 +375,7 @@ NA,Female,Associate College,Yes,"Under $10,000",Too little,Too little,Too much,A
 42,Female,Graduate,Yes,"$40,000 ~ $59,999",Too little,Too little,About right,About right,NA,NA,Too little,Clinton,1,Disagree,40-49 years old,Black
 43,Female,Graduate,Yes,"Under $10,000",Too little,Too little,Too much,Too little,NA,NA,Too little,Clinton,NA,Agree,40-49 years old,Black
 37,Other,High School,Yes,"$20,000 ~ $39,999",Too little,Too little,About right,Too little,NA,NA,Too little,Clinton,1,NA,30-39 years old,Black
-36,Male,High School,Yes,"$10,000 ~ $19,999",Too little,Too much,Too little,Too little,NA,NA,Too little,Trump,1,NA,30-39 years old,other
+36,Male,High School,Yes,"$10,000 ~ $19,999",Too little,Too much,Too little,Too little,NA,NA,Too little,Trump,1,NA,30-39 years old,Other
 62,Female,High School,Yes,"$20,000 ~ $39,999",Too little,Too little,About right,Too little,NA,NA,Too little,Clinton,2,Neither,60-69 years old,Hispanic
 80,Female,Bachelors,Yes,"Under $10,000",NA,NA,NA,NA,NA,About right,NA,Clinton,NA,NA,80-89 years old,Black
 80,Female,Graduate,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too much,Too much,Too little,Trump,1,Strongly agree,80-89 years old,White
@@ -409,7 +409,7 @@ NA,Female,High School,Yes,Refused,Too little,About right,Too little,Too much,NA,
 82,Female,Bachelors,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,About right,About right,Clinton,2,NA,80-89 years old,White
 76,Female,High School,Yes,"$20,000 ~ $39,999",Too little,Too little,Too much,About right,NA,NA,Too little,Clinton,2,Neither,70-79 years old,White
 35,Female,High School,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,Too little,About right,Clinton,2,Strongly disagree,30-39 years old,White
-69,Female,Bachelors,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,About right,Too much,About right,Trump,NA,NA,60-69 years old,other
+69,Female,Bachelors,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,About right,Too much,About right,Trump,NA,NA,60-69 years old,Other
 76,Female,High School,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,Too much,Too little,Trump,1,NA,70-79 years old,White
 31,Male,High School,Yes,"$20,000 ~ $39,999",Too much,Too much,Too much,Too much,NA,NA,Too much,Other,1,NA,30-39 years old,White
 84,Male,High School,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,Too much,About right,Clinton,2,NA,80-89 years old,White
@@ -475,7 +475,7 @@ NA,Male,Graduate,Yes,"Under $10,000",Too little,Too little,Too little,Too little
 77,Female,High School,Yes,Refused,About right,Too much,Too little,About right,NA,NA,Too little,Trump,NA,Strongly agree,70-79 years old,White
 69,Male,Associate College,Yes,"$130,000 ~ $169,999",NA,NA,NA,NA,Too little,Too much,About right,Trump,1,Agree,60-69 years old,White
 77,Male,Graduate,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,About right,About right,Clinton,2,NA,70-79 years old,White
-60,Female,Graduate,Yes,"$60,000 ~ $89,999",Too little,Too little,Too much,About right,NA,NA,Too little,Clinton,NA,Strongly disagree,60-69 years old,other
+60,Female,Graduate,Yes,"$60,000 ~ $89,999",Too little,Too little,Too much,About right,NA,NA,Too little,Clinton,NA,Strongly disagree,60-69 years old,Other
 75,Female,High School,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,Too much,About right,Trump,NA,NA,70-79 years old,White
 43,Male,Associate College,Yes,"$130,000 ~ $169,999",Too much,Too much,About right,Too much,NA,NA,Too much,Trump,1,Agree,40-49 years old,White
 75,Male,High School,Yes,"$20,000 ~ $39,999",Too little,About right,About right,Too much,NA,NA,About right,Trump,1,NA,70-79 years old,White
@@ -484,9 +484,9 @@ NA,Male,Graduate,Yes,"Under $10,000",Too little,Too little,Too little,Too little
 47,Male,High School,Yes,"$20,000 ~ $39,999",Too little,Too little,Too much,Too little,NA,NA,Too little,Clinton,NA,Neither,40-49 years old,White
 48,Male,Graduate,Yes,"$170,000 or over",NA,NA,NA,NA,Too little,Too little,Too little,Clinton,3,NA,40-49 years old,White
 38,Female,Graduate,Yes,NA,Too little,About right,Too little,Too much,NA,NA,About right,Trump,2,NA,30-39 years old,White
-23,Female,High School,Yes,"$10,000 ~ $19,999",Too little,Too little,Too much,Too little,NA,NA,About right,Clinton,1,Strongly disagree,20-29 years old,other
+23,Female,High School,Yes,"$10,000 ~ $19,999",Too little,Too little,Too much,Too little,NA,NA,About right,Clinton,1,Strongly disagree,20-29 years old,Other
 31,Female,Graduate,Yes,"$20,000 ~ $39,999",Too little,Too little,Too much,Too little,NA,NA,Too little,Clinton,2,Neither,30-39 years old,White
-47,Male,High School,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,Too little,Too little,Clinton,2,NA,40-49 years old,other
+47,Male,High School,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,Too little,Too little,Clinton,2,NA,40-49 years old,Other
 89,Male,Bachelors,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,Too much,Too little,Trump,2,Strongly agree,80-89 years old,White
 60,Male,High School,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too much,Too much,Too little,Trump,1,NA,60-69 years old,White
 62,Male,High School,Yes,"$130,000 ~ $169,999",NA,NA,NA,NA,Too little,About right,Too little,Clinton,NA,NA,60-69 years old,White
@@ -573,11 +573,11 @@ NA,Male,Graduate,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,Too much,About r
 NA,Female,Bachelors,No,"$170,000 or over",About right,About right,Too much,Too much,NA,NA,Too little,Clinton,1,NA,NA,White
 80,Female,High School,Yes,"$130,000 ~ $169,999",Too little,Too little,Too little,About right,NA,NA,Too little,Clinton,NA,Neither,80-89 years old,White
 NA,Female,Graduate,Yes,"$60,000 ~ $89,999",Too little,Too little,About right,About right,NA,NA,Too little,Clinton,1,NA,NA,White
-61,Male,Bachelors,No,"$170,000 or over",NA,NA,NA,NA,Too little,Too little,NA,Clinton,3,NA,60-69 years old,other
+61,Male,Bachelors,No,"$170,000 or over",NA,NA,NA,NA,Too little,Too little,NA,Clinton,3,NA,60-69 years old,Other
 57,Male,Bachelors,Yes,"$40,000 ~ $59,999",Too little,Too little,Too much,Too much,NA,NA,Too little,Clinton,1,Strongly disagree,50-59 years old,White
 73,Female,High School,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,About right,About right,About right,Trump,2,Disagree,70-79 years old,White
 58,Male,Associate College,Yes,"Under $10,000",NA,NA,NA,NA,Too little,Too much,Too little,Other,1,NA,50-59 years old,White
-61,Male,Less than high school,Yes,"Under $10,000",NA,NA,NA,NA,Too little,Too much,Too little,Trump,1,NA,60-69 years old,other
+61,Male,Less than high school,Yes,"Under $10,000",NA,NA,NA,NA,Too little,Too much,Too little,Trump,1,NA,60-69 years old,Other
 35,Female,Associate College,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,About right,Too much,About right,Trump,NA,NA,30-39 years old,White
 58,Female,High School,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too much,Too much,Too little,Clinton,2,NA,50-59 years old,White
 55,Female,Bachelors,Yes,"$90,000 ~ $129,999",Too little,Too little,Too much,Too much,NA,NA,Too little,Clinton,NA,Disagree,50-59 years old,Other
@@ -674,7 +674,7 @@ NA,Male,NA,Yes,NA,Too little,Too little,Too much,About right,NA,NA,About right,C
 41,Male,High School,Yes,"$90,000 ~ $129,999",About right,About right,Too much,About right,NA,NA,About right,Trump,1,Neither,40-49 years old,White
 63,Female,High School,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,About right,Too little,Trump,1,Agree,60-69 years old,White
 83,Male,High School,Yes,"$40,000 ~ $59,999",Too little,Too much,Too little,Too much,NA,NA,Too little,Trump,1,Strongly agree,80-89 years old,White
-NA,Male,Associate College,Yes,NA,Too little,Too much,Too much,Too little,NA,NA,Too little,Trump,1,Strongly agree,NA,other
+NA,Male,Associate College,Yes,NA,Too little,Too much,Too much,Too little,NA,NA,Too little,Trump,1,Strongly agree,NA,Other
 73,Female,High School,Yes,NA,About right,About right,Too little,About right,NA,NA,Too little,Trump,1,Agree,70-79 years old,White
 72,Female,High School,Yes,"$20,000 ~ $39,999",Too little,Too much,Too little,Too much,NA,NA,Too little,Trump,1,NA,70-79 years old,White
 45,Male,Bachelors,Yes,"$170,000 or over",NA,NA,NA,NA,Too much,Too much,Too little,Trump,NA,NA,40-49 years old,White
@@ -722,15 +722,15 @@ NA,Male,High School,No,"$10,000 ~ $19,999",About right,About right,About right,T
 56,Female,High School,No,"$90,000 ~ $129,999",About right,About right,About right,About right,NA,NA,About right,Clinton,NA,Neither,50-59 years old,White
 62,Female,High School,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,About right,Too much,Too little,Clinton,NA,NA,60-69 years old,White
 42,Male,Graduate,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,About right,Too little,Clinton,1,NA,40-49 years old,White
-37,Female,High School,No,"$60,000 ~ $89,999",NA,NA,NA,NA,About right,Too much,About right,Clinton,NA,NA,30-39 years old,other
+37,Female,High School,No,"$60,000 ~ $89,999",NA,NA,NA,NA,About right,Too much,About right,Clinton,NA,NA,30-39 years old,Other
 39,Female,Bachelors,Yes,"$90,000 ~ $129,999",Too little,Too little,Too much,NA,NA,NA,Too little,Clinton,NA,Disagree,30-39 years old,White
 69,Male,Bachelors,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,Too much,Too much,Too little,Other,NA,NA,60-69 years old,White
 85,Female,Graduate,Yes,"$20,000 ~ $39,999",About right,About right,Too little,Too much,NA,NA,NA,Trump,NA,Neither,80-89 years old,White
-39,Female,Bachelors,Yes,NA,Too little,Too little,About right,About right,NA,NA,Too little,Clinton,NA,Disagree,30-39 years old,other
+39,Female,Bachelors,Yes,NA,Too little,Too little,About right,About right,NA,NA,Too little,Clinton,NA,Disagree,30-39 years old,Other
 48,Female,Graduate,Yes,"$170,000 or over",NA,NA,NA,NA,Too little,Too little,Too little,Clinton,2,Strongly disagree,40-49 years old,White
 78,Female,High School,Yes,"$40,000 ~ $59,999",About right,Too much,About right,Too much,NA,NA,About right,Trump,NA,Strongly agree,70-79 years old,White
 62,Female,Graduate,Yes,"$170,000 or over",NA,NA,NA,NA,Too little,About right,About right,Clinton,2,NA,60-69 years old,White
-39,Female,High School,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,Too much,About right,Clinton,2,Strongly disagree,30-39 years old,other
+39,Female,High School,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,Too much,About right,Clinton,2,Strongly disagree,30-39 years old,Other
 84,Female,Bachelors,Yes,NA,NA,NA,NA,NA,Too little,Too much,Too little,Did not vote,2,NA,80-89 years old,White
 46,Female,Graduate,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,About right,About right,Clinton,1,NA,40-49 years old,Hispanic
 42,Female,Associate College,Yes,"$90,000 ~ $129,999",NA,Too much,About right,Too much,NA,NA,Too little,Trump,2,Neither,40-49 years old,White
@@ -766,14 +766,14 @@ NA,Female,Bachelors,Yes,"$60,000 ~ $89,999",About right,Too little,About right,A
 51,Female,High School,Yes,"$20,000 ~ $39,999",Too little,Too little,Too little,Too little,NA,NA,Too little,Clinton,1,NA,50-59 years old,Black
 29,Female,Bachelors,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,Too little,Too much,About right,Clinton,1,NA,20-29 years old,White
 37,Female,High School,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,Too little,Too little,Clinton,NA,NA,30-39 years old,Black
-34,Female,Bachelors,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,Too little,About right,Clinton,1,NA,30-39 years old,other
+34,Female,Bachelors,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,Too little,About right,Clinton,1,NA,30-39 years old,Other
 74,Male,High School,Yes,"$20,000 ~ $39,999",Too little,About right,About right,Too little,NA,NA,Too little,Clinton,2,Agree,70-79 years old,White
 28,Female,Graduate,Yes,"$40,000 ~ $59,999",Too little,Too little,About right,Too little,NA,NA,Too little,Clinton,2,NA,20-29 years old,White
 32,Male,Graduate,Yes,NA,NA,NA,NA,NA,About right,Too much,Too little,Trump,1,Strongly disagree,30-39 years old,White
 61,Male,High School,Yes,"$170,000 or over",NA,NA,NA,NA,Too much,Too much,Too much,Trump,1,NA,60-69 years old,White
 48,Female,Bachelors,Yes,"$130,000 ~ $169,999",Too little,Too little,About right,Too much,NA,NA,Too little,Other,1,Strongly agree,40-49 years old,White
 72,Female,High School,Yes,"$20,000 ~ $39,999",Too little,Too much,Too little,About right,NA,NA,Too little,Clinton,1,NA,70-79 years old,White
-69,Female,High School,Yes,"Under $10,000",NA,NA,NA,NA,Too little,Too much,Too little,Trump,1,NA,60-69 years old,other
+69,Female,High School,Yes,"Under $10,000",NA,NA,NA,NA,Too little,Too much,Too little,Trump,1,NA,60-69 years old,Other
 79,Female,High School,Yes,"$40,000 ~ $59,999",Too little,About right,About right,Too much,NA,NA,Too little,Clinton,2,Disagree,70-79 years old,White
 39,Female,High School,No,"$90,000 ~ $129,999",Too little,Too little,Too much,About right,NA,NA,Too little,Clinton,NA,Disagree,30-39 years old,White
 69,Female,Associate College,Yes,"$40,000 ~ $59,999",Too little,Too much,About right,Too much,NA,NA,Too little,Trump,NA,Neither,60-69 years old,White
@@ -803,9 +803,9 @@ NA,Male,Graduate,Yes,"$130,000 ~ $169,999",Too little,About right,About right,To
 64,Male,High School,Yes,NA,NA,NA,NA,NA,Too little,Too much,Too little,Clinton,1,NA,60-69 years old,Black
 48,Male,Graduate,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,Too little,About right,Too little,Clinton,2,Disagree,40-49 years old,White
 39,Female,High School,Yes,NA,NA,NA,NA,NA,Too little,Too much,Too little,Clinton,NA,NA,30-39 years old,Black
-26,Female,High School,Yes,"Under $10,000",NA,NA,NA,NA,Too little,Too little,Too little,Clinton,1,Neither,20-29 years old,other
+26,Female,High School,Yes,"Under $10,000",NA,NA,NA,NA,Too little,Too little,Too little,Clinton,1,Neither,20-29 years old,Other
 49,Female,Bachelors,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,Too little,About right,About right,Clinton,NA,NA,40-49 years old,White
-35,Female,High School,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,About right,Too much,Too little,Clinton,2,Agree,30-39 years old,other
+35,Female,High School,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,About right,Too much,Too little,Clinton,2,Agree,30-39 years old,Other
 52,Male,Graduate,Yes,"$170,000 or over",Too much,Too much,About right,Too much,NA,NA,Too little,Trump,1,NA,50-59 years old,White
 59,Female,High School,Yes,"$60,000 ~ $89,999",Too little,Too little,Too little,Too much,NA,NA,About right,Clinton,1,Agree,50-59 years old,Black
 37,Female,Graduate,Yes,"$10,000 ~ $19,999",NA,NA,NA,NA,Too little,Too little,Too little,Clinton,1,Neither,30-39 years old,Black
@@ -825,7 +825,7 @@ NA,Male,Graduate,Yes,"$130,000 ~ $169,999",Too little,About right,About right,To
 67,Female,Graduate,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,About right,Too much,About right,Did not vote,2,Agree,60-69 years old,White
 43,Female,Associate College,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,About right,Too little,Other,1,NA,40-49 years old,White
 42,Male,Bachelors,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,2,Disagree,40-49 years old,White
-75,Male,High School,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,Too little,Too little,About right,Clinton,2,NA,70-79 years old,other
+75,Male,High School,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,Too little,Too little,About right,Clinton,2,NA,70-79 years old,Other
 85,Male,Bachelors,Yes,Refused,Too little,About right,Too much,About right,NA,NA,About right,Clinton,NA,Disagree,80-89 years old,White
 59,Male,High School,Yes,"$130,000 ~ $169,999",Too much,Too much,About right,Too much,NA,NA,Too little,Trump,NA,Strongly agree,50-59 years old,White
 53,Male,High School,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,2,Disagree,50-59 years old,Black
@@ -838,7 +838,7 @@ NA,Male,Graduate,Yes,"$130,000 ~ $169,999",Too little,About right,About right,To
 51,Male,Associate College,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,About right,Too much,Too little,Trump,2,Agree,50-59 years old,White
 42,Male,High School,Yes,NA,Too little,Too little,About right,Too much,NA,NA,Too little,Trump,1,Agree,40-49 years old,White
 39,Male,High School,Yes,NA,NA,NA,NA,NA,Too much,Too much,About right,Other,1,Neither,30-39 years old,White
-32,Female,Bachelors,Yes,"Under $10,000",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,1,Neither,30-39 years old,other
+32,Female,Bachelors,Yes,"Under $10,000",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,1,Neither,30-39 years old,Other
 35,Female,Associate College,Yes,"$90,000 ~ $129,999",Too little,About right,Too little,Too much,NA,NA,Too little,Trump,1,NA,30-39 years old,White
 57,Female,High School,Yes,"$10,000 ~ $19,999",Too much,Too much,Too little,Too much,NA,NA,Too little,Trump,1,Strongly agree,50-59 years old,White
 74,Female,Bachelors,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,About right,Too much,Too much,Trump,1,Neither,70-79 years old,White
@@ -952,10 +952,10 @@ NA,Female,Graduate,Yes,NA,NA,NA,NA,NA,Too much,Too much,Too much,Trump,1,NA,NA,H
 NA,Female,Associate College,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,NA,NA,NA,Black
 26,Female,High School,Yes,"$20,000 ~ $39,999",Too little,Too little,Too much,About right,NA,NA,About right,Clinton,NA,Agree,20-29 years old,Black
 70,Female,Less than high school,Yes,"$60,000 ~ $89,999",Too little,About right,Too little,Too much,NA,NA,About right,Trump,NA,Agree,70-79 years old,White
-75,Male,High School,Yes,"Under $10,000",NA,NA,NA,NA,Too much,Too much,Too little,Trump,2,NA,70-79 years old,other
+75,Male,High School,Yes,"Under $10,000",NA,NA,NA,NA,Too much,Too much,Too little,Trump,2,NA,70-79 years old,Other
 45,Other,Bachelors,Yes,"$90,000 ~ $129,999",Too little,Too little,Too much,Too little,NA,NA,Too little,Clinton,1,NA,40-49 years old,Black
 40,Male,High School,Yes,"$60,000 ~ $89,999",Too little,Too much,Too little,Too much,NA,NA,Too little,Trump,1,NA,40-49 years old,White
-46,Female,High School,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,1,Disagree,40-49 years old,other
+46,Female,High School,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,1,Disagree,40-49 years old,Other
 53,Female,Bachelors,Yes,"$170,000 or over",Too little,Too much,Too little,Too much,NA,NA,About right,Trump,1,Strongly agree,50-59 years old,White
 57,Female,High School,Yes,"$10,000 ~ $19,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,1,NA,50-59 years old,Black
 53,Male,Bachelors,Yes,"$60,000 ~ $89,999",About right,Too much,About right,Too much,NA,NA,Too little,Clinton,1,NA,50-59 years old,White
@@ -963,7 +963,7 @@ NA,Female,Associate College,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,Too m
 74,Male,High School,Yes,"$40,000 ~ $59,999",Too little,Too little,About right,About right,NA,NA,About right,Clinton,NA,Disagree,70-79 years old,Black
 61,Male,High School,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,Too much,Too little,Trump,NA,NA,60-69 years old,White
 67,Male,High School,Yes,"$40,000 ~ $59,999",Too little,NA,Too much,Too little,NA,NA,Too little,Trump,1,Agree,60-69 years old,White
-40,Male,Graduate,Yes,"$90,000 ~ $129,999",Too much,About right,Too little,Too much,NA,NA,About right,Trump,NA,Strongly agree,40-49 years old,other
+40,Male,Graduate,Yes,"$90,000 ~ $129,999",Too much,About right,Too little,Too much,NA,NA,About right,Trump,NA,Strongly agree,40-49 years old,Other
 86,Male,Graduate,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,About right,Too much,Too little,Trump,NA,NA,80-89 years old,White
 25,Male,Bachelors,Yes,"Under $10,000",Too little,About right,Too little,Too little,NA,NA,Too little,Did not vote,1,NA,20-29 years old,Black
 64,Female,High School,Yes,NA,NA,NA,NA,NA,Too little,Too much,Too little,Did not vote,1,NA,60-69 years old,White
@@ -979,7 +979,7 @@ NA,Female,Associate College,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,Too m
 75,Male,Graduate,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,About right,About right,Clinton,NA,NA,70-79 years old,White
 62,Female,Bachelors,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,About right,Too much,Too little,Trump,2,Strongly agree,60-69 years old,White
 62,Female,Graduate,Yes,"$40,000 ~ $59,999",About right,Too little,About right,Too much,NA,NA,About right,Clinton,1,Neither,60-69 years old,White
-31,Female,Less than high school,Yes,"$20,000 ~ $39,999",About right,Too much,Too little,About right,NA,NA,Too little,Trump,NA,Neither,30-39 years old,other
+31,Female,Less than high school,Yes,"$20,000 ~ $39,999",About right,Too much,Too little,About right,NA,NA,Too little,Trump,NA,Neither,30-39 years old,Other
 74,Male,Bachelors,Yes,"$60,000 ~ $89,999",About right,Too little,About right,About right,NA,NA,About right,Clinton,NA,Neither,70-79 years old,White
 33,Female,High School,Yes,NA,Too little,Too little,About right,About right,NA,NA,Too little,Other,2,NA,30-39 years old,White
 41,Male,High School,Yes,"Under $10,000",NA,NA,NA,NA,Too little,Too much,Too little,Trump,1,NA,40-49 years old,White
@@ -997,8 +997,8 @@ NA,Female,Associate College,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,Too m
 41,Male,Bachelors,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,Too much,Too much,About right,Trump,2,Neither,40-49 years old,White
 67,Male,Bachelors,Yes,"$20,000 ~ $39,999",Too much,About right,Too little,Too much,NA,NA,About right,Trump,1,NA,60-69 years old,White
 51,Female,Graduate,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,Too much,About right,Trump,2,Neither,50-59 years old,White
-52,Female,Graduate,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,Too little,Too much,Too little,Trump,NA,NA,50-59 years old,other
-72,Female,Associate College,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,1,NA,70-79 years old,other
+52,Female,Graduate,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,Too little,Too much,Too little,Trump,NA,NA,50-59 years old,Other
+72,Female,Associate College,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,1,NA,70-79 years old,Other
 71,Female,Bachelors,Yes,"$60,000 ~ $89,999",Too little,Too little,About right,Too little,NA,NA,Too little,Trump,2,NA,70-79 years old,White
 64,Female,High School,Yes,"$40,000 ~ $59,999",Too little,Too little,About right,Too little,NA,NA,Too little,Clinton,2,NA,60-69 years old,Black
 NA,Male,High School,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,Too much,About right,Trump,1,NA,NA,White
@@ -1017,7 +1017,7 @@ NA,NA,Less than high school,NA,Refused,NA,NA,NA,NA,Too much,Too much,Too little,
 32,Female,High School,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,Too much,Too little,Trump,1,NA,30-39 years old,White
 32,Female,Graduate,No,"$60,000 ~ $89,999",Too little,Too little,About right,About right,NA,NA,About right,Clinton,2,NA,30-39 years old,Black
 34,Female,High School,Yes,"$60,000 ~ $89,999",Too little,Too little,Too little,Too much,NA,NA,About right,Clinton,2,Neither,30-39 years old,Black
-NA,Male,Associate College,Yes,"$130,000 ~ $169,999",NA,NA,NA,NA,Too little,Too little,Too little,Clinton,NA,NA,NA,other
+NA,Male,Associate College,Yes,"$130,000 ~ $169,999",NA,NA,NA,NA,Too little,Too little,Too little,Clinton,NA,NA,NA,Other
 24,Male,Bachelors,Yes,"$10,000 ~ $19,999",NA,NA,NA,NA,Too little,About right,About right,Other,2,NA,20-29 years old,White
 63,Female,High School,Yes,"$20,000 ~ $39,999",Too little,Too little,Too much,About right,NA,NA,Too little,Trump,NA,Agree,60-69 years old,White
 56,Male,Bachelors,Yes,"$170,000 or over",Too much,Too much,About right,Too much,NA,NA,Too much,Other,1,Neither,50-59 years old,White
@@ -1026,7 +1026,7 @@ NA,Male,Associate College,Yes,"$130,000 ~ $169,999",NA,NA,NA,NA,Too little,Too l
 71,Female,Associate College,Yes,NA,About right,About right,Too little,Too much,NA,NA,Too little,Trump,1,NA,70-79 years old,White
 48,Female,High School,Yes,"$60,000 ~ $89,999",Too little,Too little,Too little,Too little,NA,NA,Too little,Clinton,1,NA,40-49 years old,Black
 66,Male,High School,Yes,"$40,000 ~ $59,999",Too little,Too little,About right,Too much,NA,NA,Too little,Clinton,1,NA,60-69 years old,White
-38,Female,Bachelors,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,About right,About right,Too little,Clinton,1,NA,30-39 years old,other
+38,Female,Bachelors,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,About right,About right,Too little,Clinton,1,NA,30-39 years old,Other
 63,Female,Bachelors,Yes,"$130,000 ~ $169,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,NA,NA,60-69 years old,White
 74,Female,Associate College,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,About right,Too little,Trump,1,NA,70-79 years old,White
 63,Female,High School,Yes,"$10,000 ~ $19,999",NA,NA,NA,NA,Too little,Too much,About right,Clinton,NA,NA,60-69 years old,Black
@@ -1127,7 +1127,7 @@ NA,Female,Bachelors,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,Too much,Too much,Too m
 61,Male,Bachelors,Yes,"$60,000 ~ $89,999",About right,About right,Too much,Too much,NA,NA,About right,Clinton,NA,Disagree,60-69 years old,Black
 63,Male,Graduate,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,About right,Too much,Too much,Trump,1,NA,60-69 years old,White
 42,Male,Graduate,Yes,"$170,000 or over",NA,NA,NA,NA,About right,Too much,Too little,Clinton,3,NA,40-49 years old,White
-62,Female,High School,Yes,NA,NA,NA,NA,NA,About right,Too much,About right,Trump,1,NA,60-69 years old,other
+62,Female,High School,Yes,NA,NA,NA,NA,NA,About right,Too much,About right,Trump,1,NA,60-69 years old,Other
 26,Male,Bachelors,Yes,"$170,000 or over",NA,NA,NA,NA,Too little,Too much,Too much,Clinton,2,NA,20-29 years old,White
 33,Male,High School,Yes,NA,NA,NA,NA,NA,Too little,Too much,Too little,Trump,2,NA,30-39 years old,White
 74,Female,High School,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,NA,NA,70-79 years old,White
@@ -1235,8 +1235,8 @@ NA,Female,NA,Yes,NA,NA,NA,NA,NA,Too little,About right,Too little,Clinton,NA,NA,
 30,Female,Graduate,Yes,"$10,000 ~ $19,999",Too little,Too little,Too much,Too little,NA,NA,About right,Other,2,NA,30-39 years old,White
 70,Female,Bachelors,Yes,NA,Too little,Too little,About right,Too little,NA,NA,Too little,Clinton,NA,Neither,70-79 years old,Black
 NA,Female,Graduate,No,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,About right,Too little,Clinton,NA,Strongly disagree,NA,Asian
-46,Male,High School,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,1,NA,40-49 years old,other
-33,Male,High School,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,1,Strongly disagree,30-39 years old,other
+46,Male,High School,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,1,NA,40-49 years old,Other
+33,Male,High School,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,1,Strongly disagree,30-39 years old,Other
 74,Male,High School,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,About right,Too much,Too little,Clinton,1,NA,70-79 years old,Black
 63,Male,Less than high school,Yes,"Under $10,000",Too little,Too little,Too much,About right,NA,NA,Too little,Clinton,2,NA,60-69 years old,White
 33,Male,Bachelors,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,About right,About right,Clinton,NA,NA,30-39 years old,White
@@ -1300,7 +1300,7 @@ NA,Male,High School,Yes,NA,NA,NA,NA,NA,About right,Too much,Too little,Trump,NA,
 58,Female,High School,Yes,"$20,000 ~ $39,999",Too little,Too little,Too much,About right,NA,NA,About right,Trump,2,Strongly disagree,50-59 years old,White
 40,Female,Bachelors,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,About right,About right,About right,Other,2,NA,40-49 years old,White
 58,Male,High School,Yes,"$90,000 ~ $129,999",Too much,Too much,Too much,Too much,NA,NA,Too little,Trump,2,Agree,50-59 years old,White
-26,Male,High School,Yes,"$10,000 ~ $19,999",Too little,Too little,Too much,About right,NA,NA,Too little,Trump,NA,Disagree,20-29 years old,other
+26,Male,High School,Yes,"$10,000 ~ $19,999",Too little,Too little,Too much,About right,NA,NA,Too little,Trump,NA,Disagree,20-29 years old,Other
 NA,Female,High School,No,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,About right,About right,Trump,NA,NA,NA,Asian
 51,Male,High School,Yes,"$40,000 ~ $59,999",Too much,About right,About right,About right,NA,NA,About right,Trump,1,Agree,50-59 years old,NA
 76,Male,Bachelors,Yes,"$90,000 ~ $129,999",Too little,Too little,Too much,Too little,NA,NA,About right,Clinton,2,NA,70-79 years old,White
@@ -1317,17 +1317,17 @@ NA,Female,High School,No,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,About right,
 57,Male,High School,Yes,"$170,000 or over",NA,NA,NA,NA,Too little,Too much,Too little,Trump,2,Agree,50-59 years old,White
 38,Female,Associate College,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,Too much,Too little,Trump,NA,NA,30-39 years old,White
 47,Female,Less than high school,Yes,"Under $10,000",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,NA,NA,40-49 years old,Black
-57,Male,Graduate,Yes,"$170,000 or over",Too little,About right,About right,About right,NA,NA,About right,Other,2,NA,50-59 years old,other
-53,Female,High School,Yes,"$170,000 or over",NA,NA,NA,NA,Too little,Too much,Too little,Trump,NA,NA,50-59 years old,other
+57,Male,Graduate,Yes,"$170,000 or over",Too little,About right,About right,About right,NA,NA,About right,Other,2,NA,50-59 years old,Other
+53,Female,High School,Yes,"$170,000 or over",NA,NA,NA,NA,Too little,Too much,Too little,Trump,NA,NA,50-59 years old,Other
 51,Female,Bachelors,Yes,"$170,000 or over",Too little,Too much,Too little,Too much,NA,NA,About right,Trump,NA,Agree,50-59 years old,White
 56,Female,Less than high school,Yes,"$10,000 ~ $19,999",Too little,Too much,About right,Too much,NA,NA,Too little,Trump,NA,Neither,50-59 years old,White
 58,Female,Bachelors,No,NA,About right,Too much,Too little,Too much,NA,NA,Too little,Trump,NA,NA,50-59 years old,White
 NA,Female,Bachelors,Yes,"$90,000 ~ $129,999",About right,About right,Too little,Too much,NA,NA,About right,Trump,1,NA,NA,White
 63,Male,Graduate,Yes,"$170,000 or over",NA,NA,NA,NA,Too much,Too much,About right,Trump,1,Disagree,60-69 years old,American Native
-51,Male,Graduate,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,Too little,Too much,Too little,Other,1,Neither,50-59 years old,other
+51,Male,Graduate,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,Too little,Too much,Too little,Other,1,Neither,50-59 years old,Other
 57,Female,Bachelors,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,Too much,Too little,Trump,NA,NA,50-59 years old,White
 59,Male,High School,Yes,"$20,000 ~ $39,999",About right,Too little,Too little,Too much,NA,NA,Too little,Trump,NA,Agree,50-59 years old,Hispanic
-38,Female,Associate College,Yes,"$10,000 ~ $19,999",Too little,Too little,About right,Too little,NA,NA,Too little,Clinton,2,Strongly disagree,30-39 years old,other
+38,Female,Associate College,Yes,"$10,000 ~ $19,999",Too little,Too little,About right,Too little,NA,NA,Too little,Clinton,2,Strongly disagree,30-39 years old,Other
 76,Male,High School,Yes,"$20,000 ~ $39,999",Too little,About right,About right,About right,NA,NA,About right,Clinton,NA,NA,70-79 years old,White
 36,Female,Bachelors,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,About right,About right,Clinton,2,Disagree,30-39 years old,White
 60,Male,Less than high school,Yes,"$10,000 ~ $19,999",NA,NA,NA,NA,Too little,Too much,About right,Trump,2,Disagree,60-69 years old,Black
@@ -1336,9 +1336,9 @@ NA,Female,Graduate,No,NA,Too little,Too little,Too much,About right,NA,NA,About 
 45,Male,High School,Yes,"$40,000 ~ $59,999",Too little,Too little,Too much,Too little,NA,NA,Too little,Other,2,NA,40-49 years old,White
 54,Male,High School,Yes,"$10,000 ~ $19,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,NA,NA,50-59 years old,White
 70,Male,Bachelors,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,Too much,Too much,Trump,NA,NA,70-79 years old,White
-28,Female,High School,Yes,NA,Too little,Too much,Too little,Too much,NA,NA,Too little,Trump,1,Strongly agree,20-29 years old,other
+28,Female,High School,Yes,NA,Too little,Too much,Too little,Too much,NA,NA,Too little,Trump,1,Strongly agree,20-29 years old,Other
 NA,Female,Bachelors,Yes,"$130,000 ~ $169,999",NA,NA,NA,NA,Too little,Too much,Too little,Trump,NA,NA,NA,White
-57,Female,Associate College,Yes,"Under $10,000",Too much,Too little,Too little,Too much,NA,NA,Too little,Did not vote,NA,Strongly agree,50-59 years old,other
+57,Female,Associate College,Yes,"Under $10,000",Too much,Too little,Too little,Too much,NA,NA,Too little,Did not vote,NA,Strongly agree,50-59 years old,Other
 51,Male,Bachelors,Yes,"$170,000 or over",NA,NA,NA,NA,Too little,About right,About right,Other,2,Strongly disagree,50-59 years old,White
 73,Female,Bachelors,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,About right,About right,Clinton,NA,NA,70-79 years old,White
 52,Female,Bachelors,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,About right,Too little,Clinton,2,NA,50-59 years old,White
@@ -1353,7 +1353,7 @@ NA,Female,Bachelors,Yes,"$130,000 ~ $169,999",NA,NA,NA,NA,Too little,Too much,To
 NA,Female,High School,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,Too much,Too little,Trump,NA,NA,NA,White
 69,Male,High School,Yes,"$60,000 ~ $89,999",Too much,About right,About right,About right,NA,NA,About right,Trump,1,NA,60-69 years old,White
 26,Female,Bachelors,Yes,"$20,000 ~ $39,999",Too little,Too little,About right,About right,NA,NA,About right,Clinton,1,Neither,20-29 years old,Black
-82,Male,Associate College,Yes,"$130,000 ~ $169,999",NA,NA,NA,NA,Too much,Too little,Too little,Clinton,NA,NA,80-89 years old,other
+82,Male,Associate College,Yes,"$130,000 ~ $169,999",NA,NA,NA,NA,Too much,Too little,Too little,Clinton,NA,NA,80-89 years old,Other
 33,Female,Associate College,Yes,"$40,000 ~ $59,999",Too little,Too much,Too little,About right,NA,NA,About right,Trump,1,Agree,30-39 years old,White
 60,Female,Bachelors,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,About right,About right,Trump,2,NA,60-69 years old,White
 64,Male,High School,Yes,"$10,000 ~ $19,999",NA,NA,NA,NA,About right,Too much,Too little,Trump,1,Strongly agree,60-69 years old,White
@@ -1366,7 +1366,7 @@ NA,NA,Bachelors,NA,Refused,Too little,Too much,Too little,Too much,NA,NA,About r
 33,Male,Bachelors,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,About right,Too much,About right,Other,2,NA,30-39 years old,White
 62,Male,High School,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,Too little,Too much,Too little,Trump,NA,NA,60-69 years old,White
 54,Male,Graduate,No,"$170,000 or over",Too little,Too much,Too much,Too much,NA,NA,Too little,Trump,2,Neither,50-59 years old,White
-53,Male,High School,Yes,"$170,000 or over",Too little,About right,Too little,Too little,NA,NA,Too little,Trump,1,Strongly agree,50-59 years old,other
+53,Male,High School,Yes,"$170,000 or over",Too little,About right,Too little,Too little,NA,NA,Too little,Trump,1,Strongly agree,50-59 years old,Other
 72,Female,Graduate,Yes,"$130,000 ~ $169,999",Too little,About right,About right,About right,NA,NA,About right,Clinton,1,NA,70-79 years old,White
 34,Male,Bachelors,Yes,"$130,000 ~ $169,999",NA,NA,NA,NA,About right,Too much,About right,Trump,NA,NA,30-39 years old,White
 53,Female,Bachelors,Yes,"$90,000 ~ $129,999",About right,About right,About right,Too much,NA,NA,Too little,Trump,1,Neither,50-59 years old,White
@@ -1393,7 +1393,7 @@ NA,Female,Less than high school,Yes,"$170,000 or over",NA,NA,NA,NA,Too little,To
 63,Female,Graduate,Yes,"$130,000 ~ $169,999",Too little,Too much,Too little,Too much,NA,NA,Too little,Trump,1,Strongly agree,60-69 years old,White
 50,Male,Bachelors,Yes,"$170,000 or over",NA,NA,NA,NA,About right,Too much,Too little,Trump,1,Strongly agree,50-59 years old,White
 75,Male,Graduate,Yes,"$60,000 ~ $89,999",Too little,About right,About right,About right,NA,NA,About right,Trump,2,Disagree,70-79 years old,White
-61,Female,Graduate,Yes,"Under $10,000",Too little,About right,Too little,Too little,NA,NA,Too little,Trump,1,NA,60-69 years old,other
+61,Female,Graduate,Yes,"Under $10,000",Too little,About right,Too little,Too little,NA,NA,Too little,Trump,1,NA,60-69 years old,Other
 42,Female,Graduate,Yes,"$170,000 or over",Too little,Too little,Too little,About right,NA,NA,Too little,Clinton,1,Disagree,40-49 years old,White
 43,Male,Graduate,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,About right,Too little,Too little,Trump,NA,NA,40-49 years old,White
 24,Female,High School,Yes,"$10,000 ~ $19,999",About right,Too little,Too much,About right,NA,NA,About right,Trump,3,NA,20-29 years old,White
@@ -1463,7 +1463,7 @@ NA,Male,High School,Yes,"$10,000 ~ $19,999",NA,NA,NA,NA,Too little,Too much,Too 
 39,Female,Graduate,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,1,Disagree,30-39 years old,White
 47,Male,High School,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,1,Strongly disagree,40-49 years old,Hispanic
 70,Female,Bachelors,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,About right,Too little,Clinton,2,NA,70-79 years old,White
-41,Male,High School,Yes,"$60,000 ~ $89,999",Too little,About right,Too little,Too much,NA,NA,Too little,Other,2,Agree,40-49 years old,other
+41,Male,High School,Yes,"$60,000 ~ $89,999",Too little,About right,Too little,Too much,NA,NA,Too little,Other,2,Agree,40-49 years old,Other
 49,Male,Bachelors,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,About right,Too little,Trump,NA,NA,40-49 years old,White
 NA,Female,Bachelors,Yes,"$130,000 ~ $169,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,1,NA,NA,White
 59,Male,High School,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too much,Too much,About right,Trump,1,Agree,50-59 years old,White
@@ -1473,7 +1473,7 @@ NA,Female,Bachelors,Yes,"$130,000 ~ $169,999",NA,NA,NA,NA,Too little,Too much,To
 73,Male,High School,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too much,Too much,About right,Trump,1,Agree,70-79 years old,White
 53,Male,Bachelors,Yes,"$170,000 or over",Too little,Too little,About right,About right,NA,NA,Too little,Clinton,1,Disagree,50-59 years old,White
 76,Male,High School,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,About right,Too little,Clinton,1,NA,70-79 years old,American Native
-48,Female,Bachelors,Yes,"$40,000 ~ $59,999",Too little,Too little,Too little,About right,NA,NA,Too little,Trump,2,Strongly agree,40-49 years old,other
+48,Female,Bachelors,Yes,"$40,000 ~ $59,999",Too little,Too little,Too little,About right,NA,NA,Too little,Trump,2,Strongly agree,40-49 years old,Other
 73,Male,Associate College,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too much,Too much,About right,Trump,NA,NA,70-79 years old,White
 47,Female,High School,Yes,"$20,000 ~ $39,999",Too little,Too little,Too little,Too little,NA,NA,Too little,Trump,1,NA,40-49 years old,White
 80,Male,High School,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,About right,About right,Clinton,2,Disagree,80-89 years old,White
@@ -1486,12 +1486,12 @@ NA,Female,Bachelors,Yes,"$130,000 ~ $169,999",NA,NA,NA,NA,Too little,Too much,To
 61,Female,High School,Yes,"$40,000 ~ $59,999",Too little,Too little,NA,About right,NA,NA,About right,Clinton,NA,Neither,60-69 years old,White
 84,Female,High School,Yes,"$20,000 ~ $39,999",Too little,Too little,About right,About right,NA,NA,Too little,Clinton,NA,Agree,80-89 years old,Hispanic
 68,Male,Graduate,Yes,"$90,000 ~ $129,999",Too little,Too little,About right,About right,NA,NA,About right,Clinton,NA,Neither,60-69 years old,White
-62,Female,Bachelors,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,About right,Too much,Too little,Trump,NA,NA,60-69 years old,other
+62,Female,Bachelors,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,About right,Too much,Too little,Trump,NA,NA,60-69 years old,Other
 NA,Male,Bachelors,Yes,NA,Too little,Too little,About right,Too little,NA,NA,Too little,Clinton,2,NA,NA,White
 38,Male,Bachelors,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,About right,Too little,Clinton,1,Strongly disagree,30-39 years old,White
 76,Female,Bachelors,Yes,"$90,000 ~ $129,999",Too little,About right,Too little,Too much,NA,NA,About right,Trump,2,NA,70-79 years old,White
 27,Male,Graduate,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,About right,About right,Clinton,2,NA,20-29 years old,Asian
-76,Female,High School,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,About right,Too little,Clinton,2,Neither,70-79 years old,other
+76,Female,High School,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,About right,Too little,Clinton,2,Neither,70-79 years old,Other
 44,Female,Less than high school,Yes,"Under $10,000",NA,NA,NA,NA,Too little,Too little,Too little,Clinton,2,Disagree,40-49 years old,White
 46,Female,Bachelors,Yes,"$130,000 ~ $169,999",Too little,About right,Too much,About right,NA,NA,Too little,Clinton,1,Disagree,40-49 years old,White
 69,Female,High School,Yes,"$10,000 ~ $19,999",NA,NA,NA,NA,Too little,About right,Too little,Clinton,1,Neither,60-69 years old,White
@@ -1499,7 +1499,7 @@ NA,Male,Bachelors,Yes,NA,Too little,Too little,About right,Too little,NA,NA,Too 
 58,Female,Bachelors,Yes,"$170,000 or over",NA,NA,NA,NA,Too little,About right,Too little,Clinton,NA,NA,50-59 years old,White
 69,Female,Associate College,Yes,"$60,000 ~ $89,999",Too little,About right,Too much,Too little,NA,NA,About right,Clinton,NA,Disagree,60-69 years old,White
 24,Female,Less than high school,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,Too little,Too little,Clinton,1,NA,20-29 years old,Hispanic
-40,NA,Bachelors,Yes,"Under $10,000",Too little,Too little,Too little,Too little,NA,NA,Too much,Other,NA,NA,40-49 years old,other
+40,NA,Bachelors,Yes,"Under $10,000",Too little,Too little,Too little,Too little,NA,NA,Too much,Other,NA,NA,40-49 years old,Other
 63,Male,Graduate,No,"$60,000 ~ $89,999",NA,NA,NA,NA,Too much,Too much,About right,Trump,1,NA,60-69 years old,Asian
 59,Female,Bachelors,No,"$130,000 ~ $169,999",NA,NA,NA,NA,Too little,About right,Too little,Clinton,NA,NA,50-59 years old,White
 36,Female,Graduate,Yes,"$170,000 or over",Too little,Too little,Too much,Too little,NA,NA,About right,Clinton,NA,Strongly disagree,30-39 years old,White
@@ -1537,7 +1537,7 @@ NA,Female,High School,Yes,"$170,000 or over",NA,NA,NA,NA,NA,Too much,NA,Trump,NA
 57,Male,Bachelors,Yes,"$170,000 or over",Too little,Too little,About right,Too much,NA,NA,About right,Trump,1,NA,50-59 years old,White
 47,Female,High School,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,1,NA,40-49 years old,Black
 32,Male,Graduate,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,About right,Too little,Clinton,NA,NA,30-39 years old,White
-34,Male,Graduate,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,About right,Too little,Clinton,1,NA,30-39 years old,other
+34,Male,Graduate,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,About right,Too little,Clinton,1,NA,30-39 years old,Other
 46,Male,Graduate,Yes,"$130,000 ~ $169,999",Too little,Too little,Too much,Too much,NA,NA,Too little,Clinton,NA,Agree,40-49 years old,Black
 38,Female,Bachelors,Yes,"$170,000 or over",Too little,Too little,About right,Too much,NA,NA,Too little,Clinton,1,NA,30-39 years old,White
 39,Female,Graduate,Yes,"$90,000 ~ $129,999",Too little,About right,About right,Too much,NA,NA,Too little,Clinton,NA,NA,30-39 years old,White
@@ -1545,7 +1545,7 @@ NA,Female,High School,Yes,"$170,000 or over",NA,NA,NA,NA,NA,Too much,NA,Trump,NA
 71,Female,Graduate,Yes,"$170,000 or over",Too little,About right,Too much,Too little,NA,NA,About right,Clinton,2,NA,70-79 years old,White
 74,Male,Bachelors,Yes,"$20,000 ~ $39,999",Too little,About right,About right,About right,NA,NA,About right,Did not vote,NA,Agree,70-79 years old,White
 57,Female,Bachelors,Yes,"$130,000 ~ $169,999",Too little,Too little,NA,Too little,NA,NA,NA,Other,NA,Strongly disagree,50-59 years old,NA
-42,Male,Bachelors,Yes,NA,Too much,Too much,Too much,Too much,NA,NA,Too much,Trump,1,NA,40-49 years old,other
+42,Male,Bachelors,Yes,NA,Too much,Too much,Too much,Too much,NA,NA,Too much,Trump,1,NA,40-49 years old,Other
 52,Male,Associate College,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,Too much,About right,Clinton,2,NA,50-59 years old,White
 79,Male,Bachelors,Yes,"$90,000 ~ $129,999",Too little,About right,Too much,NA,NA,NA,Too little,Clinton,1,NA,70-79 years old,White
 40,Female,Associate College,Yes,"$170,000 or over",NA,NA,NA,NA,Too little,About right,Too little,Clinton,NA,NA,40-49 years old,White
@@ -1571,12 +1571,12 @@ NA,Female,Associate College,Yes,Refused,NA,NA,NA,NA,Too little,About right,Too l
 67,Male,Bachelors,Yes,"$60,000 ~ $89,999",Too much,Too little,About right,Too much,NA,NA,About right,Trump,1,Agree,60-69 years old,Black
 35,Male,Bachelors,Yes,"$130,000 ~ $169,999",About right,About right,Too much,About right,NA,NA,Too little,Clinton,1,NA,30-39 years old,White
 39,Female,Bachelors,Yes,"$170,000 or over",NA,NA,NA,NA,Too much,About right,Too much,Other,NA,NA,30-39 years old,White
-63,Female,High School,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,NA,NA,60-69 years old,other
+63,Female,High School,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,NA,NA,60-69 years old,Other
 70,Female,Bachelors,Yes,NA,About right,About right,Too little,Too much,NA,NA,Too little,Trump,1,NA,70-79 years old,Asian
-56,Female,Graduate,Yes,"$170,000 or over",Too much,Too little,Too much,About right,NA,NA,About right,Clinton,2,NA,50-59 years old,other
+56,Female,Graduate,Yes,"$170,000 or over",Too much,Too little,Too much,About right,NA,NA,About right,Clinton,2,NA,50-59 years old,Other
 40,Male,Bachelors,Yes,"$170,000 or over",NA,NA,NA,NA,Too little,About right,About right,Clinton,2,NA,40-49 years old,White
 70,Female,Graduate,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,About right,Too little,Clinton,1,NA,70-79 years old,White
-69,Male,Graduate,Yes,"$170,000 or over",NA,NA,NA,NA,About right,Too much,Too much,Trump,1,Agree,60-69 years old,other
+69,Male,Graduate,Yes,"$170,000 or over",NA,NA,NA,NA,About right,Too much,Too much,Trump,1,Agree,60-69 years old,Other
 32,Female,Bachelors,Yes,NA,Too little,Too little,Too much,Too little,NA,NA,About right,Clinton,NA,Neither,30-39 years old,Asian
 63,Female,Bachelors,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,2,NA,60-69 years old,White
 73,Female,Bachelors,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,Too much,Too little,Trump,2,Agree,70-79 years old,Asian
@@ -1586,12 +1586,12 @@ NA,Female,Associate College,Yes,Refused,NA,NA,NA,NA,Too little,About right,Too l
 67,Female,High School,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,Too little,Too much,Too little,Trump,1,Neither,60-69 years old,White
 73,Male,High School,Yes,"$90,000 ~ $129,999",Too little,Too little,About right,Too little,NA,NA,Too little,Clinton,2,NA,70-79 years old,White
 56,Female,High School,Yes,"Under $10,000",Too little,Too little,Too much,Too little,NA,NA,Too little,Trump,NA,Agree,50-59 years old,White
-24,Female,Bachelors,Yes,"Under $10,000",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,NA,NA,20-29 years old,other
+24,Female,Bachelors,Yes,"Under $10,000",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,NA,NA,20-29 years old,Other
 54,Male,Bachelors,Yes,"$90,000 ~ $129,999",Too little,About right,About right,About right,NA,NA,About right,Other,1,Disagree,50-59 years old,White
 56,Female,High School,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,Too much,Too much,Too little,Trump,1,NA,50-59 years old,White
 61,Female,Graduate,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,About right,Too little,Clinton,NA,NA,60-69 years old,White
 60,Female,High School,Yes,NA,About right,About right,About right,About right,NA,NA,About right,Trump,NA,Agree,60-69 years old,White
-32,Female,Bachelors,Yes,"$10,000 ~ $19,999",Too little,Too little,Too much,Too little,NA,NA,Too little,Clinton,1,NA,30-39 years old,other
+32,Female,Bachelors,Yes,"$10,000 ~ $19,999",Too little,Too little,Too much,Too little,NA,NA,Too little,Clinton,1,NA,30-39 years old,Other
 69,Female,Graduate,Yes,"$130,000 ~ $169,999",NA,NA,NA,NA,Too little,About right,About right,Clinton,NA,NA,60-69 years old,White
 23,Female,Associate College,Yes,"$10,000 ~ $19,999",Too little,Too little,Too much,Too little,NA,NA,About right,Trump,2,Disagree,20-29 years old,White
 52,Male,Bachelors,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,About right,About right,Clinton,2,NA,50-59 years old,White
@@ -1607,7 +1607,7 @@ NA,Female,Graduate,No,NA,Too little,Too little,Too much,Too little,NA,NA,Too lit
 26,Male,Bachelors,Yes,"$130,000 ~ $169,999",Too little,Too little,Too much,About right,NA,NA,About right,Other,2,Strongly disagree,20-29 years old,White
 35,Male,Bachelors,Yes,"$130,000 ~ $169,999",NA,NA,NA,NA,Too little,About right,About right,Clinton,NA,NA,30-39 years old,White
 50,Male,Graduate,Yes,"$10,000 ~ $19,999",Too little,Too little,Too much,Too little,NA,NA,Too little,Clinton,NA,Neither,50-59 years old,White
-37,Female,Bachelors,Yes,"$60,000 ~ $89,999",Too little,Too little,Too much,Too little,NA,NA,Too little,Clinton,1,Strongly disagree,30-39 years old,other
+37,Female,Bachelors,Yes,"$60,000 ~ $89,999",Too little,Too little,Too much,Too little,NA,NA,Too little,Clinton,1,Strongly disagree,30-39 years old,Other
 NA,Female,Bachelors,Yes,"$60,000 ~ $89,999",Too little,Too little,Too much,Too little,NA,NA,About right,Clinton,NA,Disagree,NA,White
 56,Male,Graduate,Yes,"$170,000 or over",Too little,Too little,Too much,About right,NA,NA,About right,Clinton,2,NA,50-59 years old,White
 24,Male,Bachelors,Yes,"$170,000 or over",NA,NA,NA,NA,About right,About right,About right,Clinton,2,NA,20-29 years old,White
@@ -1619,7 +1619,7 @@ NA,Female,Bachelors,Yes,"$60,000 ~ $89,999",Too little,Too little,Too much,Too l
 NA,NA,High School,Yes,"$90,000 ~ $129,999",Too much,Too much,About right,Too much,NA,NA,NA,Trump,2,NA,NA,White
 65,Male,High School,Yes,"$90,000 ~ $129,999",Too little,NA,About right,Too much,NA,NA,Too little,Trump,NA,Agree,60-69 years old,White
 72,Male,Associate College,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too much,Too much,About right,Trump,NA,NA,70-79 years old,White
-64,Male,High School,Yes,"$20,000 ~ $39,999",Too much,Too much,Too little,Too much,NA,NA,Too little,Trump,NA,Strongly agree,60-69 years old,other
+64,Male,High School,Yes,"$20,000 ~ $39,999",Too much,Too much,Too little,Too much,NA,NA,Too little,Trump,NA,Strongly agree,60-69 years old,Other
 23,Female,High School,Yes,"$40,000 ~ $59,999",Too much,Too much,About right,Too much,NA,NA,About right,Trump,NA,Neither,20-29 years old,White
 62,Female,Bachelors,Yes,"$170,000 or over",About right,About right,About right,Too much,NA,NA,Too little,Trump,1,NA,60-69 years old,White
 59,Female,High School,Yes,"$90,000 ~ $129,999",Too much,About right,Too little,About right,NA,NA,Too little,Trump,NA,Agree,50-59 years old,White
@@ -1643,12 +1643,12 @@ NA,Female,High School,Yes,"$10,000 ~ $19,999",About right,NA,About right,About r
 84,Male,Graduate,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,About right,Too much,Too much,Trump,NA,NA,80-89 years old,White
 67,Female,High School,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too much,Too much,Too little,Trump,NA,NA,60-69 years old,White
 70,Female,Graduate,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,About right,Too much,About right,Trump,1,NA,70-79 years old,White
-68,Female,High School,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,Too much,Too much,Trump,2,Strongly agree,60-69 years old,other
-58,Female,Less than high school,Yes,"$40,000 ~ $59,999",Too little,About right,About right,About right,NA,NA,Too little,Did not vote,1,Strongly agree,50-59 years old,other
+68,Female,High School,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,Too much,Too much,Trump,2,Strongly agree,60-69 years old,Other
+58,Female,Less than high school,Yes,"$40,000 ~ $59,999",Too little,About right,About right,About right,NA,NA,Too little,Did not vote,1,Strongly agree,50-59 years old,Other
 69,Male,Bachelors,Yes,"$170,000 or over",NA,NA,NA,NA,About right,About right,About right,Clinton,3,NA,60-69 years old,White
 39,Male,Associate College,Yes,"$130,000 ~ $169,999",NA,NA,NA,NA,Too little,Too little,Too little,Clinton,NA,NA,30-39 years old,Hispanic
 83,Female,Bachelors,Yes,NA,Too little,Too little,About right,About right,NA,NA,Too little,Clinton,1,Neither,80-89 years old,Black
-60,Female,High School,No,"$10,000 ~ $19,999",Too little,About right,Too much,Too much,NA,NA,Too little,Clinton,1,NA,60-69 years old,other
+60,Female,High School,No,"$10,000 ~ $19,999",Too little,About right,Too much,Too much,NA,NA,Too little,Clinton,1,NA,60-69 years old,Other
 44,Male,Less than high school,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,Too much,Too little,Trump,1,NA,40-49 years old,White
 38,Female,High School,Yes,"$40,000 ~ $59,999",Too little,About right,Too much,Too little,NA,NA,Too little,Clinton,1,NA,30-39 years old,White
 59,Male,Graduate,Yes,"$170,000 or over",Too little,Too little,Too much,Too little,NA,NA,NA,Clinton,NA,Strongly disagree,50-59 years old,White
@@ -1668,7 +1668,7 @@ NA,Female,Associate College,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,Too m
 46,Male,Bachelors,Yes,"$170,000 or over",Too much,About right,Too little,Too much,NA,NA,About right,Trump,NA,Strongly disagree,40-49 years old,White
 66,Male,Graduate,Yes,NA,About right,About right,Too much,About right,NA,NA,About right,Other,1,Disagree,60-69 years old,White
 55,Female,Graduate,Yes,"$90,000 ~ $129,999",Too little,Too little,About right,Too little,NA,NA,Too little,Clinton,1,Disagree,50-59 years old,White
-50,Female,Graduate,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,NA,NA,50-59 years old,other
+50,Female,Graduate,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,NA,NA,50-59 years old,Other
 69,Female,High School,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,Too little,About right,Clinton,NA,NA,60-69 years old,White
 38,Female,Bachelors,Yes,"$170,000 or over",Too little,Too little,Too much,Too little,NA,NA,About right,Other,NA,Strongly disagree,30-39 years old,White
 56,Male,Bachelors,No,"$170,000 or over",NA,NA,NA,NA,About right,Too much,About right,Trump,1,NA,50-59 years old,White
@@ -1681,8 +1681,8 @@ NA,Female,Associate College,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,Too m
 40,Male,Bachelors,Yes,"$130,000 ~ $169,999",Too little,Too little,Too little,About right,NA,NA,About right,Trump,1,Neither,40-49 years old,White
 NA,Female,High School,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,Too much,Too little,Trump,1,Agree,NA,White
 36,Female,Graduate,Yes,"$20,000 ~ $39,999",Too little,About right,About right,Too little,NA,NA,Too little,Trump,2,NA,30-39 years old,White
-36,Female,Bachelors,Yes,"Under $10,000",NA,NA,NA,NA,Too little,About right,About right,Clinton,2,NA,30-39 years old,other
-45,Female,Bachelors,Yes,"$90,000 ~ $129,999",Too little,Too much,About right,Too much,NA,NA,Too little,Trump,1,NA,40-49 years old,other
+36,Female,Bachelors,Yes,"Under $10,000",NA,NA,NA,NA,Too little,About right,About right,Clinton,2,NA,30-39 years old,Other
+45,Female,Bachelors,Yes,"$90,000 ~ $129,999",Too little,Too much,About right,Too much,NA,NA,Too little,Trump,1,NA,40-49 years old,Other
 78,Female,Bachelors,Yes,NA,NA,NA,NA,NA,About right,About right,About right,Clinton,NA,NA,70-79 years old,White
 65,Male,High School,Yes,"$60,000 ~ $89,999",Too little,Too little,About right,About right,NA,NA,Too little,Clinton,1,Neither,60-69 years old,White
 35,Female,Bachelors,Yes,"$60,000 ~ $89,999",About right,Too much,Too little,Too much,NA,NA,Too little,Trump,1,NA,30-39 years old,White
@@ -1724,8 +1724,8 @@ NA,Male,High School,Yes,NA,Too much,Too much,About right,Too much,NA,NA,About ri
 42,Female,Bachelors,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,About right,Too much,Too little,Trump,NA,NA,40-49 years old,White
 NA,NA,High School,Yes,"$90,000 ~ $129,999",Too little,Too much,Too little,Too much,NA,NA,Too little,Trump,NA,NA,NA,White
 46,Female,Less than high school,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,About right,About right,Clinton,NA,NA,40-49 years old,Black
-64,Female,Bachelors,No,"$90,000 ~ $129,999",Too little,Too much,Too little,Too much,NA,NA,About right,Trump,1,Agree,60-69 years old,other
-45,Female,High School,Yes,"$20,000 ~ $39,999",Too little,About right,Too much,About right,NA,NA,Too little,Clinton,2,Disagree,40-49 years old,other
+64,Female,Bachelors,No,"$90,000 ~ $129,999",Too little,Too much,Too little,Too much,NA,NA,About right,Trump,1,Agree,60-69 years old,Other
+45,Female,High School,Yes,"$20,000 ~ $39,999",Too little,About right,Too much,About right,NA,NA,Too little,Clinton,2,Disagree,40-49 years old,Other
 67,Female,High School,Yes,"$40,000 ~ $59,999",Too little,About right,Too much,About right,NA,NA,Too little,Clinton,2,NA,60-69 years old,White
 77,Male,High School,Yes,"$40,000 ~ $59,999",About right,About right,About right,Too much,NA,NA,Too little,Trump,2,NA,70-79 years old,White
 83,Male,Graduate,Yes,"$130,000 ~ $169,999",NA,NA,NA,NA,About right,Too much,Too little,Clinton,2,Agree,80-89 years old,White
@@ -1737,11 +1737,11 @@ NA,Male,High School,Yes,"$20,000 ~ $39,999",Too much,About right,Too little,Abou
 43,Male,High School,Yes,"$60,000 ~ $89,999",About right,Too much,About right,Too much,NA,NA,Too little,Trump,1,Strongly agree,40-49 years old,White
 67,Female,Bachelors,Yes,"$130,000 ~ $169,999",Too little,About right,Too much,Too little,NA,NA,About right,Clinton,NA,Disagree,60-69 years old,White
 71,Male,Graduate,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,Too much,Too little,Trump,2,Agree,70-79 years old,White
-28,Male,Bachelors,Yes,"$60,000 ~ $89,999",Too little,Too little,Too much,About right,NA,NA,About right,Other,NA,Disagree,20-29 years old,other
+28,Male,Bachelors,Yes,"$60,000 ~ $89,999",Too little,Too little,Too much,About right,NA,NA,About right,Other,NA,Disagree,20-29 years old,Other
 NA,Male,Bachelors,Yes,NA,NA,NA,NA,NA,About right,Too much,Too little,Clinton,NA,NA,NA,White
 57,Male,Graduate,Yes,"$90,000 ~ $129,999",Too little,Too little,About right,Too little,NA,NA,Too little,Clinton,NA,Neither,50-59 years old,Black
 54,Male,High School,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,About right,Too much,Too little,Trump,NA,NA,50-59 years old,White
-68,Female,Bachelors,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,NA,NA,60-69 years old,other
+68,Female,Bachelors,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,NA,NA,60-69 years old,Other
 48,Other,High School,Yes,"$40,000 ~ $59,999",Too little,About right,About right,Too little,NA,NA,Too little,Clinton,1,Agree,40-49 years old,White
 44,Female,Associate College,Yes,"Under $10,000",Too little,About right,Too much,Too little,NA,NA,Too little,Did not vote,NA,Neither,40-49 years old,White
 57,Female,High School,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,About right,Too much,Too little,Clinton,2,Agree,50-59 years old,White
@@ -1798,14 +1798,14 @@ NA,Male,High School,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,About right,Too much,Too
 23,Female,High School,Yes,"$20,000 ~ $39,999",Too little,Too little,Too much,Too little,NA,NA,Too little,Clinton,2,NA,20-29 years old,White
 65,Female,High School,No,"$90,000 ~ $129,999",NA,NA,NA,NA,Too little,About right,Too little,Clinton,NA,NA,60-69 years old,Black
 50,Female,Associate College,Yes,NA,Too little,About right,Too little,Too much,NA,NA,Too little,Trump,1,Agree,50-59 years old,White
-NA,NA,Bachelors,Yes,Refused,About right,About right,Too much,About right,NA,NA,About right,Other,2,NA,NA,other
+NA,NA,Bachelors,Yes,Refused,About right,About right,Too much,About right,NA,NA,About right,Other,2,NA,NA,Other
 52,Female,Graduate,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,Too little,Too much,Too little,Other,1,Disagree,50-59 years old,White
 57,Male,Graduate,Yes,"$170,000 or over",NA,NA,NA,NA,Too little,About right,About right,Clinton,2,Disagree,50-59 years old,White
 24,Male,High School,Yes,"$20,000 ~ $39,999",Too little,Too little,Too much,Too little,NA,NA,Too little,Clinton,2,Strongly disagree,20-29 years old,White
 NA,Male,High School,Yes,NA,NA,NA,NA,NA,About right,Too much,Too much,Trump,1,NA,NA,White
 70,Male,Graduate,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,Too little,About right,About right,Trump,NA,NA,70-79 years old,White
 65,Female,Bachelors,No,"$170,000 or over",NA,NA,NA,NA,Too little,About right,Too little,Clinton,1,NA,60-69 years old,White
-49,Male,Bachelors,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,About right,Too little,Trump,1,Neither,40-49 years old,other
+49,Male,Bachelors,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,About right,Too little,Trump,1,Neither,40-49 years old,Other
 26,Female,Bachelors,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,About right,About right,About right,Trump,1,NA,20-29 years old,White
 34,Female,Graduate,Yes,"$60,000 ~ $89,999",About right,About right,About right,About right,NA,NA,Too much,Trump,1,Neither,30-39 years old,White
 52,Male,Less than high school,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,Too much,Too little,Trump,1,Strongly agree,50-59 years old,White
@@ -1834,7 +1834,7 @@ NA,Female,Bachelors,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,Too little,Too little,A
 NA,Male,Bachelors,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,Too little,About right,Too much,Other,1,NA,NA,Asian
 56,Female,Associate College,Yes,"$90,000 ~ $129,999",Too much,Too much,Too little,Too much,NA,NA,About right,Trump,1,NA,50-59 years old,White
 NA,Male,High School,Yes,"Under $10,000",NA,NA,NA,NA,Too much,Too much,Too little,Trump,NA,NA,NA,White
-54,Female,High School,Yes,"$170,000 or over",NA,NA,NA,NA,About right,Too much,Too little,Trump,1,NA,50-59 years old,other
+54,Female,High School,Yes,"$170,000 or over",NA,NA,NA,NA,About right,Too much,Too little,Trump,1,NA,50-59 years old,Other
 42,Female,High School,Yes,"$60,000 ~ $89,999",Too little,Too little,About right,About right,NA,NA,Too little,Clinton,NA,Strongly disagree,40-49 years old,White
 74,Female,Associate College,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,About right,Too much,Too little,Trump,NA,NA,70-79 years old,Asian
 68,Male,High School,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too much,Too much,Too little,Clinton,1,Strongly agree,60-69 years old,White
@@ -1903,7 +1903,7 @@ NA,Female,Bachelors,Yes,"$20,000 ~ $39,999",Too much,Too much,Too little,Too muc
 81,Female,Associate College,Yes,"Under $10,000",NA,NA,NA,NA,About right,About right,About right,Trump,1,NA,80-89 years old,White
 43,Female,Graduate,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,NA,NA,40-49 years old,White
 NA,Female,High School,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,Too little,About right,Too little,Clinton,2,NA,NA,White
-30,Female,High School,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,About right,Too much,Too much,Trump,1,NA,30-39 years old,other
+30,Female,High School,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,About right,Too much,Too much,Trump,1,NA,30-39 years old,Other
 NA,Male,High School,Yes,"$90,000 ~ $129,999",Too little,Too little,Too much,Too little,NA,NA,Too little,Clinton,2,Disagree,NA,White
 66,Female,High School,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,2,NA,60-69 years old,White
 57,Male,Graduate,Yes,"$170,000 or over",NA,NA,NA,NA,Too little,About right,Too little,Clinton,NA,NA,50-59 years old,White
@@ -1917,7 +1917,7 @@ NA,Male,High School,Yes,"$90,000 ~ $129,999",Too little,Too little,Too much,Too 
 56,Female,Bachelors,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,NA,NA,50-59 years old,Black
 64,Male,Bachelors,Yes,"$170,000 or over",Too little,Too little,Too much,About right,NA,NA,About right,Clinton,NA,Strongly disagree,60-69 years old,White
 60,Female,High School,Yes,"$60,000 ~ $89,999",Too little,Too little,About right,About right,NA,NA,Too little,Clinton,1,Neither,60-69 years old,Black
-66,Male,High School,Yes,"$20,000 ~ $39,999",Too little,Too much,About right,Too much,NA,NA,About right,Clinton,1,Agree,60-69 years old,other
+66,Male,High School,Yes,"$20,000 ~ $39,999",Too little,Too much,About right,Too much,NA,NA,About right,Clinton,1,Agree,60-69 years old,Other
 62,Female,Bachelors,Yes,"$60,000 ~ $89,999",Too little,Too little,About right,About right,NA,NA,Too little,Clinton,1,NA,60-69 years old,White
 68,Male,High School,Yes,"$60,000 ~ $89,999",Too little,Too little,About right,About right,NA,NA,Too little,Clinton,1,NA,60-69 years old,White
 55,Female,High School,Yes,NA,NA,NA,NA,NA,Too little,Too much,Too little,Clinton,2,Neither,50-59 years old,White
@@ -2018,13 +2018,13 @@ NA,Female,Bachelors,Yes,"$40,000 ~ $59,999",Too little,Too much,About right,Too 
 56,Male,High School,Yes,NA,NA,NA,NA,NA,Too little,About right,Too little,Clinton,1,Neither,50-59 years old,Black
 34,Male,Graduate,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,Too little,About right,About right,Clinton,2,Disagree,30-39 years old,White
 71,Male,Graduate,Yes,"$20,000 ~ $39,999",About right,About right,About right,Too much,NA,NA,About right,Trump,1,Agree,70-79 years old,White
-68,Female,Graduate,Yes,"$90,000 ~ $129,999",Too little,Too little,About right,Too little,NA,NA,Too little,Clinton,NA,Disagree,60-69 years old,other
+68,Female,Graduate,Yes,"$90,000 ~ $129,999",Too little,Too little,About right,Too little,NA,NA,Too little,Clinton,NA,Disagree,60-69 years old,Other
 73,Female,Associate College,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,About right,About right,Clinton,1,Agree,70-79 years old,Black
 35,Male,High School,Yes,"$20,000 ~ $39,999",About right,Too little,About right,About right,NA,NA,Too little,Clinton,NA,Agree,30-39 years old,Black
 79,Female,High School,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,About right,Too little,Clinton,NA,NA,70-79 years old,White
 86,Male,Graduate,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,About right,Too much,About right,Trump,2,Strongly agree,80-89 years old,White
 75,Female,Less than high school,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,About right,About right,About right,Clinton,2,Agree,70-79 years old,Black
-68,Male,Bachelors,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,About right,Too much,Too little,Trump,NA,NA,60-69 years old,other
+68,Male,Bachelors,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,About right,Too much,Too little,Trump,NA,NA,60-69 years old,Other
 29,Female,Bachelors,Yes,"$90,000 ~ $129,999",Too little,About right,Too much,About right,NA,NA,About right,Clinton,2,NA,20-29 years old,White
 69,Male,Bachelors,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,Too much,Too much,Trump,2,NA,60-69 years old,White
 39,Female,Bachelors,No,"$170,000 or over",NA,NA,NA,NA,Too little,Too much,Too much,Clinton,1,Neither,30-39 years old,White
@@ -2034,7 +2034,7 @@ NA,Female,Bachelors,Yes,"$40,000 ~ $59,999",Too little,Too much,About right,Too 
 72,Male,High School,Yes,"$10,000 ~ $19,999",NA,NA,NA,NA,Too little,About right,Too little,Clinton,NA,NA,70-79 years old,White
 42,Female,Associate College,Yes,"$40,000 ~ $59,999",Too little,Too little,About right,About right,NA,NA,Too little,Clinton,NA,Disagree,40-49 years old,White
 28,Female,Associate College,No,"$40,000 ~ $59,999",NA,NA,NA,NA,Too much,About right,About right,Clinton,2,NA,20-29 years old,Hispanic
-86,Male,Graduate,No,"$10,000 ~ $19,999",NA,NA,NA,NA,About right,Too much,About right,Trump,NA,NA,80-89 years old,other
+86,Male,Graduate,No,"$10,000 ~ $19,999",NA,NA,NA,NA,About right,Too much,About right,Trump,NA,NA,80-89 years old,Other
 65,Female,Associate College,Yes,"$90,000 ~ $129,999",Too little,About right,Too much,About right,NA,NA,Too little,Clinton,1,NA,60-69 years old,White
 62,Male,Graduate,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too much,Too much,Too little,Trump,NA,NA,60-69 years old,White
 28,Male,Bachelors,Yes,"$40,000 ~ $59,999",About right,About right,Too much,About right,NA,NA,About right,Clinton,1,NA,20-29 years old,White
@@ -2116,7 +2116,7 @@ NA,Male,Bachelors,Yes,"$60,000 ~ $89,999",Too little,About right,About right,Abo
 53,Female,Bachelors,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,About right,Too much,Too little,Trump,NA,NA,50-59 years old,White
 65,Female,High School,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,Too much,Too little,Trump,NA,NA,60-69 years old,White
 37,Male,High School,Yes,NA,About right,Too much,Too little,Too much,NA,NA,Too little,Trump,1,Strongly agree,30-39 years old,White
-43,Male,Bachelors,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,Too little,Too much,About right,Clinton,NA,NA,40-49 years old,other
+43,Male,Bachelors,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,Too little,Too much,About right,Clinton,NA,NA,40-49 years old,Other
 61,Female,High School,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,Too little,Too little,Clinton,2,NA,60-69 years old,White
 58,Female,Graduate,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,Too little,Too much,About right,Clinton,1,Disagree,50-59 years old,White
 29,Female,Graduate,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,1,NA,20-29 years old,Black
@@ -2126,7 +2126,7 @@ NA,Male,Bachelors,Yes,"$60,000 ~ $89,999",Too little,About right,About right,Abo
 38,Female,Graduate,Yes,"$130,000 ~ $169,999",Too little,About right,Too much,Too much,NA,NA,Too little,Clinton,1,Neither,30-39 years old,White
 63,Male,High School,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,Too much,Too little,Trump,1,NA,60-69 years old,White
 75,Male,Graduate,Yes,"$60,000 ~ $89,999",Too little,Too little,Too much,Too little,NA,NA,About right,Clinton,2,NA,70-79 years old,White
-61,Female,High School,Yes,"Under $10,000",Too little,Too little,Too little,Too little,NA,NA,Too little,Clinton,NA,Disagree,60-69 years old,other
+61,Female,High School,Yes,"Under $10,000",Too little,Too little,Too little,Too little,NA,NA,Too little,Clinton,NA,Disagree,60-69 years old,Other
 81,Female,High School,No,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,Too much,Too little,Did not vote,NA,NA,80-89 years old,White
 38,Transgender,High School,Yes,"$90,000 ~ $129,999",Too little,Too little,Too much,Too little,NA,NA,About right,Other,2,Neither,30-39 years old,White
 70,Female,Bachelors,Yes,Refused,Too little,Too little,Too much,About right,NA,NA,Too little,Clinton,2,Strongly agree,70-79 years old,White
@@ -2155,20 +2155,20 @@ NA,Female,High School,Yes,"$20,000 ~ $39,999",About right,About right,Too little
 52,Female,Associate College,Yes,"$40,000 ~ $59,999",About right,Too much,Too little,Too much,NA,NA,Too little,Trump,1,NA,50-59 years old,White
 63,Male,High School,Yes,"$10,000 ~ $19,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,2,NA,60-69 years old,Black
 26,Male,Bachelors,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,Too much,About right,Did not vote,NA,NA,20-29 years old,White
-46,Female,High School,No,"$40,000 ~ $59,999",Too little,Too little,Too little,Too little,NA,NA,About right,Clinton,2,Neither,40-49 years old,other
+46,Female,High School,No,"$40,000 ~ $59,999",Too little,Too little,Too little,Too little,NA,NA,About right,Clinton,2,Neither,40-49 years old,Other
 83,Male,Graduate,Yes,NA,NA,NA,NA,NA,Too little,Too much,Too little,Trump,2,NA,80-89 years old,White
 44,Female,Graduate,Yes,NA,NA,NA,NA,NA,About right,About right,Too little,Trump,1,NA,40-49 years old,White
 74,Male,Bachelors,Yes,"$10,000 ~ $19,999",NA,NA,NA,NA,Too little,About right,Too little,Other,2,Neither,70-79 years old,White
 NA,Female,Bachelors,Yes,"$90,000 ~ $129,999",Too little,Too little,Too much,About right,NA,NA,Too little,Clinton,1,NA,NA,White
 68,Female,High School,Yes,"$130,000 ~ $169,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,1,NA,60-69 years old,White
 47,Female,Bachelors,No,"$90,000 ~ $129,999",Too little,Too little,Too much,Too little,NA,NA,About right,Clinton,1,NA,40-49 years old,Black
-30,Female,Bachelors,Yes,"$60,000 ~ $89,999",Too little,Too little,Too much,About right,NA,NA,Too little,Clinton,1,Strongly disagree,30-39 years old,other
+30,Female,Bachelors,Yes,"$60,000 ~ $89,999",Too little,Too little,Too much,About right,NA,NA,Too little,Clinton,1,Strongly disagree,30-39 years old,Other
 35,Female,Bachelors,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,About right,About right,Clinton,2,NA,30-39 years old,White
 NA,Female,Graduate,Yes,"$170,000 or over",NA,NA,NA,NA,Too little,Too much,About right,Clinton,1,Disagree,NA,White
 32,Female,Bachelors,Yes,"$60,000 ~ $89,999",Too little,Too little,Too much,Too little,NA,NA,About right,Clinton,NA,Strongly disagree,30-39 years old,White
 29,Male,Graduate,Yes,"$20,000 ~ $39,999",Too little,About right,Too much,About right,NA,NA,Too much,Clinton,2,Strongly disagree,20-29 years old,White
 67,Female,High School,Yes,"$20,000 ~ $39,999",Too little,About right,Too little,Too much,NA,NA,Too little,Trump,2,NA,60-69 years old,White
-51,Male,High School,Yes,"$60,000 ~ $89,999",Too little,Too little,Too much,About right,NA,NA,About right,Clinton,1,NA,50-59 years old,other
+51,Male,High School,Yes,"$60,000 ~ $89,999",Too little,Too little,Too much,About right,NA,NA,About right,Clinton,1,NA,50-59 years old,Other
 44,Male,Graduate,Yes,"$170,000 or over",Too little,Too little,About right,About right,NA,NA,About right,Clinton,1,NA,40-49 years old,White
 38,Female,Graduate,Yes,"$20,000 ~ $39,999",Too little,Too little,Too much,Too little,NA,NA,Too little,Clinton,1,Neither,30-39 years old,Hispanic
 65,Female,Graduate,Yes,NA,About right,About right,Too much,Too much,NA,NA,Too little,Clinton,1,Disagree,60-69 years old,White
@@ -2178,9 +2178,9 @@ NA,Female,Graduate,Yes,"$170,000 or over",NA,NA,NA,NA,Too little,Too much,About 
 61,Male,High School,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,About right,Too little,Clinton,2,Strongly disagree,60-69 years old,White
 51,Male,Bachelors,Yes,"$40,000 ~ $59,999",Too much,Too much,Too little,Too much,NA,NA,Too much,Trump,1,NA,50-59 years old,White
 84,Male,High School,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,Too much,About right,Clinton,NA,NA,80-89 years old,White
-46,Female,High School,Yes,"$60,000 ~ $89,999",Too little,Too little,About right,Too little,NA,NA,Too little,Clinton,NA,Strongly disagree,40-49 years old,other
+46,Female,High School,Yes,"$60,000 ~ $89,999",Too little,Too little,About right,Too little,NA,NA,Too little,Clinton,NA,Strongly disagree,40-49 years old,Other
 65,Female,Less than high school,Yes,"$170,000 or over",Too little,Too little,About right,Too little,NA,NA,Too little,Clinton,NA,Neither,60-69 years old,White
-79,Female,High School,Yes,NA,NA,NA,NA,NA,Too little,Too much,Too little,Clinton,1,Agree,70-79 years old,other
+79,Female,High School,Yes,NA,NA,NA,NA,NA,Too little,Too much,Too little,Clinton,1,Agree,70-79 years old,Other
 51,Male,High School,Yes,"$60,000 ~ $89,999",Too little,Too much,Too little,Too little,NA,NA,Too little,Trump,1,NA,50-59 years old,White
 56,Male,High School,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,Too much,Too little,Trump,1,NA,50-59 years old,White
 56,Female,Graduate,Yes,"$90,000 ~ $129,999",Too much,Too much,Too little,Too much,NA,NA,About right,Trump,1,Strongly agree,50-59 years old,White
@@ -2195,7 +2195,7 @@ NA,NA,High School,Yes,NA,NA,NA,NA,NA,Too little,About right,Too little,Trump,NA,
 89,Female,Graduate,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,About right,Too little,Clinton,1,NA,80-89 years old,White
 76,Male,Graduate,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,Too little,Too little,About right,Clinton,NA,NA,70-79 years old,White
 79,Male,Bachelors,Yes,"$170,000 or over",Too little,Too little,About right,Too little,NA,NA,About right,Clinton,2,NA,70-79 years old,White
-67,Female,Graduate,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,1,NA,60-69 years old,other
+67,Female,Graduate,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,1,NA,60-69 years old,Other
 38,Male,Associate College,Yes,"$60,000 ~ $89,999",Too much,Too much,Too much,Too much,NA,NA,Too much,Other,NA,Neither,30-39 years old,White
 72,Male,High School,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,Too much,Too little,Trump,NA,NA,70-79 years old,White
 51,Female,Bachelors,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,About right,Too little,Clinton,1,Disagree,50-59 years old,White
@@ -2217,14 +2217,14 @@ NA,Female,High School,Yes,"$40,000 ~ $59,999",Too little,Too little,Too much,Abo
 31,Male,Graduate,Yes,"$60,000 ~ $89,999",Too little,Too little,Too much,Too little,NA,NA,Too little,Clinton,3,Strongly disagree,30-39 years old,White
 84,Male,Bachelors,Yes,"$90,000 ~ $129,999",Too little,Too little,About right,Too little,NA,NA,Too little,Clinton,1,Disagree,80-89 years old,Black
 68,Female,Associate College,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,Too much,Too little,Trump,NA,NA,60-69 years old,Black
-31,Female,High School,Yes,NA,NA,NA,NA,NA,Too little,Too little,Too little,Clinton,NA,NA,30-39 years old,other
+31,Female,High School,Yes,NA,NA,NA,NA,NA,Too little,Too little,Too little,Clinton,NA,NA,30-39 years old,Other
 68,Male,Graduate,Yes,"$60,000 ~ $89,999",About right,Too much,About right,Too much,NA,NA,About right,Trump,2,Agree,60-69 years old,White
 65,Male,Graduate,No,"$40,000 ~ $59,999",Too little,Too little,Too much,About right,NA,NA,Too little,Clinton,NA,Disagree,60-69 years old,Asian
 NA,Male,Graduate,Yes,"$40,000 ~ $59,999",Too little,About right,About right,Too much,NA,NA,Too little,Trump,NA,NA,NA,White
 NA,Female,Bachelors,No,NA,NA,NA,NA,NA,Too little,Too much,Too little,Clinton,1,NA,NA,Other
 44,Female,Graduate,No,NA,NA,NA,NA,NA,Too little,About right,About right,Clinton,NA,NA,40-49 years old,Asian
 54,Female,High School,Yes,"$60,000 ~ $89,999",Too little,Too little,Too much,Too little,NA,NA,Too little,Clinton,1,NA,50-59 years old,White
-46,Male,Graduate,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,Too much,Too much,Clinton,NA,NA,40-49 years old,other
+46,Male,Graduate,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,Too much,Too much,Clinton,NA,NA,40-49 years old,Other
 67,Male,High School,Yes,"$60,000 ~ $89,999",Too little,Too little,Too much,About right,NA,NA,Too little,Clinton,1,Neither,60-69 years old,White
 50,Female,Bachelors,Yes,"$90,000 ~ $129,999",About right,About right,Too little,Too much,NA,NA,About right,Did not vote,2,NA,50-59 years old,White
 58,Female,Bachelors,Yes,"$40,000 ~ $59,999",Too little,Too little,About right,About right,NA,NA,Too little,Clinton,2,NA,50-59 years old,White
@@ -2282,7 +2282,7 @@ NA,Female,Graduate,Yes,NA,Too little,Too little,About right,About right,NA,NA,Ab
 51,Female,Graduate,Yes,"$130,000 ~ $169,999",Too little,Too little,About right,About right,NA,NA,About right,Trump,NA,Neither,50-59 years old,White
 64,Female,High School,Yes,"$40,000 ~ $59,999",About right,About right,About right,About right,NA,NA,About right,Trump,NA,Neither,60-69 years old,White
 43,Male,Bachelors,Yes,"$130,000 ~ $169,999",Too little,Too little,Too much,Too little,NA,NA,About right,Clinton,NA,Strongly disagree,40-49 years old,White
-44,Female,Graduate,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,About right,Too much,Too little,Clinton,3,NA,40-49 years old,other
+44,Female,Graduate,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,About right,Too much,Too little,Clinton,3,NA,40-49 years old,Other
 72,Male,Bachelors,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too much,Too much,About right,Trump,NA,NA,70-79 years old,White
 56,Male,Graduate,Yes,"$130,000 ~ $169,999",Too little,Too little,Too much,Too little,NA,NA,Too little,Clinton,1,Disagree,50-59 years old,Hispanic
 61,Male,Graduate,No,"$170,000 or over",Too little,Too much,Too much,Too much,NA,NA,Too much,Trump,NA,Strongly disagree,60-69 years old,White
@@ -2340,10 +2340,10 @@ NA,Male,High School,Yes,"$170,000 or over",NA,NA,NA,NA,About right,Too much,Too 
 41,Male,Graduate,Yes,"$170,000 or over",About right,About right,About right,About right,NA,NA,About right,Clinton,2,Disagree,40-49 years old,White
 40,Male,Bachelors,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,Too much,Too much,Too little,Trump,1,NA,40-49 years old,White
 57,Male,Bachelors,Yes,"$60,000 ~ $89,999",Too little,About right,Too much,About right,NA,NA,About right,Clinton,2,Agree,50-59 years old,White
-44,Male,Bachelors,Yes,"$90,000 ~ $129,999",Too little,Too much,Too little,Too much,NA,NA,Too little,Trump,NA,Agree,40-49 years old,other
+44,Male,Bachelors,Yes,"$90,000 ~ $129,999",Too little,Too much,Too little,Too much,NA,NA,Too little,Trump,NA,Agree,40-49 years old,Other
 33,Female,Graduate,Yes,"$170,000 or over",Too little,Too little,Too much,Too little,NA,NA,Too much,Clinton,1,NA,30-39 years old,White
 23,Female,Bachelors,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,Too much,About right,Trump,2,NA,20-29 years old,White
-59,Female,High School,Yes,"$20,000 ~ $39,999",Too little,Too little,Too little,About right,NA,NA,Too little,Other,2,Neither,50-59 years old,other
+59,Female,High School,Yes,"$20,000 ~ $39,999",Too little,Too little,Too little,About right,NA,NA,Too little,Other,2,Neither,50-59 years old,Other
 52,Male,Bachelors,Yes,"$130,000 ~ $169,999",About right,Too little,About right,About right,NA,NA,Too little,Clinton,2,NA,50-59 years old,White
 26,Female,Graduate,Yes,"Under $10,000",NA,NA,NA,NA,About right,Too little,Too little,Clinton,NA,NA,20-29 years old,White
 57,Female,High School,Yes,"$20,000 ~ $39,999",Too little,Too little,Too much,About right,NA,NA,Too little,Clinton,NA,Neither,50-59 years old,White
@@ -2379,7 +2379,7 @@ NA,Male,High School,Yes,"$170,000 or over",NA,NA,NA,NA,About right,Too much,Too 
 30,Female,Graduate,Yes,"$170,000 or over",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,2,Strongly disagree,30-39 years old,Asian
 69,Female,High School,Yes,"$20,000 ~ $39,999",Too little,About right,Too little,Too much,NA,NA,About right,Trump,NA,Agree,60-69 years old,White
 83,Female,High School,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,About right,Too much,Too little,Trump,NA,NA,80-89 years old,White
-51,Male,Bachelors,No,"$170,000 or over",Too little,Too little,Too much,Too little,NA,NA,Too little,Clinton,NA,Strongly disagree,50-59 years old,other
+51,Male,Bachelors,No,"$170,000 or over",Too little,Too little,Too much,Too little,NA,NA,Too little,Clinton,NA,Strongly disagree,50-59 years old,Other
 58,Female,High School,Yes,"$10,000 ~ $19,999",Too little,Too little,Too little,Too much,NA,NA,Too little,Trump,2,Neither,50-59 years old,White
 59,Male,High School,Yes,"$20,000 ~ $39,999",Too little,Too little,Too much,Too little,NA,NA,Too little,Clinton,1,NA,50-59 years old,Black
 69,Male,Bachelors,Yes,"$40,000 ~ $59,999",Too little,Too little,Too much,Too little,NA,NA,Too little,Clinton,2,Strongly disagree,60-69 years old,White
@@ -2394,7 +2394,7 @@ NA,Male,High School,Yes,"$170,000 or over",NA,NA,NA,NA,About right,Too much,Too 
 32,Female,Bachelors,Yes,"$20,000 ~ $39,999",Too little,About right,Too little,Too much,NA,NA,Too little,Trump,2,NA,30-39 years old,White
 78,Female,Graduate,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,NA,NA,70-79 years old,White
 59,Male,High School,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,Too much,About right,Clinton,1,NA,50-59 years old,Black
-58,Male,High School,Yes,"$40,000 ~ $59,999",About right,About right,Too little,About right,NA,NA,About right,Clinton,1,Agree,50-59 years old,other
+58,Male,High School,Yes,"$40,000 ~ $59,999",About right,About right,Too little,About right,NA,NA,About right,Clinton,1,Agree,50-59 years old,Other
 67,Female,Graduate,Yes,"$90,000 ~ $129,999",Too little,Too little,Too much,Too little,NA,NA,Too little,Clinton,1,Disagree,60-69 years old,Black
 71,Female,Graduate,Yes,NA,Too little,About right,About right,About right,NA,NA,Too little,Clinton,NA,Disagree,70-79 years old,White
 55,Male,Less than high school,Yes,"$10,000 ~ $19,999",NA,NA,NA,NA,Too little,Too much,About right,Clinton,2,NA,50-59 years old,White
@@ -2417,7 +2417,7 @@ NA,NA,High School,Yes,"$10,000 ~ $19,999",About right,Too little,About right,Abo
 70,Male,High School,Yes,"$20,000 ~ $39,999",Too little,Too little,About right,Too little,NA,NA,Too little,Other,NA,Disagree,70-79 years old,White
 39,Female,High School,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,Too much,About right,Clinton,1,Strongly disagree,30-39 years old,American Native
 75,Male,High School,Yes,NA,Too little,Too little,About right,Too little,NA,NA,Too little,Clinton,1,Strongly disagree,70-79 years old,White
-71,Male,High School,Yes,"$90,000 ~ $129,999",Too little,Too little,Too much,Too little,NA,NA,Too little,Clinton,2,NA,70-79 years old,other
+71,Male,High School,Yes,"$90,000 ~ $129,999",Too little,Too little,Too much,Too little,NA,NA,Too little,Clinton,2,NA,70-79 years old,Other
 84,Female,Bachelors,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,Too little,About right,About right,Clinton,1,Disagree,80-89 years old,White
 80,Female,Less than high school,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,Too little,About right,Clinton,1,NA,80-89 years old,White
 36,Female,Graduate,Yes,"$170,000 or over",Too little,Too little,Too much,Too little,NA,NA,Too little,Clinton,NA,Disagree,30-39 years old,White
@@ -2425,12 +2425,12 @@ NA,NA,High School,Yes,"$10,000 ~ $19,999",About right,Too little,About right,Abo
 NA,Female,Bachelors,Yes,NA,NA,NA,NA,NA,About right,Too much,Too little,Trump,1,Agree,NA,White
 34,Female,Bachelors,Yes,"$170,000 or over",NA,NA,NA,NA,Too little,About right,About right,Clinton,NA,NA,30-39 years old,White
 72,Female,Bachelors,No,"$60,000 ~ $89,999",About right,About right,About right,Too little,NA,NA,About right,Clinton,NA,Neither,70-79 years old,Asian
-67,Female,Bachelors,Yes,"$60,000 ~ $89,999",Too little,Too little,Too much,About right,NA,NA,Too little,Clinton,NA,Neither,60-69 years old,other
+67,Female,Bachelors,Yes,"$60,000 ~ $89,999",Too little,Too little,Too much,About right,NA,NA,Too little,Clinton,NA,Neither,60-69 years old,Other
 81,Male,High School,Yes,"$40,000 ~ $59,999",Too little,Too much,Too little,About right,NA,NA,About right,Trump,NA,Neither,80-89 years old,White
 69,Female,Graduate,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,Too little,Too little,Clinton,1,Strongly disagree,60-69 years old,White
 63,Female,High School,Yes,"$60,000 ~ $89,999",Too little,About right,Too much,About right,NA,NA,Too little,Clinton,1,NA,60-69 years old,White
 62,Female,Bachelors,Yes,"Under $10,000",NA,NA,NA,NA,Too little,Too little,Too little,Clinton,NA,NA,60-69 years old,White
-68,Male,Graduate,Yes,"$90,000 ~ $129,999",Too little,Too little,About right,About right,NA,NA,Too little,Trump,1,Neither,60-69 years old,other
+68,Male,Graduate,Yes,"$90,000 ~ $129,999",Too little,Too little,About right,About right,NA,NA,Too little,Trump,1,Neither,60-69 years old,Other
 72,Female,Graduate,Yes,"$170,000 or over",Too little,Too little,Too much,Too little,NA,NA,About right,Clinton,2,Strongly disagree,70-79 years old,White
 76,Male,High School,Yes,"$60,000 ~ $89,999",About right,Too little,About right,Too little,NA,NA,Too little,Clinton,2,NA,70-79 years old,White
 24,NA,Bachelors,Yes,"$20,000 ~ $39,999",Too little,About right,About right,Too much,NA,NA,About right,Clinton,NA,Neither,20-29 years old,Hispanic
@@ -2466,7 +2466,7 @@ NA,Male,Associate College,Yes,"$170,000 or over",NA,NA,NA,NA,Too little,Too much
 37,Female,High School,Yes,"$10,000 ~ $19,999",NA,NA,NA,NA,Too little,Too much,Too little,Trump,NA,NA,30-39 years old,White
 66,Female,High School,Yes,"$10,000 ~ $19,999",Too little,Too much,Too much,Too much,NA,NA,About right,Clinton,NA,Agree,60-69 years old,White
 69,Female,Bachelors,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,NA,NA,60-69 years old,White
-55,Male,High School,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,1,Disagree,50-59 years old,other
+55,Male,High School,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,1,Disagree,50-59 years old,Other
 28,Female,Bachelors,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,About right,Too much,Too little,Trump,NA,NA,20-29 years old,White
 36,Male,Bachelors,Yes,"$170,000 or over",Too little,About right,About right,About right,NA,NA,About right,Clinton,2,Strongly disagree,30-39 years old,White
 74,Male,Bachelors,Yes,"$90,000 ~ $129,999",Too little,Too much,About right,Too much,NA,NA,About right,Trump,2,NA,70-79 years old,White
@@ -2480,7 +2480,7 @@ NA,Male,Associate College,Yes,"$170,000 or over",NA,NA,NA,NA,Too little,Too much
 62,Female,High School,Yes,"$170,000 or over",Too little,Too much,Too little,Too much,NA,NA,Too little,Trump,1,Strongly agree,60-69 years old,White
 31,Female,Graduate,Yes,"$40,000 ~ $59,999",Too little,Too little,About right,Too little,NA,NA,Too little,Trump,2,NA,30-39 years old,White
 78,Male,Graduate,Yes,NA,About right,Too much,About right,About right,NA,NA,About right,Trump,NA,Neither,70-79 years old,White
-75,Female,Less than high school,Yes,"Under $10,000",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,NA,NA,70-79 years old,other
+75,Female,Less than high school,Yes,"Under $10,000",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,NA,NA,70-79 years old,Other
 55,Male,High School,Yes,"$130,000 ~ $169,999",Too little,About right,Too much,Too much,NA,NA,About right,Clinton,1,NA,50-59 years old,Black
 54,Female,Graduate,Yes,"$170,000 or over",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,NA,NA,50-59 years old,White
 29,Female,Graduate,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,Too much,Too little,Trump,NA,NA,20-29 years old,Asian
@@ -2504,7 +2504,7 @@ NA,Male,Associate College,Yes,"$170,000 or over",NA,NA,NA,NA,Too little,Too much
 73,Female,High School,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,About right,Too much,Too little,Trump,NA,NA,70-79 years old,White
 68,Female,High School,Yes,"$130,000 ~ $169,999",NA,NA,NA,NA,About right,Too much,Too little,Trump,1,Agree,60-69 years old,White
 51,Female,Graduate,Yes,"$170,000 or over",Too little,Too little,Too little,Too much,NA,NA,Too little,Trump,NA,Strongly agree,50-59 years old,White
-62,Female,High School,Yes,"$20,000 ~ $39,999",Too little,Too much,Too little,Too much,NA,NA,Too little,Trump,2,NA,60-69 years old,other
+62,Female,High School,Yes,"$20,000 ~ $39,999",Too little,Too much,Too little,Too much,NA,NA,Too little,Trump,2,NA,60-69 years old,Other
 37,Male,Associate College,No,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,About right,Too little,Clinton,NA,NA,30-39 years old,Black
 62,Female,High School,Yes,NA,About right,Too little,About right,About right,NA,NA,Too little,Trump,2,NA,60-69 years old,White
 62,Male,High School,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,Too much,Too little,Trump,2,Neither,60-69 years old,Hispanic
@@ -2546,12 +2546,12 @@ NA,NA,Less than high school,NA,Refused,NA,NA,NA,NA,Too little,About right,Too li
 57,Male,Graduate,No,"$60,000 ~ $89,999",NA,NA,NA,NA,About right,About right,About right,Clinton,NA,NA,50-59 years old,White
 44,Male,High School,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,About right,Too much,Too little,Trump,1,NA,40-49 years old,White
 44,Female,Bachelors,Yes,"$40,000 ~ $59,999",About right,Too little,Too much,Too little,NA,NA,About right,Other,NA,Strongly disagree,40-49 years old,White
-56,Female,Associate College,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,About right,Too little,Clinton,2,NA,50-59 years old,other
+56,Female,Associate College,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,About right,Too little,Clinton,2,NA,50-59 years old,Other
 49,Female,Graduate,Yes,"$90,000 ~ $129,999",Too little,Too little,Too much,Too much,NA,NA,Too little,Clinton,NA,Strongly disagree,40-49 years old,White
 53,Male,Graduate,Yes,"$60,000 ~ $89,999",Too little,Too little,About right,About right,NA,NA,About right,Trump,NA,Neither,50-59 years old,White
 47,Female,High School,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,About right,Too much,Too little,Trump,1,Agree,40-49 years old,White
 31,Female,Graduate,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,Too much,Too much,About right,Trump,1,Agree,30-39 years old,White
-53,Female,Bachelors,Yes,"$130,000 ~ $169,999",Too little,Too much,Too little,Too much,NA,NA,About right,Trump,1,NA,50-59 years old,other
+53,Female,Bachelors,Yes,"$130,000 ~ $169,999",Too little,Too much,Too little,Too much,NA,NA,About right,Trump,1,NA,50-59 years old,Other
 47,Female,Associate College,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,Too much,Too little,Trump,2,NA,40-49 years old,White
 NA,Male,High School,Yes,"$90,000 ~ $129,999",About right,Too much,About right,Too much,NA,NA,Too little,Trump,NA,Disagree,NA,White
 28,Female,Bachelors,Yes,"$10,000 ~ $19,999",Too little,About right,Too little,Too little,NA,NA,Too little,Trump,1,NA,20-29 years old,White
@@ -2577,7 +2577,7 @@ NA,Male,Bachelors,Yes,NA,NA,NA,NA,NA,Too much,Too much,Too little,Trump,NA,NA,NA
 51,Male,Graduate,Yes,"$170,000 or over",NA,NA,NA,NA,About right,About right,Too much,Clinton,NA,NA,50-59 years old,White
 80,Male,Bachelors,Yes,"$60,000 ~ $89,999",Too much,Too much,Too little,Too much,NA,NA,About right,Trump,1,Disagree,80-89 years old,White
 64,Female,Associate College,Yes,"$90,000 ~ $129,999",Too little,Too much,Too little,Too much,NA,NA,Too little,Trump,NA,NA,60-69 years old,White
-61,Male,Graduate,No,"$90,000 ~ $129,999",NA,NA,NA,NA,Too little,About right,About right,Clinton,2,Disagree,60-69 years old,other
+61,Male,Graduate,No,"$90,000 ~ $129,999",NA,NA,NA,NA,Too little,About right,About right,Clinton,2,Disagree,60-69 years old,Other
 57,Female,Graduate,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,Too little,Too much,About right,Clinton,NA,NA,50-59 years old,White
 33,Female,High School,Yes,"$60,000 ~ $89,999",Too little,Too much,Too little,Too much,NA,NA,Too little,Trump,NA,NA,30-39 years old,White
 39,Male,Associate College,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,Too little,Too much,Too little,Trump,1,Agree,30-39 years old,White
@@ -2590,7 +2590,7 @@ NA,Male,High School,Yes,"$60,000 ~ $89,999",Too little,Too little,Too little,Too
 66,Male,Graduate,Yes,"$10,000 ~ $19,999",About right,Too little,Too much,About right,NA,NA,Too much,Clinton,NA,Neither,60-69 years old,White
 81,Female,Graduate,Yes,"$60,000 ~ $89,999",Too little,Too little,About right,Too little,NA,NA,About right,Clinton,1,Agree,80-89 years old,Black
 36,Male,High School,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,2,NA,30-39 years old,Black
-35,Female,Bachelors,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,About right,About right,About right,Clinton,2,Disagree,30-39 years old,other
+35,Female,Bachelors,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,About right,About right,About right,Clinton,2,Disagree,30-39 years old,Other
 71,Female,Bachelors,Yes,NA,Too little,Too little,Too much,About right,NA,NA,About right,Clinton,NA,Agree,70-79 years old,Asian
 46,Female,Graduate,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,1,Strongly disagree,40-49 years old,Black
 66,Female,High School,Yes,NA,NA,NA,NA,NA,About right,Too much,Too little,Trump,2,Agree,60-69 years old,White
@@ -2667,7 +2667,7 @@ NA,Male,High School,No,"Under $10,000",NA,NA,NA,NA,Too much,Too much,Too little,
 56,Female,High School,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,About right,Too much,Too little,Trump,1,NA,50-59 years old,White
 84,Female,High School,Yes,"$20,000 ~ $39,999",Too little,About right,About right,Too much,NA,NA,Too little,Trump,2,Strongly agree,80-89 years old,White
 68,Female,High School,Yes,"$170,000 or over",NA,NA,NA,NA,About right,Too much,Too little,Clinton,1,Disagree,60-69 years old,Black
-43,Male,Less than high school,Yes,"$10,000 ~ $19,999",NA,NA,NA,NA,Too little,Too little,Too little,Did not vote,NA,NA,40-49 years old,other
+43,Male,Less than high school,Yes,"$10,000 ~ $19,999",NA,NA,NA,NA,Too little,Too little,Too little,Did not vote,NA,NA,40-49 years old,Other
 68,Male,Bachelors,Yes,"$170,000 or over",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,1,NA,60-69 years old,White
 60,Female,Less than high school,Yes,"$40,000 ~ $59,999",Too little,Too little,About right,Too little,NA,NA,Too little,Clinton,2,Agree,60-69 years old,White
 75,Female,Bachelors,Yes,"Under $10,000",NA,NA,NA,NA,Too little,About right,Too little,Clinton,NA,NA,70-79 years old,White
@@ -2713,14 +2713,14 @@ NA,Male,High School,No,"Under $10,000",NA,NA,NA,NA,Too much,Too much,Too little,
 51,Male,Graduate,Yes,"$90,000 ~ $129,999",Too little,Too much,Too little,Too much,NA,NA,Too much,Trump,1,NA,50-59 years old,White
 34,Male,High School,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,About right,Too much,Too little,Trump,1,NA,30-39 years old,White
 70,Male,High School,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,About right,Too little,Trump,1,Strongly agree,70-79 years old,White
-76,Male,Associate College,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,About right,Too much,Too little,Trump,1,NA,70-79 years old,other
+76,Male,Associate College,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,About right,Too much,Too little,Trump,1,NA,70-79 years old,Other
 71,Male,High School,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,Too much,Too much,About right,Trump,2,NA,70-79 years old,White
 54,Female,Bachelors,Yes,"$20,000 ~ $39,999",Too little,Too little,About right,Too much,NA,NA,About right,Clinton,NA,Disagree,50-59 years old,White
 NA,Male,High School,Yes,"$40,000 ~ $59,999",NA,NA,NA,NA,Too little,Too much,About right,Clinton,NA,NA,NA,White
 30,Female,Graduate,Yes,"$40,000 ~ $59,999",Too little,Too little,Too much,About right,NA,NA,About right,Clinton,NA,Disagree,30-39 years old,White
 NA,Male,Bachelors,Yes,NA,About right,Too much,About right,Too much,NA,NA,About right,Trump,1,Agree,NA,White
 33,Female,Bachelors,Yes,"$170,000 or over",Too little,About right,Too little,Too much,NA,NA,About right,Trump,1,NA,30-39 years old,White
-26,Male,High School,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,Too much,Too little,Trump,1,Agree,20-29 years old,other
+26,Male,High School,Yes,"$20,000 ~ $39,999",NA,NA,NA,NA,Too little,Too much,Too little,Trump,1,Agree,20-29 years old,Other
 47,Male,Associate College,Yes,"$60,000 ~ $89,999",Too little,Too little,Too little,Too much,NA,NA,About right,Trump,1,NA,40-49 years old,White
 70,Male,Bachelors,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,Too little,Too much,About right,Clinton,1,NA,70-79 years old,White
 64,Female,Graduate,Yes,"$90,000 ~ $129,999",NA,NA,NA,NA,About right,About right,About right,Trump,2,NA,60-69 years old,White
@@ -2744,7 +2744,7 @@ NA,Male,Bachelors,Yes,NA,About right,Too much,About right,Too much,NA,NA,About r
 38,Female,Bachelors,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,About right,Too little,Other,NA,NA,30-39 years old,White
 57,Male,High School,Yes,"$10,000 ~ $19,999",Too little,Too much,About right,Too much,NA,NA,Too little,Trump,NA,Agree,50-59 years old,White
 68,Female,High School,Yes,"$60,000 ~ $89,999",NA,NA,NA,NA,Too little,Too much,Too little,Trump,1,Strongly agree,60-69 years old,White
-34,Male,Graduate,Yes,"$90,000 ~ $129,999",Too little,Too little,Too much,Too little,NA,NA,Too little,Other,2,Disagree,30-39 years old,other
+34,Male,Graduate,Yes,"$90,000 ~ $129,999",Too little,Too little,Too much,Too little,NA,NA,Too little,Other,2,Disagree,30-39 years old,Other
 67,Male,Graduate,Yes,"$170,000 or over",NA,NA,NA,NA,About right,About right,About right,Trump,1,Neither,60-69 years old,White
 75,Male,Associate College,Yes,"$20,000 ~ $39,999",About right,Too little,Too little,Too much,NA,NA,About right,Clinton,1,NA,70-79 years old,White
 30,Male,High School,Yes,"$130,000 ~ $169,999",NA,NA,NA,NA,Too little,Too much,Too little,Clinton,NA,NA,30-39 years old,Asian

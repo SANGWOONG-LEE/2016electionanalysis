@@ -1,5 +1,5 @@
 ---
-title: "Numerous variables relating to 2016 election in 2021 US GSS^[Code and data are available at: https://github.com/SANGWOONG-LEE/2016electionanalysis.git]"
+title: "Numerous variables relating to 2016 election in 2021 US GSS^[Code and data are available at: https://github.com/SANGWOONG-LEE/2016electionanalysis]"
 subtitle: "Possible factors effecting 2016 election"
 author: 
   - SangWoong Lee
@@ -71,6 +71,15 @@ Considering the result above, our data sample is fairly recruited.
 
 
 ```{r, echo=FALSE}
+reduced_data$pres16 <- factor(reduced_data$pres16, levels = c("Clinton","Trump","Other","Did not vote"))
+
+
+reduced_data$Family_income <- factor(reduced_data$Family_income, 
+                                     levels = c("Under $10,000","$10,000 ~ $19,999","$20,000 ~ $39,999","$40,000 ~ $59,999", 
+                                                "$60,000 ~ $89,999","$90,000 ~ $129,999","$130,000 ~ $169,999","$170,000 or over"))
+
+reduced_data$Immigration <- factor(reduced_data$Immigration, levels = c("Strongly disagree","Disagree", "Neither","Agree","Strongly agree"))
+
 reduced_data %>%
   drop_na(age_group) %>%
   ggplot(aes(x = age_group, fill = age_group)) +
@@ -92,23 +101,14 @@ reduced_data %>%
   theme(legend.position = "none")
 
 reduced_data %>%
-  ggplot(aes(x = pres16, fill = pres16)) +
+  ggplot(aes(x = pres16, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
   geom_bar() +
   scale_fill_manual("Candidate", values = c("Clinton" = "#01378C", "Trump" = "#ff3d3d", "Other" = "#2cd18c", "Did not vote" = "#dede1b")) +
   labs(x = element_blank(),
        y = element_blank(),
-       title = "Surveyee's vote choice of 2016 Presidential election",
+       title = "Surveyee's Vote Choice of 2016 Presidential Election",
        caption = "Figure 3: Distribution of survey respondents' vote choice") +
   theme(legend.position = "none")
-
-
-# reduced_data %>%
-#   ggplot(aes(x = age, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
-#   geom_bar() +
-#   scale_fill_manual("Candidate", values = c("Clinton" = "#01378C", "Trump" = "#ff3d3d", "Other" = "#2cd18c", "Did not vote" = "#dede1b")) +
-#   labs(fil = "Candidate")
-
-reduced_data$pres16 <- factor(reduced_data$pres16, levels = c("Clinton","Trump","Other","Did not vote"))
 
 reduced_data %>%
   drop_na(nation_race) %>%
@@ -124,10 +124,14 @@ reduced_data %>%
   theme(legend.title = element_blank())
 
 reduced_data %>%
-  ggplot(aes(x = pres16, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
+  ggplot(aes(x = born_US, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
   geom_bar() +
   scale_fill_manual("Candidate", values = c("Clinton" = "#01378C", "Trump" = "#ff3d3d", "Other" = "#2cd18c", "Did not vote" = "#dede1b")) +
-  labs(fil = "Candidate")
+  labs(x = element_blank(),
+       y = element_blank(),
+       title = "Surveyee's Vote Choice of 2016 Presidential Election by Brith Place",
+       caption = "Figure 5: Distribution of survey respondents' vote choice by birth place",
+       fil = "Candidate")
   
 # reduced_data %>%
 #   ggplot(aes(x = gender, fill = gender)) +
@@ -135,11 +139,11 @@ reduced_data %>%
 #   scale_fill_brewer(palette = "pink")
 
   
-reduced_data %>%
-  ggplot(aes(x = gender, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
-  geom_bar() +
-  scale_fill_manual("Candidate", values = c("Clinton" = "#01378C", "Trump" = "#ff3d3d", "Other" = "#2cd18c", "Did not vote" = "#dede1b")) +
-  labs(fil = "Candidate")
+# reduced_data %>%
+#   ggplot(aes(x = gender, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
+#   geom_bar() +
+#   scale_fill_manual("Candidate", values = c("Clinton" = "#01378C", "Trump" = "#ff3d3d", "Other" = "#2cd18c", "Did not vote" = "#dede1b")) +
+#   labs(fil = "Candidate")
 
 reduced_data %>%
   ggplot(aes(x = degree, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
@@ -147,15 +151,6 @@ reduced_data %>%
   scale_fill_manual("Candidate", values = c("Clinton" = "#01378C", "Trump" = "#ff3d3d", "Other" = "#2cd18c", "Did not vote" = "#dede1b")) +
   labs(fil = "Candidate")
 
-reduced_data %>%
-  ggplot(aes(x = born_US, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
-  geom_bar() +
-  scale_fill_manual("Candidate", values = c("Clinton" = "#01378C", "Trump" = "#ff3d3d", "Other" = "#2cd18c", "Did not vote" = "#dede1b")) +
-  labs(fil = "Candidate")
-
-reduced_data$Family_income <- factor(reduced_data$Family_income, 
-                                     levels = c("Under $10,000","$10,000 ~ $19,999","$20,000 ~ $39,999","$40,000 ~ $59,999", 
-                                                "$60,000 ~ $89,999","$90,000 ~ $129,999","$130,000 ~ $169,999","$170,000 or over"))
 reduced_data %>%
   ggplot(aes(x = Family_income, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
   geom_bar() +
@@ -218,8 +213,6 @@ reduced_data %>%
   geom_bar() +
   labs(fill = "Family Income") +
   coord_flip()
-
-reduced_data$Immigration <- factor(reduced_data$Immigration, levels = c("Strongly disagree","Disagree", "Neither","Agree","Strongly agree"))
 
 reduced_data %>%
   ggplot(aes(x = Immigration, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
