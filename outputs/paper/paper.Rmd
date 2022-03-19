@@ -96,8 +96,8 @@ reduced_data %>%
   geom_bar() +
   labs(x = element_blank(),
        y = element_blank(),
-       title = "Survey Respondents' race",
-       caption = "Figure 2: Distribution of survey respondents' Race") +
+       title = "Survey Respondents' Race",
+       caption = "Figure 2: Distribution of survey respondents' race") +
   theme(legend.position = "none")
 
 reduced_data %>%
@@ -130,7 +130,7 @@ reduced_data %>%
   labs(x = element_blank(),
        y = element_blank(),
        title = "Is the US Spending Enough to Improve Conditions of Black Population?",
-       caption = "Figure 5: Opinion on National Spending on Improving Conditions of Black Population") +
+       caption = "Figure 5: Opinion on national spending on improving conditions of black population") +
   facet_wrap(~ pres16) + 
   theme(legend.title = element_blank())
 
@@ -143,12 +143,6 @@ reduced_data %>%
        title = "Surveyee's Vote Choice of 2016 Presidential Election by Brith Place",
        caption = "Figure 6: Distribution of survey respondents' vote choice by birth place",
        fil = "Candidate")
-  
-# reduced_data %>%
-#   ggplot(aes(x = gender, fill = gender)) +
-#   geom_bar() +
-#   scale_fill_brewer(palette = "pink")
-
   
 # reduced_data %>%
 #   ggplot(aes(x = gender, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
@@ -164,8 +158,8 @@ reduced_data %>%
   coord_flip() +
   labs(x = element_blank(),
        y = element_blank(),
-       title = "Is the US Spending Enough on Welfare?",
-       caption = "Figure 7: Opinion on National Spending on welfare") +
+       title = "Is the Government Spending Enough on Welfare?",
+       caption = "Figure 7: Opinion on national spending on welfare") +
   facet_wrap(~ pres16) + 
   theme(legend.title = element_blank())
 
@@ -173,34 +167,88 @@ reduced_data %>%
 
 
 reduced_data %>%
+  drop_na(degree) %>%
   ggplot(aes(x = degree, fill = factor(Family_income, 
                                        levels = c("$170,000 or over","$130,000 ~ $169,999","$90,000 ~ $129,999","$60,000 ~ $89,999",
                                                   "$40,000 ~ $59,999","$20,000 ~ $39,999","$10,000 ~ $19,999","Under $10,000")))) +
   geom_bar(position = "dodge") +
   labs(fill = "Family Income") +
-  coord_flip()
-```
-
-``````{r, echo=FALSE}
-
-reduced_data %>%
-  ggplot(aes(x = degree, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
-  geom_bar() +
-  scale_fill_manual("Candidate", values = c("Clinton" = "#01378C", "Trump" = "#ff3d3d", "Other" = "#2cd18c", "Did not vote" = "#dede1b")) +
-  labs(fil = "Candidate")
+  coord_flip() +
+  facet_wrap(~pres16) +
+  labs(x = element_blank(),
+       y = element_blank(),
+       title = "Education, Income and its Effect to the Vote",
+       caption = "Figure 8: Distribution of votes by degree and family income")
 
 reduced_data %>%
-  ggplot(aes(x = Family_income, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
+  ggplot(aes(x = Immigration, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
   geom_bar() +
   scale_fill_manual("Candidate", values = c("Clinton" = "#01378C", "Trump" = "#ff3d3d", "Other" = "#2cd18c", "Did not vote" = "#dede1b")) +
   labs(fil = "Candidate") +
-  coord_flip()
+  coord_flip() +
+  labs(x = element_blank(),
+       y = element_blank(),
+       title = "Should the Government Limit Immigration?",
+       caption = "Figure 9: Opinion on wheter the US should limit immigration to protect their culture") +
+  facet_wrap(~pres16)
 
 reduced_data %>%
   ggplot(aes(x = nation_education, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
-  geom_bar() +
+  geom_bar(position = "dodge") +
   scale_fill_manual("Candidate", values = c("Clinton" = "#01378C", "Trump" = "#ff3d3d", "Other" = "#2cd18c", "Did not vote" = "#dede1b")) +
-  labs(fil = "Candidate")
+  labs(fil = "Candidate") +
+  labs(x = element_blank(),
+       y = element_blank(),
+       title = "Is the Government Spending Enough on Improving Education?",
+       caption = "Figure 10: Surveyee's opinion on government's budget on education improvement")
+
+
+reduced_data %>%
+  ggplot(aes(x = nation_arms, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
+  geom_bar(position = "dodge") +
+  scale_fill_manual("Candidate", values = c("Clinton" = "#01378C", "Trump" = "#ff3d3d", "Other" = "#2cd18c", "Did not vote" = "#dede1b")) +
+  labs(fil = "Candidate") +
+  labs(x = element_blank(),
+       y = element_blank(),
+       title = "Is the Government Spending Enough on Arms and National Defense?",
+       caption = "Figure 11: Surveyee's opinion on government's budget on arms")
+
+
+reduced_data %>%
+  ggplot(aes(x = Assistance_to_the_poor, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
+  geom_bar(position = "dodge") +
+  scale_fill_manual("Candidate", values = c("Clinton" = "#01378C", "Trump" = "#ff3d3d", "Other" = "#2cd18c", "Did not vote" = "#dede1b")) +
+  labs(fil = "Candidate") +
+  labs(x = element_blank(),
+       y = element_blank(),
+       title = "Is the Government Spending Enough to Assis the Poor?",
+       caption = "Figure 12: Surveyee's opinion on government's budget on assisting the poor")
+
+reduced_data %>%
+  ggplot(aes(x = Assistance_to_other_countries, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
+  geom_bar(position = "dodge") +
+  scale_fill_manual("Candidate", values = c("Clinton" = "#01378C", "Trump" = "#ff3d3d", "Other" = "#2cd18c", "Did not vote" = "#dede1b")) +
+  labs(fil = "Candidate") +
+  labs(x = element_blank(),
+       y = element_blank(),
+       title = "Is the Government Spending Enough to Assis Other Countries?",
+       caption = "Figure 13: Surveyee's opinion on government's budget on assisting other countries")
+```
+
+```{r, echo=FALSE}
+
+# reduced_data %>%
+#   ggplot(aes(x = degree, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
+#   geom_bar() +
+#   scale_fill_manual("Candidate", values = c("Clinton" = "#01378C", "Trump" = "#ff3d3d", "Other" = "#2cd18c", "Did not vote" = "#dede1b")) +
+#   labs(fil = "Candidate")
+
+# reduced_data %>%
+#   ggplot(aes(x = Family_income, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
+#   geom_bar() +
+#   scale_fill_manual("Candidate", values = c("Clinton" = "#01378C", "Trump" = "#ff3d3d", "Other" = "#2cd18c", "Did not vote" = "#dede1b")) +
+#   labs(fil = "Candidate") +
+#   coord_flip()
 
 # reduced_data %>%
 #   ggplot(aes(x = nation_race, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
@@ -208,29 +256,12 @@ reduced_data %>%
 #   scale_fill_manual("Candidate", values = c("Clinton" = "#01378C", "Trump" = "#ff3d3d", "Other" = "#2cd18c", "Did not vote" = "#dede1b")) +
 #   labs(fil = "Candidate")
 
-reduced_data %>%
-  ggplot(aes(x = nation_arms, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
-  geom_bar() +
-  scale_fill_manual("Candidate", values = c("Clinton" = "#01378C", "Trump" = "#ff3d3d", "Other" = "#2cd18c", "Did not vote" = "#dede1b")) +
-  labs(fil = "Candidate")
 
 # reduced_data %>%
 #   ggplot(aes(x = nation_welfare, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
 #   geom_bar() +
 #   scale_fill_manual("Candidate", values = c("Clinton" = "#01378C", "Trump" = "#ff3d3d", "Other" = "#2cd18c", "Did not vote" = "#dede1b")) +
 #   labs(fil = "Candidate")
-
-reduced_data %>%
-  ggplot(aes(x = Assistance_to_the_poor, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
-  geom_bar() +
-  scale_fill_manual("Candidate", values = c("Clinton" = "#01378C", "Trump" = "#ff3d3d", "Other" = "#2cd18c", "Did not vote" = "#dede1b")) +
-  labs(fil = "Candidate")
-
-reduced_data %>%
-  ggplot(aes(x = Assistance_to_other_countries, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
-  geom_bar() +
-  scale_fill_manual("Candidate", values = c("Clinton" = "#01378C", "Trump" = "#ff3d3d", "Other" = "#2cd18c", "Did not vote" = "#dede1b")) +
-  labs(fil = "Candidate")
 
 # reduced_data %>%
 #   ggplot(aes(x = social_security, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
@@ -243,14 +274,6 @@ reduced_data %>%
 #   geom_bar() +
 #   scale_fill_manual("Candidate", values = c("Clinton" = "#01378C", "Trump" = "#ff3d3d", "Other" = "#2cd18c", "Did not vote" = "#dede1b")) +
 #   labs(fil = "Candidate")
-
-reduced_data %>%
-  ggplot(aes(x = Immigration, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
-  geom_bar() +
-  scale_fill_manual("Candidate", values = c("Clinton" = "#01378C", "Trump" = "#ff3d3d", "Other" = "#2cd18c", "Did not vote" = "#dede1b")) +
-  labs(fil = "Candidate") +
-  coord_flip() +
-  facet_wrap(~born_US)
 
 ```
 
