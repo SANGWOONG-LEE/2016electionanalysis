@@ -36,6 +36,14 @@ However, considering
 # Data
 ```{r, include=FALSE, echo=FALSE}
 reduced_data <- read_csv("outputs/data/prepared_gss.csv")
+reduced_data$pres16 <- factor(reduced_data$pres16, levels = c("Clinton","Trump","Other","Did not vote"))
+
+
+reduced_data$Family_income <- factor(reduced_data$Family_income, 
+                                     levels = c("Under $10,000","$10,000 ~ $19,999","$20,000 ~ $39,999","$40,000 ~ $59,999", 
+                                                "$60,000 ~ $89,999","$90,000 ~ $129,999","$130,000 ~ $169,999","$170,000 or over"))
+
+reduced_data$Immigration <- factor(reduced_data$Immigration, levels = c("Strongly disagree","Disagree", "Neither","Agree","Strongly agree"))
 ```
 * number of survey participants of age in the range of 20~40 is unexpectedly low -> not many people in ages between 20-40 participated in the survey
 * Clinton's vote is higher than trump's vote in this survey, which contradicts the election result of 2016, reader should keep in mind that this survey is more biased towards clinton.
@@ -71,14 +79,6 @@ Considering the result above, our data sample is fairly recruited.
 
 
 ```{r, echo=FALSE}
-reduced_data$pres16 <- factor(reduced_data$pres16, levels = c("Clinton","Trump","Other","Did not vote"))
-
-
-reduced_data$Family_income <- factor(reduced_data$Family_income, 
-                                     levels = c("Under $10,000","$10,000 ~ $19,999","$20,000 ~ $39,999","$40,000 ~ $59,999", 
-                                                "$60,000 ~ $89,999","$90,000 ~ $129,999","$130,000 ~ $169,999","$170,000 or over"))
-
-reduced_data$Immigration <- factor(reduced_data$Immigration, levels = c("Strongly disagree","Disagree", "Neither","Agree","Strongly agree"))
 
 reduced_data %>%
   drop_na(age_group) %>%
@@ -101,13 +101,24 @@ reduced_data %>%
   theme(legend.position = "none")
 
 reduced_data %>%
+  ggplot(aes(x = gender, fill = gender)) +
+  geom_bar() +
+  #scale_fill_manual("gender", values = c("Clinton" = "#01378C", "Trump" = "#ff3d3d", "Other" = "#2cd18c", "Did not vote" = "#dede1b")) +
+  labs(x = element_blank(),
+       y = element_blank(),
+       title = "Survey Respondents' Gender",
+       caption = "Figure 3: Distribution of survey respondents' gender") +
+  theme(legend.position = "none")
+
+
+reduced_data %>%
   ggplot(aes(x = pres16, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
   geom_bar() +
   scale_fill_manual("Candidate", values = c("Clinton" = "#01378C", "Trump" = "#ff3d3d", "Other" = "#2cd18c", "Did not vote" = "#dede1b")) +
   labs(x = element_blank(),
        y = element_blank(),
        title = "Surveyee's Vote Choice of 2016 Presidential Election",
-       caption = "Figure 3: Distribution of survey respondents' vote choice") +
+       caption = "Figure 4: Distribution of survey respondents' vote choice") +
   theme(legend.position = "none")
 
 reduced_data %>%
@@ -118,8 +129,8 @@ reduced_data %>%
   coord_flip() +
   labs(x = element_blank(),
        y = element_blank(),
-       title = "Is the US Governemnt Spending Enough to Improve Conditions of Black Population?",
-       caption = "Figure 4: Opinion on National Spending on Improving Conditions of Black Population") +
+       title = "Is the US Spending Enough to Improve Conditions of Black Population?",
+       caption = "Figure 5: Opinion on National Spending on Improving Conditions of Black Population") +
   facet_wrap(~ pres16) + 
   theme(legend.title = element_blank())
 
@@ -130,7 +141,7 @@ reduced_data %>%
   labs(x = element_blank(),
        y = element_blank(),
        title = "Surveyee's Vote Choice of 2016 Presidential Election by Brith Place",
-       caption = "Figure 5: Distribution of survey respondents' vote choice by birth place",
+       caption = "Figure 6: Distribution of survey respondents' vote choice by birth place",
        fil = "Candidate")
   
 # reduced_data %>%
@@ -147,15 +158,27 @@ reduced_data %>%
 
 reduced_data %>%
   drop_na(nation_welfare) %>%
+  drop_na(race) %>%
   ggplot(aes(x = race, fill = nation_welfare)) +
   geom_bar() +
   coord_flip() +
   labs(x = element_blank(),
        y = element_blank(),
-       title = "Is the US Government Spending Enough on Welfare?",
-       caption = "Figure 6: Opinion on National Spending on welfare") +
+       title = "Is the US Spending Enough on Welfare?",
+       caption = "Figure 7: Opinion on National Spending on welfare") +
   facet_wrap(~ pres16) + 
   theme(legend.title = element_blank())
+
+
+
+
+reduced_data %>%
+  ggplot(aes(x = degree, fill = factor(Family_income, 
+                                       levels = c("$170,000 or over","$130,000 ~ $169,999","$90,000 ~ $129,999","$60,000 ~ $89,999",
+                                                  "$40,000 ~ $59,999","$20,000 ~ $39,999","$10,000 ~ $19,999","Under $10,000")))) +
+  geom_bar(position = "dodge") +
+  labs(fill = "Family Income") +
+  coord_flip()
 ```
 
 ``````{r, echo=FALSE}
@@ -179,11 +202,11 @@ reduced_data %>%
   scale_fill_manual("Candidate", values = c("Clinton" = "#01378C", "Trump" = "#ff3d3d", "Other" = "#2cd18c", "Did not vote" = "#dede1b")) +
   labs(fil = "Candidate")
 
-reduced_data %>%
-  ggplot(aes(x = nation_race, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
-  geom_bar() +
-  scale_fill_manual("Candidate", values = c("Clinton" = "#01378C", "Trump" = "#ff3d3d", "Other" = "#2cd18c", "Did not vote" = "#dede1b")) +
-  labs(fil = "Candidate")
+# reduced_data %>%
+#   ggplot(aes(x = nation_race, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
+#   geom_bar() +
+#   scale_fill_manual("Candidate", values = c("Clinton" = "#01378C", "Trump" = "#ff3d3d", "Other" = "#2cd18c", "Did not vote" = "#dede1b")) +
+#   labs(fil = "Candidate")
 
 reduced_data %>%
   ggplot(aes(x = nation_arms, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
@@ -209,32 +232,25 @@ reduced_data %>%
   scale_fill_manual("Candidate", values = c("Clinton" = "#01378C", "Trump" = "#ff3d3d", "Other" = "#2cd18c", "Did not vote" = "#dede1b")) +
   labs(fil = "Candidate")
 
-reduced_data %>%
-  ggplot(aes(x = social_security, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
-  geom_bar() +
-  scale_fill_manual("Candidate", values = c("Clinton" = "#01378C", "Trump" = "#ff3d3d", "Other" = "#2cd18c", "Did not vote" = "#dede1b")) +
-  labs(fil = "Candidate")
+# reduced_data %>%
+#   ggplot(aes(x = social_security, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
+#   geom_bar() +
+#   scale_fill_manual("Candidate", values = c("Clinton" = "#01378C", "Trump" = "#ff3d3d", "Other" = "#2cd18c", "Did not vote" = "#dede1b")) +
+#   labs(fil = "Candidate")
 
-reduced_data %>%
-  ggplot(aes(x = race, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
-  geom_bar() +
-  scale_fill_manual("Candidate", values = c("Clinton" = "#01378C", "Trump" = "#ff3d3d", "Other" = "#2cd18c", "Did not vote" = "#dede1b")) +
-  labs(fil = "Candidate")
-
-reduced_data %>%
-  ggplot(aes(x = degree, fill = factor(Family_income, 
-                                       levels = c("$170,000 or over","$130,000 ~ $169,999","$90,000 ~ $129,999","$60,000 ~ $89,999",
-                                                  "$40,000 ~ $59,999","$20,000 ~ $39,999","$10,000 ~ $19,999","Under $10,000")))) +
-  geom_bar() +
-  labs(fill = "Family Income") +
-  coord_flip()
+# reduced_data %>%
+#   ggplot(aes(x = race, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
+#   geom_bar() +
+#   scale_fill_manual("Candidate", values = c("Clinton" = "#01378C", "Trump" = "#ff3d3d", "Other" = "#2cd18c", "Did not vote" = "#dede1b")) +
+#   labs(fil = "Candidate")
 
 reduced_data %>%
   ggplot(aes(x = Immigration, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
   geom_bar() +
   scale_fill_manual("Candidate", values = c("Clinton" = "#01378C", "Trump" = "#ff3d3d", "Other" = "#2cd18c", "Did not vote" = "#dede1b")) +
   labs(fil = "Candidate") +
-  coord_flip()
+  coord_flip() +
+  facet_wrap(~born_US)
 
 ```
 
