@@ -67,11 +67,16 @@ Why did we clean some variables?
 what the variables look like using graphs or tables discussion of the observations.
 Summary statistics should also be included 
 
-Original dataset is collected through US GSS, which is aimed for the goal that enabling the cleanest comparison to show changes in public opinion in the United States. Usually, it is conducted in person, however because of pandemic, it was conducted via online. Among numerous interesting findings from the dataset, we choose to analyze the 2016 United States presidential election. This slightly deviates the US GSS goal, but we thought it clearly represents current situation of US. However, choosing specific variables related to the election was not easy since deciding who to vote is followed by countless factors.After looking over the variables, we chose age,race,gender,degree,born US, Family income, national spending on education, race, arms, welfare, the poor, the other countries, social security and immigration as potential variables. 
+Original dataset is collected through US GSS, which is aimed for the goal that enabling the cleanest comparison to show changes in public opinion in the United States. Usually, it is conducted in person, however because of pandemic, this time it was conducted via online. Among numerous interesting findings from the dataset, we choose to analyze the 2016 United States presidential election. This slightly deviates the US GSS goal, but we thought it clearly represents current situation of US. However, choosing specific variables related to the election was not easy since deciding who to vote is followed by countless factors. After looking over the variables, we chose age,race,gender,degree,born US, Family income, national spending on education, race, arms, welfare, the poor, the other countries, social security and immigration as potential variables. 
 We mainly divided the variables into two parts: personal information (Age, race, gender, degree, born US and family income) and thoughts on national policies (national spending on education, race, arms, welfare, the poor, the other countries, social security and immigration).
-As I mentioned above, deciding who to vote is followed by very complex system of thoughts. Thus, as we cut down the variables, they do not guarantee 100% of the vote. 
+As I mentioned above, deciding who to vote is followed by very complex system of thoughts. Thus, as we cut down the variables, they do not guarantee 100% of the vote. Also, because we did not exclude non-response from our dataset, for some graphs it caused difficulties in interpretation.
+There exists similar survey similar to ours, CNN exit polls, however it is not obtain the datasets they used.
+Now, let's get into the variables in details. One thing that we foucsed was whether respondents were equivalently recruited. To do this, we first have to look at respondents' personal information. If you take a look at fig(), there is not much to notice. Few things to notice are there are more female respondents than male, and for race, there are more White than others. However, following US demographics, White 76.3%, Black: 13.4%, American Indian: 1.3%, Asian: 5.9%, Hispanic: 18.5%, our sample is fairly well recruited. 
 
-US demographics: White 76.3%, Black: 13.4%, American Indian: 1.3%, Asian: 5.9%, Hispanic: 18.5%
+
+
+
+
 https://www.census.gov/quickfacts/fact/table/US/PST045221.
 Considering the result above, our data sample is fairly recruited. 
 
