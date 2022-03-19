@@ -63,6 +63,20 @@ reduced_data <-
          Immigration = immlimit)
 
 rm(raw_data)
+
+# Add age_group column based on age column
+reduced_data <- reduced_data %>% 
+  mutate(age_group = reduced_data$age %>% cut(breaks = seq(19, 89, by = 10))) %>%
+  mutate(age_group = case_when(
+    age_group == "(19,29]" ~ "20-29 years old",
+    age_group == "(29,39]" ~ "30-39 years old",
+    age_group == "(39,49]" ~ "40-49 years old",
+    age_group == "(49,59]" ~ "50-59 years old",
+    age_group == "(59,69]" ~ "60-69 years old",
+    age_group == "(69,79]" ~ "70-79 years old",
+    age_group == "(79,89]" ~ "80-89 years old"
+  ))
+
 # # Recode to rename variables in imigration according to options from the Codebook 'GSS 2021 Codebook R1b.pdf'.
 # The question was America should limit immigration in order to protect our national way of life
 reduced_data <- 
@@ -192,18 +206,18 @@ reduced_data$race_sum <- reduced_data %>%
 # Create a column named "race" and assign values according to the columns from the survey.
 reduced_data <- reduced_data %>%
   mutate(race = case_when(
-    raceacs1 == 1 ~ "white",
-    raceacs2 == 1 ~ "black",
-    raceacs3 == 1 ~ "american_native",
-    raceacs4 == 1 ~ "asian",
-    raceacs5 == 1 ~ "asian",
-    raceacs6 == 1 ~ "asian",
-    raceacs7 == 1 ~ "asian",
-    raceacs8 == 1 ~ "asian",
-    raceacs9 == 1 ~ "asian",
-    raceacs10 == 1 ~ "asian",
-    raceacs15 == 1 ~ "other",
-    raceacs16 == 1 ~ "hispanic"
+    raceacs1 == 1 ~ "White",
+    raceacs2 == 1 ~ "Black",
+    raceacs3 == 1 ~ "American Native",
+    raceacs4 == 1 ~ "Asian",
+    raceacs5 == 1 ~ "Asian",
+    raceacs6 == 1 ~ "Asian",
+    raceacs7 == 1 ~ "Asian",
+    raceacs8 == 1 ~ "Asian",
+    raceacs9 == 1 ~ "Asian",
+    raceacs10 == 1 ~ "Asian",
+    raceacs15 == 1 ~ "Other",
+    raceacs16 == 1 ~ "Hispanic"
     ))
 
 # If a person is of mixed race, that person is assigned value "other"
