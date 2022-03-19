@@ -7,7 +7,8 @@ author:
 date: "`r format(Sys.time(), '%d %B %Y')`"
 abstract: "First sentence (what was done). Second sentence(what was found). Third sentence (why this matters). Fourth sentence."
 output:
-  bookdown::pdf_document2
+  bookdown::pdf_document2:
+    fig_caption: yes
 toc: FALSE
 bibliography: references.bib
 ---
@@ -17,6 +18,7 @@ knitr::opts_chunk$set(echo = TRUE)
 knitr::opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
 library(tidyverse)
 library(dplyr)
+library(knitr)
 ```
 
 # Introduction
@@ -45,46 +47,21 @@ reduced_data$Family_income <- factor(reduced_data$Family_income,
 
 reduced_data$Immigration <- factor(reduced_data$Immigration, levels = c("Strongly disagree","Disagree", "Neither","Agree","Strongly agree"))
 ```
-* number of survey participants of age in the range of 20~40 is unexpectedly low -> not many people in ages between 20-40 participated in the survey
-* Clinton's vote is higher than trump's vote in this survey, which contradicts the election result of 2016, reader should keep in mind that this survey is more biased towards clinton.
-
-
-
-
-1.Conveying a sense of the dataset of interest.
-2.Dicussion of the survey's methodology and its key features, strengths, weaknesses.
-For instance what is the population, frame and sample.
-How is the sample recruited 
-what sampling approach is taken
-what are some of the trade offs of this 
-how is non response handled.
-(What is good and bad about it
-
-A sense of the datasets should be communicated to the reader.
-All varaiables should be throughly examined and explained.
-Explain if there were similar datasets that could have been used and why they were not.
-Why did we clean some variables?
-what the variables look like using graphs or tables discussion of the observations.
-Summary statistics should also be included 
 
 Original dataset is collected through US GSS, which is aimed for the goal that enabling the cleanest comparison to show changes in public opinion in the United States. Usually, it is conducted in person, however because of pandemic, this time it was conducted via online. Among numerous interesting findings from the dataset, we choose to analyze the 2016 United States presidential election. This slightly deviates the US GSS goal, but we thought it clearly represents current situation of US. However, choosing specific variables related to the election was not easy since deciding who to vote is followed by countless factors. After looking over the variables, we chose age,race,gender,degree,born US, Family income, national spending on education, race, arms, welfare, the poor, the other countries, social security and immigration as potential variables. 
 We mainly divided the variables into two parts: personal information (Age, race, gender, degree, born US and family income) and thoughts on national policies (national spending on education, race, arms, welfare, the poor, the other countries, social security and immigration).
-As I mentioned above, deciding who to vote is followed by very complex system of thoughts. Thus, as we cut down the variables, they do not guarantee 100% of the vote. Also, because we did not exclude non-response from our dataset, for some graphs it caused difficulties in interpretation.
-There exists similar survey similar to ours, CNN exit polls, however it is not obtain the datasets they used.
-Now, let's get into the variables in details. One thing that we foucsed was whether respondents were equivalently recruited. To do this, we first have to look at respondents' personal information. If you take a look at fig(), there is not much to notice. Few things to notice are there are more female respondents than male, and for race, there are more White than others. However, following US demographics, White 76.3%, Black: 13.4%, American Indian: 1.3%, Asian: 5.9%, Hispanic: 18.5%, our sample is fairly well recruited. 
+As I mentioned above, deciding who to vote is followed by very complex system of thoughts. Thus, as we cut down the variables, they do not guarantee 100% of the vote. Also, we thought that excluding non-response completely would affect our understandings of data, so even though it caused difficulties in interpretation, we decided to include it except "pres16", which is our main variable whether respondents voted for Clinton and Trump. This is because non-response does not have meanings regarding our interests.There exists similar survey similar to ours, CNN exit polls, however it is not easy to obtain the datasets they used. Also, US GSS is more realistic than exit polls since people would think more rational in US GSS than exit polls. 
+Now, let's get into the variables in details. One thing that we focused was whether respondents were equivalently recruited. To do this, we first have to look at respondents' personal information. If you take a look from Figure \ref{fig:fig1} to Figure \ref{fig:fig4}. There exists some interesting things. 
+1) number of survey participants of age in the range of 20~40 is unexpectedly low compared to other ages. \ref{fig:fig1}
+2) There are more white race than others. However, considering US race demographics, it is very reasonable. \ref{fig:fig2}
+For more details on US race demographics, https://www.census.gov/quickfacts/fact/table/US/PST045221.
+3) For gender, there is slightly more female than male, and we will see later whether this has impacts on vote or not. \ref{fig:fig3}
+4) Clinton's vote is higher than trump's vote in this survey, which contradicts the election result of 2016, reader should keep in mind that this survey is more biased towards Clinton.
+\ref{fig:fig4}
+From Figure \ref{fig:fig5} to Figure \ref{fig:fig14}, they represent respondents' thoughts on national policies as well as relation between variables.  
+Mostly they were collected from questions that whether you think that national spending on corresponding variables is about right, too much, or too little.
 
-
-
-
-
-https://www.census.gov/quickfacts/fact/table/US/PST045221.
-Considering the result above, our data sample is fairly recruited. 
-
-
-
-
-
-```{r fig1, echo=FALSE}
+```{r fig1, include=FALSE, fig.cap = "Distribution of survey respondents' age group"}
 
 reduced_data %>%
   drop_na(age_group) %>%
@@ -94,11 +71,10 @@ reduced_data %>%
   labs(x = element_blank(),
        y = element_blank(),
        title = "Survey Respondents' Age",
-       caption = "Figure 1: Distribution of survey respondents' age group") +
+        )+
   theme(legend.position = "none")
 ```
-
-```{r fig2, echo=FALSE}
+```{r fig2, echo=FALSE, fig.cap = "Distribution of survey respondents' race"}
 
 reduced_data %>%
   ggplot(aes(x = race, fill = race)) +
@@ -106,11 +82,10 @@ reduced_data %>%
   labs(x = element_blank(),
        y = element_blank(),
        title = "Survey Respondents' Race",
-       caption = "Figure 2: Distribution of survey respondents' race") +
+       ) +
   theme(legend.position = "none")
 ```
-
-```{r fig3, echo=FALSE}
+```{r fig3, echo = FALSE, fig.cap= "Distribution of survey respondents' gender"}
 reduced_data %>%
   ggplot(aes(x = gender, fill = gender)) +
   geom_bar() +
@@ -118,11 +93,10 @@ reduced_data %>%
   labs(x = element_blank(),
        y = element_blank(),
        title = "Survey Respondents' Gender",
-       caption = "Figure 3: Distribution of survey respondents' gender") +
+       ) +
   theme(legend.position = "none")
 ```
-
-```{r fig4, echo=FALSE}
+```{r fig4, echo=FALSE, fig.cap = "Distribution of survey respondents' vote choice"}
 reduced_data %>%
   ggplot(aes(x = pres16, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
   geom_bar() +
@@ -130,11 +104,10 @@ reduced_data %>%
   labs(x = element_blank(),
        y = element_blank(),
        title = "Surveyee's Vote Choice of 2016 Presidential Election",
-       caption = "Figure 4: Distribution of survey respondents' vote choice") +
+       ) +
   theme(legend.position = "none")
 ```
-
-```{r fig5, echo=FALSE}
+```{r fig5, echo=FALSE, fig.cap = "Opinion on national spending on improving conditions of black population"}
 reduced_data %>%
   drop_na(nation_race) %>%
   drop_na(race) %>%
@@ -144,12 +117,11 @@ reduced_data %>%
   labs(x = element_blank(),
        y = element_blank(),
        title = "Is the US Spending Enough to Improve Conditions of Black Population?",
-       caption = "Figure 5: Opinion on national spending on improving conditions of black population") +
+       ) +
   facet_wrap(~ pres16) + 
   theme(legend.title = element_blank())
 ```
-
-```{r fig6, echo=FALSE}
+```{r fig6, echo=FALSE,fig.cap = "Distribution of survey respondents' vote choice by birth place"}
 reduced_data %>%
   ggplot(aes(x = born_US, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
   geom_bar() +
@@ -157,22 +129,19 @@ reduced_data %>%
   labs(x = element_blank(),
        y = element_blank(),
        title = "Surveyee's Vote Choice of 2016 Presidential Election by Brith Place",
-       caption = "Figure 6: Distribution of survey respondents' vote choice by birth place",
        fil = "Candidate")
 ```  
-
-```{r fig7, echo=FALSE}
+```{r fig7, echo=FALSE, fig.cap = "Distribution of survey respondents' vote by gender"}
 reduced_data %>%
   ggplot(aes(x = pres16, fill = gender)) +
   geom_bar() +
   coord_flip() +
   labs(x = element_blank(),
        y = element_blank(),
-       title = "Surveyee's Vote Choice of 2016 Presidential Election by Gender",
-       caption = "Figure 7: Distribution of survey respondents' vote by gender",)
+       title = "Surveyee's Vote Choice of 2016 Presidential Election by Gender"
+       )
 ```
-
-```{r fig8, echo=FALSE}
+```{r fig8, echo=FALSE, fig.cap = "Opinion on national spending on welfare"}
 reduced_data %>%
   drop_na(nation_welfare) %>%
   drop_na(race) %>%
@@ -182,12 +151,11 @@ reduced_data %>%
   labs(x = element_blank(),
        y = element_blank(),
        title = "Is the Government Spending Enough on Welfare?",
-       caption = "Figure 8: Opinion on national spending on welfare") +
+       ) +
   facet_wrap(~ pres16) + 
   theme(legend.title = element_blank())
 ```
-
-```{r fig9, echo=FALSE}
+```{r fig9, echo=FALSE, fig.cap = "Distribution of votes by degree and family income"}
 reduced_data %>%
   drop_na(degree) %>%
   ggplot(aes(x = degree, fill = factor(Family_income, 
@@ -199,11 +167,10 @@ reduced_data %>%
   facet_wrap(~pres16) +
   labs(x = element_blank(),
        y = element_blank(),
-       title = "Education, Income and its Effect to the Vote",
-       caption = "Figure 9: Distribution of votes by degree and family income")
+       title = "Education, Income and its Effect to the Vote"
+       )
 ```
-
-```{r fig10, echo=FALSE}
+```{r fig10, echo=FALSE, fig.cap = "Opinion on wheter the US should limit immigration to protect their culture"}
 reduced_data %>%
   ggplot(aes(x = Immigration, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
   geom_bar() +
@@ -212,12 +179,11 @@ reduced_data %>%
   coord_flip() +
   labs(x = element_blank(),
        y = element_blank(),
-       title = "Should the Government Limit Immigration?",
-       caption = "Figure 10: Opinion on wheter the US should limit immigration to protect their culture") +
+       title = "Should the Government Limit Immigration?"
+       ) +
   facet_wrap(~pres16)
 ```
-
-```{r fig11, echo=FALSE}
+```{r fig11, echo=FALSE, fig.cap = "Surveyee's opinion on government's budget on education improvement"}
 reduced_data %>%
   ggplot(aes(x = nation_education, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
   geom_bar(position = "dodge") +
@@ -225,11 +191,10 @@ reduced_data %>%
   labs(fil = "Candidate") +
   labs(x = element_blank(),
        y = element_blank(),
-       title = "Is the Government Spending Enough on Improving Education?",
-       caption = "Figure 11: Surveyee's opinion on government's budget on education improvement")
+       title = "Is the Government Spending Enough on Improving Education?"
+       )
 ```
-
-```{r fig12, echo=FALSE}
+```{r fig12, echo=FALSE, fig.cap = "Surveyee's opinion on government's budget on arms"}
 reduced_data %>%
   ggplot(aes(x = nation_arms, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
   geom_bar(position = "dodge") +
@@ -237,11 +202,10 @@ reduced_data %>%
   labs(fil = "Candidate") +
   labs(x = element_blank(),
        y = element_blank(),
-       title = "Is the Government Spending Enough on Arms and National Defense?",
-       caption = "Figure 12: Surveyee's opinion on government's budget on arms")
+       title = "Is the Government Spending Enough on Arms and National Defense?"
+       )
 ```
-
-```{r fig13, echo=FALSE}
+```{r fig13, echo=FALSE, fig.cap= "Surveyee's opinion on government's budget on assisting the poor"}
 reduced_data %>%
   ggplot(aes(x = Assistance_to_the_poor, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
   geom_bar(position = "dodge") +
@@ -249,11 +213,10 @@ reduced_data %>%
   labs(fil = "Candidate") +
   labs(x = element_blank(),
        y = element_blank(),
-       title = "Is the Government Spending Enough to Assis the Poor?",
-       caption = "Figure 13: Surveyee's opinion on government's budget on assisting the poor")
+       title = "Is the Government Spending Enough to Assis the Poor?"
+       )
 ```
-
-```{r fig14, echo=FALSE}
+```{r fig14, echo=FALSE, fig.cap = "Surveyee's opinion on government's budget on assisting other countries"}
 reduced_data %>%
   ggplot(aes(x = Assistance_to_other_countries, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
   geom_bar(position = "dodge") +
@@ -261,10 +224,9 @@ reduced_data %>%
   labs(fil = "Candidate") +
   labs(x = element_blank(),
        y = element_blank(),
-       title = "Is the Government Spending Enough to Assis Other Countries?",
-       caption = "Figure 14: Surveyee's opinion on government's budget on assisting other countries")
+       title = "Is the Government Spending Enough to Assis Other Countries?"
+       )
 ```
-
 ```{r, echo=FALSE}
 
 # reduced_data %>%
@@ -306,7 +268,6 @@ reduced_data %>%
 #   labs(fil = "Candidate")
 
 ```
-
 
 # Results
 Summary statistics, tables, graphs, images .... 
