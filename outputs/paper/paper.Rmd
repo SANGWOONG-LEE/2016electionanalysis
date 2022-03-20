@@ -64,13 +64,14 @@ From figure \@ref(fig:fig5) to \@ref(fig:fig14), they represent respondents' tho
 
 reduced_data %>%
   drop_na(age_group) %>%
-  ggplot(aes(x = age_group, fill = age_group)) +
+  ggplot(aes(x = age_group, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
   geom_bar() +
+  scale_fill_manual("Candidate", values = c("Clinton" = "#01378C", "Trump" = "#ff3d3d", "Other" = "#2cd18c", "Did not vote" = "#dede1b")) +
   coord_flip() +
   labs(x = element_blank(),
        y = element_blank(),
        title = "Survey Respondents' Age") +
-  theme(legend.position = "none")
+  theme(legend.title = element_blank())
 ```
 
 ```{r fig2, fig.cap= "Distribution of survey respondents' race.", echo = FALSE}
@@ -223,7 +224,7 @@ reduced_data %>%
   labs(fil = "Candidate") +
   labs(x = element_blank(),
        y = element_blank(),
-       title = "Is the Government Spending Enough to Assis the Poor?"
+       title = "Is the Government Spending Enough to Assist the Poor?"
        )
 ```
 
@@ -239,66 +240,13 @@ reduced_data %>%
        )
 ```
 
-```{r, echo=FALSE}
-
-# reduced_data %>%
-#   ggplot(aes(x = degree, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
-#   geom_bar() +
-#   scale_fill_manual("Candidate", values = c("Clinton" = "#01378C", "Trump" = "#ff3d3d", "Other" = "#2cd18c", "Did not vote" = "#dede1b")) +
-#   labs(fil = "Candidate")
-
-# reduced_data %>%
-#   ggplot(aes(x = Family_income, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
-#   geom_bar() +
-#   scale_fill_manual("Candidate", values = c("Clinton" = "#01378C", "Trump" = "#ff3d3d", "Other" = "#2cd18c", "Did not vote" = "#dede1b")) +
-#   labs(fil = "Candidate") +
-#   coord_flip()
-
-# reduced_data %>%
-#   ggplot(aes(x = nation_race, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
-#   geom_bar() +
-#   scale_fill_manual("Candidate", values = c("Clinton" = "#01378C", "Trump" = "#ff3d3d", "Other" = "#2cd18c", "Did not vote" = "#dede1b")) +
-#   labs(fil = "Candidate")
-
-
-# reduced_data %>%
-#   ggplot(aes(x = nation_welfare, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
-#   geom_bar() +
-#   scale_fill_manual("Candidate", values = c("Clinton" = "#01378C", "Trump" = "#ff3d3d", "Other" = "#2cd18c", "Did not vote" = "#dede1b")) +
-#   labs(fil = "Candidate")
-
-# reduced_data %>%
-#   ggplot(aes(x = social_security, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
-#   geom_bar() +
-#   scale_fill_manual("Candidate", values = c("Clinton" = "#01378C", "Trump" = "#ff3d3d", "Other" = "#2cd18c", "Did not vote" = "#dede1b")) +
-#   labs(fil = "Candidate")
-
-# reduced_data %>%
-#   ggplot(aes(x = race, fill = factor(pres16, levels = c("Clinton", "Trump", "Other", "Did not vote")))) +
-#   geom_bar() +
-#   scale_fill_manual("Candidate", values = c("Clinton" = "#01378C", "Trump" = "#ff3d3d", "Other" = "#2cd18c", "Did not vote" = "#dede1b")) +
-#   labs(fil = "Candidate")
-
-```
-
 # Results
-Summary statistics, tables, graphs, images .... 
-Regression tables must not contain stars?? 
 
-Thesis: what triggered U.S citizens to vote Clinton and Trump. 
+The questions asking personal information shows some obvious but also interesting results. Figure \@ref(fig:fig1) shows that younger generation did not participate in the survey as much as older generation. It can also be seen that while almost all age groups preferred Clinton over Trump, compared to younger generation, older age groups shows more interest to Trump. Females participants outnumbers male participants by significant amount as seen on Figure \@ref(fig:fig3), and many of female participants' vote went to Clinton, while male votes divided almost evenly(Figure \@ref(fig:fig6)). Figure \@ref(fig:fig8) shows some very interesting responses. Considering the distribution of votes, votes of white population are fairly split between Clinton and Trump, with more votes to Clinton, but all other races heavily favors Clinton. Some aspects that are not so obvious are ones involving education, family income and its correlation with the candidate preference. AS seen on figure \@ref(fig:fig9), People with higher education and higher income voted for Clinton while lower income and education votes are quite evenly split.
 
-1. nation_race 
--> This session clearly shows the difference in approval rating between Hillary Clinton and 
-Donald Trump. Majority of people who thinks that national spending on improving conditions on
-race has to be increased advocated Hillary Clinton. On the other hand, people who did not agree 
-with them advocated Donald Trump. I assume that this is due to the image of Donald Trump. 
+The questions that involves asking their opinions of various subjects of government policies, figure \@ref(fig:fig8) shows that white population's general opinion is that the government's budget on welfare is not lacking, with many of them thinking government is spending too much, whereas other races opinions are evenly split with black community leaning more towards the opinion that it is lacking. We can also observe from the same figure that Clinton supporters generally think that the budget on welfare is lacking and Trump's supporters think budget is too much. Figure \@ref(fig:fig10) shows answers to question on immigration and whether the government should limit immigration to protect american culture, and it shows that out of the people who answered the question, majority of Clinton voters disagrees and majority of Trump voters agrees. We start to see a trend here that Trump supporters have more conservative opinions and Clinton supporters are more open to ideas on improvement in social equality or welfare. We see this trend continue on other figures. On Figure \@ref(fig:fig12), many Clinton voters think government is spending too much of national defense while very few Trump voters think the same, while many trump voters think they spend too little when very few Clinton voters have the same opinion. For the question on if they think the government is spending enough to assist other countries (Figure \@ref(fig:fig14)), while Clinton's supporters opinions are divided quite evenly between "about right", and "too much", majority of Trump supporters think that the government is spending too much. Figure \@ref(fig:fig11) and Figure \@ref(fig:fig13) shows where Clinton voters and Trump voters share the same opinion on government spending on education and to assist the poor. While majority of people who thinks that the government is spending too much on both occasions are Trump supporters, popular opinions from both parties is that the government is spending too little on education and to assist the poor. 
 
-2. nation_arms
--> Interestingly this session shows opposite trend compared to nation_race. Aside from people who
-answered "About right" and "NA", the two bars, "Too little" and "Too much" shows us opposite trend.
-
-In general, similar to the indicators above, Hillary Clinton supporters were moved by improvement in social equality or welfare such as 
-"Assistance to the Poor", "nation welfare", "nation education" and "Assistance to the other countries". On the other hand, Donald Trump supporters were interested by more conservative ideas that US is spending too much on the sessions above.
+In general, just as we expected by the trend we saw during our observation of the data, Hillary Clinton supporters were moved by improvement in social equality or welfare such as "Assistance to the Poor", "nation welfare", "nation education" and "Assistance to the other countries". On the other hand, Donald Trump supporters were interested by more conservative ideas that US is spending too much on the sessions above, and shows their support to Trump's slogan "Make America Great Again".
 
 
 # Discussion
