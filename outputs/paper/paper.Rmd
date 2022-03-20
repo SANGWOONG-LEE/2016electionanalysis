@@ -5,7 +5,7 @@ author:
   - SangWoong Lee
   - Young Suk
 date: "`r format(Sys.time(), '%d %B %Y')`"
-abstract: "First sentence (what was done). Second sentence(what was found). Third sentence (why this matters). Fourth sentence."
+abstract: "This paper has been examined possible variables that influenced U.S citizens' choice for the 2016 U.S presidential election. We have found that there exists significantly different opinions regarding gender, wealth, race and age. This is important in a sesne that it shows thought trends as well as crucial decision indicators for voting in U.S.,With further survey at the end of this paper, we are going to explore whether this is happening only in U.S or not."
 output:
   bookdown::pdf_document2:
     fig_caption: yes
@@ -22,11 +22,11 @@ library(knitr)
 ```
 
 # Introduction
-Donald Trump won the 2016 United States presidential election. From what we remembered, it was quite surprising considering his image outside of U.S or even in U.S. Also, from what we remembered, before the election, Hillary Clinton was winning in most surveys as well. There is a famous quote that we learn from the past. Therefore, we thought that even though we are living in 2022, it would be meaningful to analyze the election so that we get to know what U.S citizens thoughts, or in broad sense thoughts trends in nowadays and what factors they or we considered most important to decide our representative.
+Donald Trump won the 2016 United States presidential election. From what we remembered, it was quite surprising considering his image outside of U.S or even in U.S. Also, before the election, Hillary Clinton was ahead in most surveys as well. There is a famous quote that we learn from the past. We thought that even though we are living in 2022, it would be meaningful to analyze the election so that we get to know what U.S citizens thoughts, or in broader sense, thoughts trends in nowadays and what factors we considered most important to decide our representative.
 
-This paper is going to explore mainly possible variables that potentially had impacts on deciding factors in the election as well as their analysis. However, making a decision that this variable affects U.S citizens to lean on Trump side or Clinton side is not easy because there is nothing in this world absolute. Thus, as we mentioned above, we are going to focus on general flows of results instead of defining variables as absolute factors of the demarcation. Following that, this paper has structures: Data, Results, Discussion, Appendix and supplementary survey. 
+This paper is mainly going to explore possible variables that potentially had impacts on decision regarding the election as well as their analysis. However, making a choice for choosing which variables affected U.S citizens to lean on Trump side or Clinton side was not easy because there is nothing in this world absolute. Thus, as we mentioned above, we are going to focus on general flows of results instead of defining variables as absolute factors of the demarcation. Following that, this paper has structures: Data, Results, Discussion, Appendix and supplementary survey. 
 
-We have obtained dataset from U.S GSS, and sorted variables that we consider as potential factors affecting the election. Throughout analysis of relation between the variables and respondents' votes on the election, we could observe that people who have conservative thoughts on equality and welfare preferred Trump, and people who do not preferred Clinton. This may sound obvious considering their parties, however in result session, reader can observe that what specific areas or fields they become more conservative and progressive. We believe that this situation is not only happening in U.S, but it also happens all over the world. This claim is going to be conducted with supplementary survey session. 
+We have obtained dataset from U.S GSS, and sorted variables that we consider as potential factors affected the election. Throughout the analysis of relation between the variables and respondents' votes on the election, we could observe that people who had conservative thoughts on equality and welfare preferred Trump, and people who did not preferred Clinton. This may sound obvious considering their parties. In the result session, reader can observe that what specific areas or fields the respondents considered important. We believe that this situation is not only happening in U.S, but it is also happening all over the world. This claim is going to be conducted with supplementary survey session. 
 
 This report was created using `R` [@citeR] and its libraries `tidyverse` [@tidyverse], `dplyr` [@dplyr], were used to process and clean the data, and `ggplot` [@ggplot] `bookdown` [@bookdown] and `knitr` [@knitr] was used to format this report.
 
@@ -43,13 +43,13 @@ reduced_data$Family_income <- factor(reduced_data$Family_income,
 reduced_data$Immigration <- factor(reduced_data$Immigration, levels = c("Strongly disagree","Disagree", "Neither","Agree","Strongly agree"))
 ```
 
-Original dataset is collected through US GSS, which is aimed for the goal that enabling the cleanest comparison to show changes in public opinion in the United States. Usually, it is conducted in person, however because of pandemic, this time it was conducted via online. Among numerous interesting findings from the dataset, we choose to analyze the 2016 United States presidential election. This slightly deviates from the US GSS goal, but we thought that it can clearly represent current situations of U.S. However, choosing specific variables related to the election was not easy since deciding who to vote is followed by countless and complex factors. After looking over the variables, we chose age,race,gender,degree,born US, family income, national spending on education, race, arms, welfare, the poor, the other countries, social security and immigration as potential variables.
+Original dataset is collected through US GSS, which is aimed for the goal that enabling the cleanest comparison to show changes in public opinion in the United States. Usually, it is conducted in person, however because of pandemic, this time it was conducted via online. Among numerous interesting findings from the dataset, we chose to analyze the 2016 United States presidential election. Although this slightly deviated from the US GSS goal, we thought that it can clearly represent current situations of U.S. However, choosing specific variables related to the election was not easy since deciding who to vote is followed by countless and complex factors. After looking over the variables, we chose age,race,gender,degree,born US, family income, national spending on education, race, arms, welfare, the poor, the other countries, social security and immigration as potential variables.
 
 We mainly divided the variables into two parts: personal information (Age, race, gender, degree, born US and family income) and thoughts on national policies (national spending on education, race, arms, welfare, the poor, the other countries, social security and immigration).
-As I mentioned above, deciding who to vote is followed by very complex system of thoughts. Thus, as we cut down the variables, they do not guarantee 100% of the vote. Also, we thought that excluding non-response completely would be a bias for our understandings in data, so even though it caused difficulties in interpretation, we decided to include it except "pres16", which is our main variable whether respondents voted for Clinton and Trump. This is because non-response does not have meanings with respect to our interests.
-There exists similar survey similar to ours, CNN exit polls, however it is not easy to obtain the datasets they used. Also, US GSS is more realistic than exit polls since people would think more rational in US GSS than exit polls. 
+As I mentioned above, deciding who to vote is followed by very complex system of thoughts. Thus, as we cut down the variables, they do not 100% guarantee of the vote. Also, we thought that excluding non-response completely would turn into a bias for our understandings in data, so even though it caused difficulties in interpretation, we decided to include it except "pres16", which is our main variable whether respondents voted for Clinton and Trump. This is because non-response does not have convey meaningful findings with respect to our interests.
+There exists a survey similar to ours, CNN exit polls, however it is not easy to obtain the datasets they used. Also, US GSS is more realistic than exit polls since people would think more rational with sufficient time to think in US GSS than exit polls. 
 
-Now, let's get into the variables in details. One thing that we focused at first was whether respondents were equivalently recruited. To do this, we have to look at respondents' personal information. If you take a look from figure \@ref(fig:fig1) to \@ref(fig:fig4). We can see some interesting observations as followed:
+Now, let's get into the variables in details. One thing that we focused at first was whether respondents were equivalently recruited or not. To do this, you have to look at respondents' personal information. If you take a look from figure \@ref(fig:fig1) to \@ref(fig:fig4). You can see some interesting observations as followed:
 
 1) number of survey participants of age in the range of 20~40 is unexpectedly low compared to other ages.
 
@@ -58,7 +58,7 @@ For more details on US race demographics, please visit the link: https://www.cen
 
 3) For gender, there is slightly more female than male, and we will see later whether this has impacts on vote or not. 
 
-From figure \@ref(fig:fig5) to \@ref(fig:fig14), they represent respondents' thoughts on national policies as well as relation between variables. Mostly they were collected from questions that whether you think that national spending on corresponding variables is about right, too much, or too little.For instance, let's take a look at figure \@ref(fig:fig7). This graph represents respondents' thoughts on U.S national spending on improving black condition, and we sorted it with our interest, Clinton or Trump. For more example, let's take a look at figure \@ref(fig:fig9).This graph represents relation between income and degree with respect to our interest. It generally shows that higher education you have more income you earn. We are going to talk about interesting results in more detailed later in result and discussion session. For more information regarding variables graph please check Appendix.
+From figure \@ref(fig:fig5) to \@ref(fig:fig14), they represent respondents' thoughts on national policies as well as relation between variables. Mostly they were collected from questions that whether you think that national spending on corresponding variables is about right, too much, or too little.For instance, let's take a look at figure \@ref(fig:fig5). This graph represents respondents' thoughts on U.S national spending on improving black condition, and we sorted it with our interest, Clinton or Trump. For more example, let's take a look at figure \@ref(fig:fig9).This graph represents relation between income and degree with respect to our interest. It generally shows that higher education you have, more income you earn. We are going to talk about interesting results in more detailed later in result and discussion session. For more information regarding variables graph please check Appendix.
 
 ```{r fig1,echo=FALSE, fig.cap = "Distribution of survey respondents' age group."}
 
@@ -249,7 +249,7 @@ Figures 9-14 focuses on the questions that involves asking their opinions of var
 
 
 # Discussion
-In this session, we are going to explore important questions that can be raised from our findings. At this point, you may end up with question marks in meanings this analysis possess. Although this paper is a research of the past, this definitely has something to tell us about the U.S or even the world. 
+In this session, we are going to explore important questions that can be raised from our findings. At this point, you may end up with question marks in meanings this paper possess. Although this paper is a research of the past, this definitely has something to tell us about the U.S or even the world. 
 Hopefully following questions helps you to understand our paper.
 
 ## Summary
@@ -285,7 +285,7 @@ To gain more knowledge in this trend of disagreement between people of different
 
 # Supplementary survey
 
-Our supplementary survey is available here: LINK
+Our supplementary survey is available here: https://docs.google.com/forms/d/e/1FAIpQLScN9ySPIn2W2DZ-Cs5GBpgXRcw79l1oNkqym3ARWWzIy-8uOg/viewform?usp=sf_link
 
 ## Preamble:
 
@@ -293,8 +293,6 @@ The purpose of this survey is to further investigate the 2016 U.S presidential e
 
 By proceeding with this survey, you understand that we will use your responses to 
 better understand the 2016 U.S presidential election in the GSS. The survey is voluntary, and if you decide to participate you can skip questions and withdraw at any time.
-
-## Questions
 
 
 ## End Page
