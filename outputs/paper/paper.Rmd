@@ -295,6 +295,14 @@ The purpose of this survey is to further investigate the 2016 U.S presidential e
 By proceeding with this survey, you understand that we will use your responses to 
 better understand the 2016 U.S presidential election in the GSS. The survey is voluntary, and if you decide to participate you can skip questions and withdraw at any time.
 
+```{r echo=FALSE, out.width='50%'}
+# insert pictures of survey questions
+include_graphics(paste(getwd(),"/inputs/survey/survey1.png", sep = ""))
+include_graphics(paste(getwd(),"/inputs/survey/survey2.png", sep = ""))
+include_graphics(paste(getwd(),"/inputs/survey/survey3.png", sep = ""))
+include_graphics(paste(getwd(),"/inputs/survey/survey4.png", sep = ""))
+```
+
 
 ## End Page
 
