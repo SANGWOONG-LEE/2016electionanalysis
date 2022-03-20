@@ -28,6 +28,8 @@ This paper is going to explore mainly possible variables that potentially had im
 
 We have obtained dataset from U.S GSS, and sorted variables that we consider as potential factors affecting the election. Throughout analysis of relation between the variables and respondents' votes on the election, we could observe that people who have conservative thoughts on equality and welfare preferred Trump, and people who do not preferred Clinton. This may sound obvious considering their parties, however in result session, reader can observe that what specific areas or fields they become more conservative and progressive. We believe that this situation is not only happening in U.S, but it also happens all over the world. This claim is going to be conducted with supplementary survey session. 
 
+This report was created using `R` [@citeR] and its libraries `tidyverse` [@tidyverse], `dplyr` [@dplyr], were used to process and clean the data, and `ggplot` [@ggplot] `bookdown` [@bookdown] and `knitr` [@knitr] was used to format this report.
+
 # Data
 ```{r, include=FALSE, echo=FALSE}
 reduced_data <- read_csv("outputs/data/prepared_gss.csv")
@@ -55,8 +57,6 @@ Now, let's get into the variables in details. One thing that we focused at first
 For more details on US race demographics, please visit the link: https://www.census.gov/quickfacts/fact/table/US/PST045221.
 
 3) For gender, there is slightly more female than male, and we will see later whether this has impacts on vote or not. 
-
-4) Clinton's vote is higher than trump's vote in this survey, which contradicts the election result of 2016, reader should keep in mind that this survey is more biased towards Clinton.
 
 From figure \@ref(fig:fig5) to \@ref(fig:fig14), they represent respondents' thoughts on national policies as well as relation between variables. Mostly they were collected from questions that whether you think that national spending on corresponding variables is about right, too much, or too little.For instance, let's take a look at figure \@ref(fig:fig7). This graph represents respondents' thoughts on U.S national spending on improving black condition, and we sorted it with our interest, Clinton or Trump. For more example, let's take a look at figure \@ref(fig:fig9).This graph represents relation between income and degree with respect to our interest. It generally shows that higher education you have more income you earn. We are going to talk about interesting results in more detailed later in result and discussion session. For more information regarding variables graph please check Appendix.
 
@@ -247,21 +247,21 @@ The questions asking personal information shows some obvious but also interestin
 
 Figures 9-14 focuses on the questions that involves asking their opinions of various subjects of government policies and how supporters of different candidate , figure \@ref(fig:fig8) shows that white population's general opinion is that the government's budget on welfare is not lacking, with many of them thinking government is spending too much, whereas other races opinions are evenly split with black community leaning more towards the opinion that it is lacking. We can also observe from the same figure that Clinton supporters generally think that the budget on welfare is lacking and Trump's supporters think budget is too much. Figure \@ref(fig:fig10) shows answers to question on immigration and whether the government should limit immigration to protect american culture, and it shows that out of the people who answered the question, majority of Clinton voters disagrees and majority of Trump voters agrees. We start to see a trend here that Trump supporters have more conservative opinions and Clinton supporters are more open to ideas on improvement in social equality or welfare. We see this trend continue on other figures. On Figure \@ref(fig:fig12), many Clinton voters think government is spending too much of national defense while very few Trump voters think the same, while many trump voters think they spend too little when very few Clinton voters have the same opinion. For the question on if they think the government is spending enough to assist other countries (Figure \@ref(fig:fig14)), while Clinton's supporters opinions are divided quite evenly between "about right", and "too much", majority of Trump supporters think that the government is spending too much. Figure \@ref(fig:fig11) and Figure \@ref(fig:fig13) shows where Clinton voters and Trump voters share the same opinion on government spending on education and to assist the poor. While majority of people who thinks that the government is spending too much on both occasions are Trump supporters, popular opinions from both parties is that the government is spending too little on education and to assist the poor. 
 
-In general, just as we expected by the trend we saw during our observation of the data, Hillary Clinton supporters were moved by improvement in social equality or welfare such as "Assistance to the Poor", "nation welfare", "nation education" and "Assistance to the other countries". On the other hand, Donald Trump supporters were interested by more conservative ideas that US is spending too much on the sessions above, and shows their support to Trump's slogan "Make America Great Again".
-
 
 # Discussion
 In this session, we are going to explore important questions that can be raised from our findings. At this point, you may end up with question marks in meanings this analysis possess. Although this paper is a research of the past, this definitely has something to tell us about the U.S or even the world. 
 Hopefully following questions helps you to understand our paper.
 
-## What was done in this paper? 
+## Summary
+We have taken survey data to observe the trend in voters of 2016 presidential election of the United States. In general, just as we expected by the trend we saw during our observation of the data, Hillary Clinton supporters were moved by improvement in social equality or welfare such as "Assistance to the Poor", "nation welfare", "nation education" and "Assistance to the other countries". On the other hand, Donald Trump supporters were interested by more conservative ideas that US is spending too much on the sessions above, and shows their support to Trump's slogan "Make America Great Again".
 
-## What is something that we learn about the world?
-Even though the world has been trying hard for social welfare and equality, throughout this paper we have observed that there still exists disagreement within gender, race, wealth and age. U.S is just one example of this situation. If you extend your view to the world, you can observe this situation with no difficulties. 
+## Disagreement Between Races, Gender, Ages, and Wealth
+Even though the United States and many other countries around the world have been trying hard to improve social welfare and equality, throughout this paper we have observed that there still exists disagreement within gender, race, wealth and age, and this had massive impact on politics and was crucial factor on people's decision on who to vote for as the president. Despite the popular movements voicing for equality between genders, and races and such in recent years, it seems that the opinions of people in different groups, are very divided. 
 
-## what is left to learn or how should we proceed in the future?
+## Weaknesses and how we should proceed in the future
+The data from U.S GSS contained large amount of data and information and the distribution of survey respondents were quite accurate in terms of race. However, there were significantly more females than males and significantly less people of ages in the 20s, 30s and 40s. It is important, especially for the topic of this paper, to have the data on the younger generation and how they view government policies and how it effects their vote for the presidential election.
+To gain more knowledge in this trend of disagreement between people of different race, gender, age and wealth when it comes to the election, an additional survey could be made to answer WHY this disagreement is happening, by not just asking for their opinion but also asking about what they experience and witness. In the future, survey should be including questions that can allow us to better capture and understand the current trend in agreement and disagreement between different groups of people, it can allow us to study how it could effect the election in the future.
 
-## what are some weaknesses of what was done?
 
 
 \newpage
@@ -308,3 +308,4 @@ Thank you ~~
 
 # References
 
+U.S. Census Bureau quickfacts: United States. (n.d.), from https://www.census.gov/quickfacts/fact/table/US/PST045221
