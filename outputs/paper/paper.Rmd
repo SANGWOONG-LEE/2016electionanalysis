@@ -306,8 +306,6 @@ sangwoong.lee@maill.utoronto.ca and young.suk@mail.utoronto.ca
 
 
 # References
--- Smith, Tom W., Davern, Michael, Freese, Jeremy, and Morgan, Stephen L., General Social Surveys, 1972-2018 [machine-readable data file] /Principal Investigator, Smith, Tom W.; Co-Principal Investigators, Michael Davern, Jeremy Freese and Stephen L. Morgan; Sponsored by National Science Foundation. --NORC ed.-- Chicago: NORC, 2019.
+Smith, Tom W., Davern, Michael, Freese, Jeremy, and Morgan, Stephen L., General Social Surveys, 1972-2018 [machine-readable data file] /Principal Investigator, Smith, Tom W.; Co-Principal Investigators, Michael Davern, Jeremy Freese and Stephen L. Morgan; Sponsored by National Science Foundation. --NORC ed.-- Chicago: NORC, 2019.
 
--- U.S. Census Bureau (2021). Population estimates. Retrieved from https://www.census.gov/quickfacts/fact/table/US/PST045221.
-
-U.S. Census Bureau quickfacts: United States. (n.d.), from https://www.census.gov/quickfacts/fact/table/US/PST045221
+U.S. Census Bureau (2021). Population estimates. Retrieved from https://www.census.gov/quickfacts/fact/table/US/PST045221.
