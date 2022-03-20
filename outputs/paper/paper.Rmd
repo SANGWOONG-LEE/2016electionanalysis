@@ -289,22 +289,24 @@ Our supplementary survey is available here: LINK
 
 ## Preamble:
 
-The purpose of this survey is ~~
+The purpose of this survey is to further investigate the 2016 U.S presidential election. We are interested in more and specific opinions regarding factors you consider important to decide who to vote than what US GSS provided. If you are not a US citizen, please pretend you are, or imagine that having very similar candidates in your home country. 
 
 By proceeding with this survey, you understand that we will use your responses to 
 better understand the 2016 U.S presidential election in the GSS. The survey is voluntary, and if you decide to participate you can skip questions and withdraw at any time.
 
 ## Questions
-1. 
-2. 
-3. 
+
 
 ## End Page
 
-Thank you ~~
+Thank you for participating in our survey. If you have any questions please do not hesitate to contact us.
+sangwoong.lee@maill.utoronto.ca and young.suk@mail.utoronto.ca
 
 \newpage
 
 
 # References
+-- Smith, Tom W., Davern, Michael, Freese, Jeremy, and Morgan, Stephen L., General Social Surveys, 1972-2018 [machine-readable data file] /Principal Investigator, Smith, Tom W.; Co-Principal Investigators, Michael Davern, Jeremy Freese and Stephen L. Morgan; Sponsored by National Science Foundation. --NORC ed.-- Chicago: NORC, 2019.
+
+-- U.S. Census Bureau (2021). Population estimates. Retrieved from https://www.census.gov/quickfacts/fact/table/US/PST045221.
 
