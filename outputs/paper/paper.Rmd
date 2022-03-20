@@ -251,24 +251,18 @@ In general, just as we expected by the trend we saw during our observation of th
 
 
 # Discussion
+In this session, we are going to explore important questions that can be raised from our findings. At this point, you may end up with question marks in meanings this analysis possess. Although this paper is a research of the past, this definitely has something to tell us about the U.S or even the world. 
+Hopefully following questions helps you to understand our paper.
 
-what is done in this paper?
-what is something that we learn about the world
-what is another thing that we learn about the world
-what are some weaknesses of what was done?
-what is left to learn or how should we proceed in the future?
+## What was done in this paper? 
 
-## First discussion point
+## What is something that we learn about the world?
+Even though the world has been trying hard for social welfare and equality, throughout this paper we have observed that there still exists disagreement within gender, race, wealth and age. U.S is just one example of this situation. If you extend your view to the world, you can observe this situation with no difficulties. 
 
-If my paper were 10 pages, then should be be at least 2.5 pages. The discussion is a chance to show off what you know and what you learnt from all this. 
+## what is left to learn or how should we proceed in the future?
 
-## Second discussion point
+## what are some weaknesses of what was done?
 
-## Third discussion point
-
-## Weaknesses and next steps
-
-Weaknesses and next steps should also be included.
 
 \newpage
 
@@ -297,9 +291,8 @@ Our supplementary survey is available here: LINK
 
 The purpose of this survey is ~~
 
-By proceeding with this survey, you understand that we will user your responses to 
-better understand () in the GSS. The survey is voluntary, and if you decide to 
-participate you can skip questions and withdraw at any time.
+By proceeding with this survey, you understand that we will use your responses to 
+better understand the 2016 U.S presidential election in the GSS. The survey is voluntary, and if you decide to participate you can skip questions and withdraw at any time.
 
 ## Questions
 1. 
