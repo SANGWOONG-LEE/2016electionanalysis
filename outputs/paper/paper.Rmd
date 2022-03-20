@@ -32,10 +32,11 @@ This report was created using `R` [@citeR] and its libraries `tidyverse` [@tidyv
 
 # Data
 ```{r, include=FALSE, echo=FALSE}
+# Read the reduced and cleaned data, modification done in data-preparation.r file
 reduced_data <- read_csv("outputs/data/prepared_gss.csv")
 reduced_data$pres16 <- factor(reduced_data$pres16, levels = c("Clinton","Trump","Other","Did not vote"))
 
-
+# Change the order of variables for graphing purposes
 reduced_data$Family_income <- factor(reduced_data$Family_income, 
                                      levels = c("Under $10,000","$10,000 ~ $19,999","$20,000 ~ $39,999","$40,000 ~ $59,999", 
                                                 "$60,000 ~ $89,999","$90,000 ~ $129,999","$130,000 ~ $169,999","$170,000 or over"))
